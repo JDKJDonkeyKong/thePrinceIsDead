@@ -1858,19 +1858,19 @@ You apologize to Ari and sequester yourself in a corner, producing a simple syri
 &quot;Only on the inside, Ari~~, and that hasn&#39;t been for a while.&quot; Your coyness can&#39;t seem to shake her concern, but she holds you a little tighter now.
 
 With your routine finally done for the morning, the two of you give Payla your goodbyes [[and head out-&gt;darkMoonOpen]].](finallyLeaving|
-</tw-passagedata><tw-passagedata pid="44" name="False Start" tags="" position="6625,7175" size="100,100">UwU
+</tw-passagedata><tw-passagedata pid="44" name="False Start" tags="" position="5300,6650" size="100,100">UwU
 
-[[The ink dries to a deep crimson, and the fiend gives a curt bow before slithering out of the room -&gt;tunneltime]] 
+[[The ink dries to a deep crimson, and the fiend gives a curt bow before slithering out of the room -&gt;bedTimeInTheBar]] 
 
-(set: $Name to &quot;Hypatia&quot;)
-(set: $shortName to &quot;Hyp&quot;)
-(set: $splitName to &quot;Hy~ pat~ i~ a~&quot;)
+(set: $Name to &quot;Anastasia&quot;)
+(set: $shortName to &quot;Ana&quot;)
+(set: $splitName to &quot;A~ na~ sta~ si~ a~&quot;)
 (set: $Str to 8)
-(set: $Dex to 8)
-(set: $Con to 12)
-(set: $Int to 16)
-(set: $Wis to 12)
-(set: $Cha to 8)
+(set: $Dex to 12)
+(set: $Con to 16)
+(set: $Int to 8)
+(set: $Wis to 8)
+(set: $Cha to 12)
 (set: $tenderFlower to 1)
 (set: $rapierFlag to 1)</tw-passagedata><tw-passagedata pid="45" name="darkMoonOpen" tags="" position="3300,3500" size="100,100">Before long, you&#39;ve passed far beyond the lights of the waterways&#39; township, following the water towards the next hurdle on your path.
 (save-game:&quot;defaultSave&quot;)
@@ -4390,7 +4390,107 @@ Hand in hand, [[you finally reach the Abyssal Capitol-&gt;intoTheCity]].
 “Oh… uhm… that would… actually be super helpful… uhm… thanks, love.” Ari gives you a tender smile, and you offer her your hand. 
 
 Together, you finally reach [[the Abyssal Capitol-&gt;intoTheCity]].
-](helpIntro|</tw-passagedata><tw-passagedata pid="75" name="intoTheCity" tags="" position="7600,7300" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+](helpIntro|</tw-passagedata><tw-passagedata pid="75" name="intoTheCity" tags="" position="7600,7300" size="100,100">This ancient city has felt so distant for so long... but you&#39;ve finally arrived.
+When you emerge from the old tunnels into a side alley, you&#39;re greeted by the humming of the Abyssal Capitol&#39;s East Wing. You wait expectantly, hoping to catch some of the East&#39;s typical street music... but nothing comes. Ariadne pulls herself up behind you.
+
+&quot;Wow... this place is... certainly something... but where are...&quot; Ari furrows her brow, peering into the street ahead.
+
+&quot;The people... they... they&#39;re usually pretty out and about types...&quot; Your mind races. You take Ariadne&#39;s hand, racing into the empty street.
+
+&quot;$shortName... what... what could have...&quot; Ari&#39;s palms are sweating.
+
+[&quot;I... I don&#39;t know... What if it&#39;s like in Scindos?&quot;]&lt;scinCity| [
+&quot;Maybe... maybe it&#39;s a lockdown...?&quot;]&lt;lockCity| {(click:?scinCity)[(replace:?lockCity)[](show:?scinFin)]
+(click:?lockCity)[(replace:?scinCity)[](show:?scinFin)]} [
+&quot;I... but if that&#39;s the case...&quot; Ari gasps, suddenly pulling you into an alley. Ari&#39;s hand goes over your mouth. You both watch as a royal guard crosses the street where you once were. You wait until they&#39;re long gone to speak again.
+
+&quot;Uh... well... I guess our fears are confirmed, then...?&quot; Ari gives a nervous laugh.
+
+&quot;Uhm... yeah... is there, maybe, another way to get around this place...?&quot; You eye the area around you, looking for any way out, and then you see the fire escape of an adjacent building.
+
+&quot;Uh... Ari...?&quot; You can&#39;t stop yourself from grinning.
+
+Ari only gives you a concerned look.
+
+&quot;I think I found our next step...&quot; And then [[you start climbing-&gt;theRooftops]]...
+](scinFin|</tw-passagedata><tw-passagedata pid="76" name="theRooftops" tags="" position="7900,7400" size="100,100">Above the capitol... things are much nicer. You take a moment to peer out over the city beyond, while Ari climbs the last few flights.
+
+Below... everything looks peaceful. You can only imagine what things must be like for everyone living below right now... You wonder what they must think is going on...
+
+Knowing what you do... would they still blame you...? Do you even blame yourself...? You... don&#39;t have any easy answers... just a lot of time to think about it. You&#39;re snapped from your reverie as Ari sits beside you, overlooking the capitol with you.
+
+&quot;Hey... how are you feeling, love?&quot;
+
+[&quot;Tired...&quot;]&lt;tired| [
+&quot;Worried...&quot;]&lt;worried| [
+&quot;Better, now...&quot;]&lt;better| [
+&quot;Homesick...&quot;]&lt;homesick| [
+&quot;Afraid...&quot;]&lt;afraid| [
+&quot;Cold...&quot;]&lt;cold| [
+&quot;It... doesn&#39;t really matter...&quot;]&lt;dismissive|{
+(click:?tired)[(replace:?worried)[](replace:?better)[](replace:?homesick)[](replace:?afraid)[](replace:?cold)[](replace:?dismissive)[](show:?tiredRes)]
+(click:?worried)[(replace:?tired)[](replace:?better)[](replace:?homesick)[](replace:?afraid)[](replace:?cold)[](replace:?dismissive)[](show:?worriedRes)]
+(click:?better)[(replace:?worried)[](replace:?tired)[](replace:?homesick)[](replace:?afraid)[](replace:?cold)[](replace:?dismissive)[](show:?betterRes)]
+(click:?homesick)[(replace:?worried)[](replace:?better)[](replace:?tired)[](replace:?afraid)[](replace:?cold)[](replace:?dismissive)[](show:?homesickRes)]
+(click:?afraid)[(replace:?worried)[](replace:?better)[](replace:?homesick)[](replace:?tired)[](replace:?cold)[](replace:?dismissive)[](show:?afraidRes)]
+(click:?cold)[(replace:?worried)[](replace:?better)[](replace:?homesick)[](replace:?afraid)[](replace:?tired)[](replace:?dismissive)[](show:?coldRes)]
+(click:?dismissive)[(replace:?worried)[](replace:?better)[](replace:?homesick)[](replace:?afraid)[](replace:?cold)[](replace:?tired)[](show:?dismissiveRes)]}[ Ariadne wraps her arms around you.
+
+&quot;There&#39;s not much longer, $shortName... I know you can make it... Wanna take a little break up here anyway?&quot; You look over to Ari. The capitol&#39;s massive lanterns usually seem ominous to you... but... the way their light sparkles off Ari&#39;s eyes... You feel at peace.
+
+You both take some time, here. It&#39;s just you two, laying together, alone at the top of the bottom of the world... and... for now... that&#39;s enough.](tiredRes| [ Ariadne wraps her arms around you.
+
+&quot;I know how it feels, $shortName... I&#39;m going to be here until the end, though... Even when it gets hard... I won&#39;t let you face it alone.&quot; Ari is squeezing you tightly. You think she needs to say it as much as you need to hear it. You lay back, leading Ari down with an arm. The two of you are intertwined on this rooftop, Ari&#39;s head over your heart.
+
+&quot;Until the end... I can definitely do that...&quot; You coil your fingers through Ari&#39;s hair as she lays her head on your chest.
+The two of you stay like this for some time... two hearts, mixing together on a rooftop... staring out from the top of the bottom of the world...](worriedRes| [ Ariadne wraps her arms around you, nuzzling into your cheek.
+
+&quot;Oh, you...&quot; Ariadne lays back, and you recline to lay with her.
+
+&quot;You know... I never did anticipate something like this... $shortName...&quot; You look over. Ari&#39;s eyes are shining in the lantern light of the capitol. You feel your heart racing. Ari&#39;s hand is on your face, and she tenderly rubs your cheek with her thumb.
+
+&quot;You know... I have to ask... all that stuff last night... that wasn&#39;t some weird //bloodlust// thing... right...?&quot; Ariadne is fiddling with something on her back. You shake your head, but, before you can elaborate, Ari interrupts you.
+
+&quot;Good... both because I&#39;d feel bad if it were my blood that set you off... and... because... well...~&quot; Ariadne hoists off her now freed breastplate. You suddenly find it very hard to breathe normally.
+
+...
+
+The two of you... spend... time... together... ... ... like this, until Ari is lying limp and warm in your arms. You&#39;re suddenly thankful that the streets are empty, as you stare out from the top of the bottom of the world.](betterRes| [ Ariadne wraps her arms around you.
+
+&quot;Hey... it&#39;s not far now, love... we&#39;re almost there...&quot; Ari looks out over the capitol. You catch the light in her eyes and feel... safe...
+
+Ariadne lays against the rooftop, pulling you down to lay on top of her.
+
+&quot;Do you think we&#39;ll have a view like this... wherever we end up, $shortName...?&quot; You can hear Ari&#39;s heart beating below you. You close your eyes and listen.
+
+&quot;I... I really hope so, love...&quot; Ari coils her fingers through your hair. The two of you lay together for some time. Ari watches out to the city below, and you keep her held close.](homesickRes| [ Ariadne pulls you into her embrace.
+
+&quot;Now now, love... come here...&quot; Ari pulls you down to lay with her.
+
+&quot;Whatever you&#39;re afraid of, right now... we&#39;ll face it together, okay...?&quot; Ari nuzzles you cheek.
+
+[&quot;Even... even if we have to fight my dad...?&quot;]&lt;popShock|[
+&quot;But... what if... what if I hurt you...?&quot;]&lt;heckShock| {(click:?popShock)[(replace:?heckShock)[](show:?popShocked)] (click:?heckShock)[(replace:?popShock)[](show:?heckShocked)]}
+
+[&quot;Absolutely... I&#39;m not afraid of that old man... especially with you by my side, love...&quot; Ari leaves a kiss on your cheek, and the two of you watch the city below.
+
+The lights below seem... distant... but still beautiful.](popShocked| [
+
+
+...
+
+
+&quot;$shortName... I... I trust you, okay...? I know you&#39;d never hurt me on purpose... so don&#39;t worry too much about that.&quot; Ari strokes your hair, but her hand keeps catching around your horns.
+
+You pull Ariadne closer, and the two of you stay like this for some time, peering out over the city, lost in a tender, tearful embrace.](heckShocked|
+](afraidRes| [Ariadne throws her cloak around you before you even noticed she&#39;s removed it.
+
+&quot;Tsk tsk... we can&#39;t have that, can we $shortName?&quot; Ariadne gently lays you down against the rooftop, before throwing one leg over your body.
+
+Ari nuzzles into your neck, and you feel your warmth return, if only to your face. You wrap your arms around Ariadne&#39;s waist. She feels... strong... like all the world couldn&#39;t move her... You anchor yourself to her, and she dots all your exposed flesh in kisses. She eventually tires, simply laying over you as you hold on to her... you don&#39;t mind...](coldRes| [
+
+](dismissiveRes|
+</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
