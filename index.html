@@ -1858,9 +1858,9 @@ You apologize to Ari and sequester yourself in a corner, producing a simple syri
 &quot;Only on the inside, Ari~~, and that hasn&#39;t been for a while.&quot; Your coyness can&#39;t seem to shake her concern, but she holds you a little tighter now.
 
 With your routine finally done for the morning, the two of you give Payla your goodbyes [[and head out-&gt;darkMoonOpen]].](finallyLeaving|
-</tw-passagedata><tw-passagedata pid="44" name="False Start" tags="" position="5300,6650" size="100,100">UwU
+</tw-passagedata><tw-passagedata pid="44" name="falseStart" tags="" position="5050,8225" size="100,100">UwU
 
-[[The ink dries to a deep crimson, and the fiend gives a curt bow before slithering out of the room -&gt;bedTimeInTheBar]] 
+[[The ink dries to a deep crimson, and the fiend gives a curt bow before slithering out of the room -&gt;beddingTime]] 
 
 (set: $Name to &quot;Anastasia&quot;)
 (set: $shortName to &quot;Ana&quot;)
@@ -4225,7 +4225,7 @@ Ari stops you with an embrace.
 
 &quot;Hopefully you&#39;ll get those again soon, dearest. Now let&#39;s get going.&quot;
 [[And the two of you delve deeper still-&gt;tunneltime]].](meds|</tw-passagedata><tw-passagedata pid="74" name="tunneltime" tags="" position="7100,7800" size="100,100">(save-game:&quot;defaultSave&quot;)
-&lt;h2&gt;-3900 km: Divergence and Convergence&lt;/h2&gt;
+&lt;h2&gt;-3900 km: Convergence and Divergence&lt;/h2&gt;
 
 The tunnels from Alxyo&#39;s stockhouse are different from any other place you&#39;ve seen in the abyss.
 The walls are rough-hewn stone, and all light that might have once been has been long extinguished.
@@ -4635,7 +4635,237 @@ Vevere waits in silence for a few seconds, peering both of you up and down.
 
 &quot;Okay, the spirits have told me all I need to know. I like her.&quot; Ariadne&#39;s eyes light up and you take her hand.
 
-[[&quot;Come on in, now, dearie... we have &#39;&#39;much&#39;&#39; do discuss...&quot;-&gt;dinnerTime]]]</tw-passagedata><tw-passagedata pid="78" name="dinnerTime" tags="" position="5700,8400" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[&quot;Come on in, now, dearie... we have &#39;&#39;much&#39;&#39; do discuss...&quot;-&gt;dinnerTime]]]</tw-passagedata><tw-passagedata pid="78" name="dinnerTime" tags="" position="5700,8400" size="100,100">In all your time in her care, your Vevere has been to cook some... interesting... dinners, and you half expected to be eating some of Ari&#39;s rations tonight. Luckily, Vevere was busy today, so all she prepared was a very herb-y stew with some skewers of strange meat. You both politely refuse the latter, but the former is a delight against the cold winds of the capitol&#39;s rooftops.
+
+Talk over dinner is rather dry, but you&#39;re happy to see Ariadne and your Vevere getting along. (unless: $introIndex is 2)[Vevere picks up on your mission very quickly. You expect some resistance, but she doesn&#39;t seem too shocked about the whole regicide ordeal. You suppose the spirits must have told her.](else:)[Vevere chimes in at times to tell half joke / half history lectures about the places you&#39;ve passed. You&#39;re usually bored to death by these, but Ari seems absolutely enraptured.] The entire conversation fades into the background, at least until you hear Vevere say your name.
+
+&quot;... and then I figured, well, my $Name will probably come by to receive the Arms sometime soon, so I&#39;ve been sticking around... waiting...&quot; 
+
+Vevere trails off and your brow furrows. The Arms...? You feel like you //should// know what she means... but you can&#39;t remember why...
+
+You sit in concerned silence as Ari and Vevere&#39;s dinner smalltalk turns to cleaning smalltalk. Vevere retires for a very early rest, and Ariadne approaches you, placing a hand on your shoulder.
+
+&quot;Good news! We have a room wh-... $shortName...? Is everything alright, love?&quot;
+[
+&quot;I&#39;m... uh... I&#39;m good. It&#39;s just been a while since I&#39;ve been here.&quot;]&lt;fine| [
+&quot;The... the Arms... I feel like that should... mean something... but I&#39;ve never heard of it...&quot;]&lt;weapon|{(click:?fine)[(replace:?weapon)[](show:?fineR)] (click:?weapon)[(replace:?weapon)[](show:?weaponR)]}
+[
+Ariadne heads to the other side of the table and slides a chair next to you, sitting and watching you intently.
+&quot;Good memories or bad?&quot; She gives a soft smile, placing a reassuring hand on your leg.
+[
+&quot;Good...&quot;]&lt;good| [
+&quot;//Mostly// good...&quot;]&lt;mostly|
+{(click:?good)[(replace:?mostly)(show:?goodR)] (click:?mostly)[(replace:?good)(show:?goodR)]}
+[&quot;Yeah... yeah I get that vibe from her... She seems... wise... Oh, uhm... is she actually... well... magic? Or... yknow?&quot; You knew the question was coming. You laugh.
+
+&quot;Oh //Vevere// is really talented... she helped me perform my expunging, back in the day... since... since Dad wouldn&#39;t...&quot; You trail off, and Ari gives you a worried look.
+
+&quot;Hey... love... it&#39;s okay...&quot; Ari stands to wrap her arms around you.
+
+&quot;Orion, he... he can&#39;t hurt you anymore... we won&#39;t let him hurt &#39;&#39;anyone&#39;&#39;... anymore... okay?&quot; Ariadne is starting to tear up. Without noticing, you are too.
+
+&quot;P-promise...?&quot; Your voice is shaking. You take Ari&#39;s hand.
+
+&quot;I promise... now... let&#39;s... let&#39;s get some sleep, okay...? It&#39;s been... a day...&quot; You smile at her, and the two of you [[shuffle off towards Vevere&#39;s spare room-&gt;beddingTime]].](goodR|
+](fineR| [
+Ariadne heads to the other side of the table and slides a chair next to you, sitting and watching you, holding her head in her hands.
+
+&quot;I... I&#39;m not really sure... I was kind of hoping &#39;&#39;you&#39;d&#39;&#39; get it, then you could explain it to me... I guess that&#39;s about expected though.&quot; You laugh and take Ari&#39;s hand in yours.
+
+&quot;Well... it just feels like I should know... but it feels all foggy... like... like part of me remembers, but part doesnt...&quot; You close your eyes and try to //force// a memory by focusing. It obviously fails. When you open your eyes, Ari is staring at you. You can&#39;t tell if it&#39;s expectation or adoration in her eyes, but she doesn&#39;t &#39;&#39;immediately&#39;&#39; start laughing at you.
+
+&quot;You know... I don&#39;t think you can just force yourself to remember something, $shortName... how about we just get some rest? It&#39;s been a hectic day.&quot; Ari stands and pulls you with her. Together, you [[shuffle off towards Vevere&#39;s spare room-&gt;beddingTime]].](weaponR|</tw-passagedata><tw-passagedata pid="79" name="beddingTime" tags="" position="5400,8525" size="100,100">&quot;You&#39;re //sure// you can&#39;t stay... $shortName...?&quot; You shuffle around on the side of the bed. Ari&#39;s eyes are shimmering, and you struggle to look at her.
+
+&quot;I just... I don&#39;t want to risk hurting you... I don&#39;t know if what happened last night will...... will happen again...&quot; Ari wraps her arms around you, pressing her face into your shoulder.
+
+&quot;I... I understand... I&#39;m just... going to miss you the whole night...&quot; You press a kiss to her cheek.
+
+&quot;Hey... Ari... It&#39;s gonna be okay... I don&#39;t feel anything right now... it&#39;ll just be a quiet night, I&#39;ll never be too far... I won&#39;t let anything hurt you...&quot; Ari pulls back and looks into your eyes.
+
+&quot;You... you promise...?&quot;
+{(click:?sil)[(replace:?pro)[](show:?silR)]
+ (click:?pro)[(replace:?sil)[](show:?proR)]}
+[&quot;...&quot;]&lt;sil| [
+&quot;I promise...&quot;]&lt;pro| 
+[
+...
+
+Ariadne turns around, curling into herself.
+
+&quot;You&#39;re... you&#39;re right... I guess we can&#39;t be certain... Uhm... have a good night, $shortName... I love you...&quot; You place a hand on her arm.
+
+&quot;I&#39;m sorry that this is... how I am... I just...&quot; Ari turns back to face you, placing a finger over your lips.
+
+&quot;It&#39;s... okay. Don&#39;t apologize for things that you can&#39;t control... We&#39;re gonna finish this together... and then... things will finally calm down...&quot; Ari gives you a tearful smile. You wrap your arms around her.
+
+&quot;I... I&#39;ll try my hardest... I love you, Ariadne...&quot; You stay like this for some time, with Ariadne in your embrace, tenderly petting the back of her head as you listen to her breathing fall into a steady, slow rhythm. You lay her down slowly, pulling a blanket over her. You take your bag and approach the door.
+
+In your last, parting look, Ari seems... peaceful... It hurts your heart.
+
+You take a deep breath... wipe an errant tear... [[and take your leave-&gt;theOldRoom]].](silR| [
+Ariadne takes a deep, labored breath, wiping a tear from her eyes.
+
+&quot;O-okay... thank you, $shortName... I... I love you...&quot; You nuzzle into Ari&#39;s cheek.
+
+&quot;And I love you too, Ariadne... now get some rest, okay? It&#39;s gonna be a big day, tommorrow.&quot; Ari lets you go, and you pull back. You prop yourself against a wall, watching over her until she can finally rest.
+
+She seems... peaceful...
+(set: $theLie to 1)
+When she finally seems to be out, you grab your bag and head to the door. You take one last look back... your heart aches of yearning... but you have no choice. [[You step out-&gt;theOldRoom]].](proR|</tw-passagedata><tw-passagedata pid="80" name="theOldRoom" tags="" position="5100,8600" size="100,100">You reach your old bedroom.
+(if: $loopFlag &gt; 0)[
+
+
+Wait... wait what...?
+
+]
+You&#39;re lucky Vevere kept it mostly intact. Swiping a few piles of empty boxes away, you set your bag down and get to work. (if: $loopFlag &gt; 4)[
+
+This... this isn&#39;t right... what...?
+
+...]
+
+[You are not going to take any risks.]&lt;a|(click:?a)[==
+
+You take a deep breath, and pull out Ari&#39;s [r]&lt;b|(click:?b)[==ope. (if: $loopFlag &gt; 1)[
+
+Wait.. but didn&#39;t you already....]
+
+... (if: $loopFlag &gt; 6)[
+
+This was all a mistake... why did you think you could do this...?]
+
+You shake yourself.
+
+...
+(if: $loopFlag &gt; 2)[
+
+...
+
+
+What...? What is //happening//...? (if: $loopFlag &gt; 5)[
+
+...
+
+
+Your eyes are welling with tears...]
+
+
+...
+
+]
+You tie a loop around one post, connecting the other side to your offhand. You c[an]&lt;c|(click:?c)[== do the res(click:?c)[==t one handed.
+
+...
+
+
+What? (if:$loopFlag &gt; 1)[What... what is this...?]
+
+
+... (if: $loopFlag &gt; 8)[
+
+This... this... is hopeless...]
+
+
+You tie the rest of your ro[pe]&lt;e|(click:?e)[== around the remaining [po]&lt;f|(click:?f)[==sts. You need to hurry. (if: $loopFlag &gt; 7)[You don&#39;t have long before...] (if: $loopFlag &gt; 9)[
+
+
+Gods... how could you let this happen...?!]
+
+
+What even &#39;&#39;is&#39;&#39; this... (if: $loopFlag &gt; 3)[
+
+...
+
+
+You... you&#39;ve got to get to Ari...]
+
+
+... (if: $loopFlag &gt; 10)[
+
+
+You can&#39;t have long left... It&#39;s all over...
+
+...]
+
+Your b[re]&lt;g|(click:?g)[==athing gets heavy. You s(link: &quot;t&quot;)[(set: $loopFlag to it + 1)(goto:&quot;theOldRoom&quot;)](if: $loopFlag &gt; 0)[ep into one of your constraints, pulling it taut around your leg. Your motion is rather restricted, but you have to keep going.(if: $loopFlag &gt; 1)[.. but... it&#39;s like nothing you do is //sticking//...]
+
+
+...
+
+You... you feel ill... (if: $loopFlag &gt; 9)[
+
+
+...
+
+
+Your body is... betraying you... and it&#39;s winning...]
+
+
+... (if: $loopFlag &gt;2)[
+
+
+You&#39;re... stuck... or something...]
+
+
+Your (link: &quot;thou&quot;)[(set: $loopFlag to it + 1)(goto:&quot;theOldRoom&quot;)](if:$loopFlag &gt; 3)[ghts are clouding over...
+
+
+...
+
+
+Your chest feels heavy... The corners of your vision are dimming... (if: $loopFlag &gt; 4)
+
+[Gods... &#39;&#39;think&#39;&#39;, $Name... there has to be something...]
+
+
+...
+
+
+You r[ea]&lt;h|(click:?h)[==ch for the (link:&quot;next r&quot;)[(set: $loopFlag to it + 1)(goto:&quot;theOldRoom&quot;)](if:$loopFlag &gt; 6)[ope, but you [s]&lt;i|(click:?i)[==lip. Your r[estraints bu]&lt;j|(click:?j)[==rn your ankle and wrist badly.
+
+...(if: $loopFlag &gt; 10)[
+
+You always do this... you keep failing, no matter how hard you try...]
+
+...
+
+
+This... no... gods, you&#39;[r]&lt;k|(click:?k)[==e so close... (if: $loopFlag &gt; 8)[You... no matter what you do...]
+
+...
+
+You dig your claws into the b[ed be]&lt;l|(click:?l)[==side you, pulling yourself [forward]&lt;m|(click:?m)[==... (if: $loopFlag &gt; 7)[You... you have to keep fighting... but...]
+
+(if: $loopFlag &gt; 9)[Gods... this... none of this makes any sense...]
+
+
+Color s[tarts to]&lt;p|(click:?p)[== [fade f]&lt;o|(click:?o)[==[ro]&lt;n|(click:?n)[==m th[e w]&lt;q|(click:?q)[==orld... (if: $loopFlag &gt; 10)[It&#39;s... it&#39;s too late...]
+
+
+You (link:&quot;try&quot;)[(set: $loopFlag to it + 1)(goto:&quot;theOldRoom&quot;)] (if: $loopFlag &gt; 10)[to call out... but nothing comes from your lips...
+
+You focus on a single point... at the corner of the room... a bright red curtain... it fades...
+
+
+...
+
+
+
+It [all]&lt;r|(click:?r)[== fades...
+
+
+
+And t[her]&lt;s|(click:?s)[==e...
+
+
+
+
+Is [no]&lt;t|(click:?t)[==th[i]&lt;u|(click:?u)[==ng left...
+
+
+
+[[And you fall unconscious...-&gt;whereAreYouKasio]]]]]]</tw-passagedata><tw-passagedata pid="81" name="whereAreYouKasio" tags="" position="5300,9100" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="82" name="NOTE ABOUT THIS ONE BC ILL FORGET WHILE DEBUGGING" tags="" position="5400,9100" size="100,100">YOU AWAKEN IN CORE, VEVERE IS THERE BC SHE FOUND YOU
+FOR CLIMACTIC REASONING</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
