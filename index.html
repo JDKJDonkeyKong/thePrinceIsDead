@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Prince Is Dead" startnode="57" creator="Twine" creator-version="2.3.8" ifid="D8D20777-060A-450A-9FA2-5B416443930D" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">del {
+<tw-storydata name="The Prince Is Dead" startnode="57" creator="Twine" creator-version="2.3.8" ifid="D8D20777-060A-450A-9FA2-5B416443930D" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">del {
 	background-color: inherit;
 	text-decoration: line-through;
 }
@@ -159,7 +159,7 @@ It is with this goal that you took the name Galatea.
 
 
 (set: $Name to &quot;Galatea&quot;)
-(set: $shortName to &quot;Gal&quot;)
+(set: $shortName to &quot;Gala&quot;)
 (set: $splitName to &quot;Gal~ a~ te~ a~&quot;)
 (set: $Str to 8)
 (set: $Dex to 12)
@@ -3511,7 +3511,7 @@ Your heartrate rises. You... you didn&#39;t think you&#39;d find her so easily..
 &quot;Please... $shortName... please help...&quot;
 
 You can&#39;t quite triangulate the source of the sound, but there&#39;s only one way to go. You sprint down the path, calling back to her.
-(link: &quot;Ari! Just hold on...&quot;, (show:?whoopsie))
+[&quot;Ari! Just hold on...&quot;]&lt;dela| (click:?dela)[(show:?whoopsie)]
 [
 You can hear her so closely now... You&#39;ve nearly got her... you reach the end of the tunnel and...
 
@@ -4224,7 +4224,10 @@ Ari stops you with an embrace.
 &quot;Of course, of course... you know, before I met you, I&#39;d go entire weeks without nearly dying...&quot; Ari lets out a sweet laugh, planting a brief kiss on your cheek.
 
 &quot;Hopefully you&#39;ll get those again soon, dearest. Now let&#39;s get going.&quot;
-[[And the two of you delve deeper still-&gt;tunneltime]].](meds|</tw-passagedata><tw-passagedata pid="74" name="tunneltime" tags="" position="7200,7200" size="100,100">The tunnels from Alxyo&#39;s stockhouse are different from any other place you&#39;ve seen in the abyss.
+[[And the two of you delve deeper still-&gt;tunneltime]].](meds|</tw-passagedata><tw-passagedata pid="74" name="tunneltime" tags="" position="7100,7800" size="100,100">(save-game:&quot;defaultSave&quot;)
+&lt;h2&gt;-3900 km: Divergence and Convergence&lt;/h2&gt;
+
+The tunnels from Alxyo&#39;s stockhouse are different from any other place you&#39;ve seen in the abyss.
 The walls are rough-hewn stone, and all light that might have once been has been long extinguished.
 
 As you silently stalk these shadowed halls, Ari squeezes your hand. You squeeze hers. While you&#39;d like some light, you don&#39;t know what you might set off if you start casting. For the most part, your journey is... dark...
@@ -4346,7 +4349,7 @@ Drawing near the capitol, you suddenly realize what you&#39;d been forgetting th
 
 You&#39;ve heard of humans being... //weird// about this before. You don&#39;t get it... but you&#39;re not in a place to criticize anybody else&#39;s familial culture.
 
-&quot;Well... my //vevere// is... I guess as close as I have to a mother... so... sort of...?&quot; Ariadne blushes.
+&quot;Well... my //Vevere// is... I guess as close as I have to a mother... so... sort of...?&quot; Ariadne blushes.
 
 &quot;Oh... that&#39;s... uhm... fine... but... uhm...&quot; Ariadne toys with her hair, only continuing when you give her a sideways glance.
 &quot;I just... uhm... was wondering how I should introduce myself... yknow... I&#39;ve... never really done this sort of thing...&quot; You stifle your laughter, for Ariadne&#39;s sake.
@@ -4390,7 +4393,7 @@ Hand in hand, [[you finally reach the Abyssal Capitol-&gt;intoTheCity]].
 “Oh… uhm… that would… actually be super helpful… uhm… thanks, love.” Ari gives you a tender smile, and you offer her your hand. 
 
 Together, you finally reach [[the Abyssal Capitol-&gt;intoTheCity]].
-](helpIntro|</tw-passagedata><tw-passagedata pid="75" name="intoTheCity" tags="" position="7600,7300" size="100,100">This ancient city has felt so distant for so long... but you&#39;ve finally arrived.
+](helpIntro|</tw-passagedata><tw-passagedata pid="75" name="intoTheCity" tags="" position="6800,8000" size="100,100">This ancient city has felt so distant for so long... but you&#39;ve finally arrived.
 When you emerge from the old tunnels into a side alley, you&#39;re greeted by the humming of the Abyssal Capitol&#39;s East Wing. You wait expectantly, hoping to catch some of the East&#39;s typical street music... but nothing comes. Ariadne pulls herself up behind you.
 
 &quot;Wow... this place is... certainly something... but where are...&quot; Ari furrows her brow, peering into the street ahead.
@@ -4413,7 +4416,7 @@ When you emerge from the old tunnels into a side alley, you&#39;re greeted by th
 Ari only gives you a concerned look.
 
 &quot;I think I found our next step...&quot; And then [[you start climbing-&gt;theRooftops]]...
-](scinFin|</tw-passagedata><tw-passagedata pid="76" name="theRooftops" tags="" position="7900,7400" size="100,100">Above the capitol... things are much nicer. You take a moment to peer out over the city beyond, while Ari climbs the last few flights.
+](scinFin|</tw-passagedata><tw-passagedata pid="76" name="theRooftops" tags="" position="6400,8200" size="100,100">Above the capitol... things are much nicer. You take a moment to peer out over the city beyond, while Ari climbs the last few flights.
 
 Below... everything looks peaceful. You can only imagine what things must be like for everyone living below right now... You wonder what they must think is going on...
 
@@ -4438,24 +4441,27 @@ Knowing what you do... would they still blame you...? Do you even blame yourself
 
 &quot;There&#39;s not much longer, $shortName... I know you can make it... Wanna take a little break up here anyway?&quot; You look over to Ari. The capitol&#39;s massive lanterns usually seem ominous to you... but... the way their light sparkles off Ari&#39;s eyes... You feel at peace.
 
-You both take some time, here. It&#39;s just you two, laying together, alone at the top of the bottom of the world... and... for now... that&#39;s enough.](tiredRes| [ Ariadne wraps her arms around you.
+You both take some time, here. It&#39;s just you two, laying together, alone at the top of the bottom of the world... and... for now... that&#39;s enough.
+Eventually, though... you find the energy to leave... [[Your Vevere needs you to keep going...-&gt;VevereIntro]]](tiredRes| [ Ariadne wraps her arms around you.
 
-&quot;I know how it feels, $shortName... I&#39;m going to be here until the end, though... Even when it gets hard... I won&#39;t let you face it alone.&quot; Ari is squeezing you tightly. You think she needs to say it as much as you need to hear it. You lay back, leading Ari down with an arm. The two of you are intertwined on this rooftop, Ari&#39;s head over your heart.
+&quot;I know how it feels, $shortName... I&#39;m going to be here until the end, though... Even when it gets hard... I won&#39;t let you face it alone.&quot; Ari is squeezing you tightly. You think she needs to say it as much as you need to hear it. You lay back, leading Ari down with an arm. The two of you intertwine on the rooftops.
 
-&quot;Until the end... I can definitely do that...&quot; You coil your fingers through Ari&#39;s hair as she lays her head on your chest.
-The two of you stay like this for some time... two hearts, mixing together on a rooftop... staring out from the top of the bottom of the world...](worriedRes| [ Ariadne wraps her arms around you, nuzzling into your cheek.
+&quot;Until the end... I can definitely do that...&quot; You coil your fingers through Ari&#39;s hair as she lays upon your chest.
+The two of you stay like this for some time... two hearts, mixing together above the capitol... staring outwards from the top of the bottom of the world...
+You wish you could stay like this forever... but... until the end... [[You&#39;ve got to keep fighting onward-&gt;VevereIntro]].](worriedRes| [ Ariadne wraps her arms around you, nuzzling into your cheek.
 
 &quot;Oh, you...&quot; Ariadne lays back, and you recline to lay with her.
 
 &quot;You know... I never did anticipate something like this... $shortName...&quot; You look over. Ari&#39;s eyes are shining in the lantern light of the capitol. You feel your heart racing. Ari&#39;s hand is on your face, and she tenderly rubs your cheek with her thumb.
 
-&quot;You know... I have to ask... all that stuff last night... that wasn&#39;t some weird //bloodlust// thing... right...?&quot; Ariadne is fiddling with something on her back. You shake your head, but, before you can elaborate, Ari interrupts you.
+&quot;You know... I have to ask... all that stuff last night... that wasn&#39;t some weird //bloodlust// thing... right...?&quot; Ariadne is fiddling with something on her back. You shake your head, but, before you can elaborate, Ari interrupts you with a thumb over your lips.
 
 &quot;Good... both because I&#39;d feel bad if it were my blood that set you off... and... because... well...~&quot; Ariadne hoists off her now freed breastplate. You suddenly find it very hard to breathe normally.
 
 ...
 
-The two of you... spend... time... together... ... ... like this, until Ari is lying limp and warm in your arms. You&#39;re suddenly thankful that the streets are empty, as you stare out from the top of the bottom of the world.](betterRes| [ Ariadne wraps her arms around you.
+The two of you... spend... time... together... ... ... like this, until Ari is lying limp and warm in your arms. You&#39;re suddenly thankful that the streets are empty, as you stare out, on top at the top of the bottom of the world.
+You eventually help Ari don her armor again, and you set out... Ari with a conspicuously modest cloak... but [[with the wind in your sails-&gt;VevereIntro]].](betterRes| [ Ariadne wraps her arms around you.
 
 &quot;Hey... it&#39;s not far now, love... we&#39;re almost there...&quot; Ari looks out over the capitol. You catch the light in her eyes and feel... safe...
 
@@ -4463,7 +4469,8 @@ Ariadne lays against the rooftop, pulling you down to lay on top of her.
 
 &quot;Do you think we&#39;ll have a view like this... wherever we end up, $shortName...?&quot; You can hear Ari&#39;s heart beating below you. You close your eyes and listen.
 
-&quot;I... I really hope so, love...&quot; Ari coils her fingers through your hair. The two of you lay together for some time. Ari watches out to the city below, and you keep her held close.](homesickRes| [ Ariadne pulls you into her embrace.
+&quot;I... I really hope so, love...&quot; Ari coils her fingers through your hair. The two of you lay together for some time. Ari watches out to the city below, and you keep her held close.
+[[You want to stay like this... but... eventually... your mission calls -&gt;VevereIntro]].](homesickRes| [ Ariadne pulls you into her embrace.
 
 &quot;Now now, love... come here...&quot; Ari pulls you down to lay with her.
 
@@ -4474,7 +4481,8 @@ Ariadne lays against the rooftop, pulling you down to lay on top of her.
 
 [&quot;Absolutely... I&#39;m not afraid of that old man... especially with you by my side, love...&quot; Ari leaves a kiss on your cheek, and the two of you watch the city below.
 
-The lights below seem... distant... but still beautiful.](popShocked| [
+The lights below seem... distant... but still beautiful.
+[[You wish to watch them forever... but //Vevere// needs you. -&gt;VevereIntro]]](popShocked| [
 
 
 ...
@@ -4482,15 +4490,152 @@ The lights below seem... distant... but still beautiful.](popShocked| [
 
 &quot;$shortName... I... I trust you, okay...? I know you&#39;d never hurt me on purpose... so don&#39;t worry too much about that.&quot; Ari strokes your hair, but her hand keeps catching around your horns.
 
-You pull Ariadne closer, and the two of you stay like this for some time, peering out over the city, lost in a tender, tearful embrace.](heckShocked|
+You pull Ariadne closer, and the two of you stay like this for some time, peering out over the city, lost in a tender, tearful embrace.
+[[You wish to stay like this forever... but you have a mission. -&gt;VevereIntro]]](heckShocked|
 ](afraidRes| [Ariadne throws her cloak around you before you even noticed she&#39;s removed it.
 
 &quot;Tsk tsk... we can&#39;t have that, can we $shortName?&quot; Ariadne gently lays you down against the rooftop, before throwing one leg over your body.
 
-Ari nuzzles into your neck, and you feel your warmth return, if only to your face. You wrap your arms around Ariadne&#39;s waist. She feels... strong... like all the world couldn&#39;t move her... You anchor yourself to her, and she dots all your exposed flesh in kisses. She eventually tires, simply laying over you as you hold on to her... you don&#39;t mind...](coldRes| [
+Ari nuzzles into your neck, and you feel your warmth return, if only to your face. You wrap your arms around Ariadne&#39;s waist. She feels... strong... like all the world couldn&#39;t move her... You anchor yourself to her, and she dots all your exposed flesh in kisses. She eventually tires, simply laying over you as you cling to her... [[you don&#39;t mind...-&gt;VevereIntro]]](coldRes| [Ari pouts, grabbing your wrist to pull you into her embrace.
 
-](dismissiveRes|
-</tw-passagedata></tw-storydata>
+&quot;No, no, you&#39;re wrong. It does matter. Talk to me, $Name.&quot; You melt into Ari&#39;s arms, and she strokes your hair tenderly.
+
+&quot;Uh... just... lots of pressure, I guess...&quot; You bury your face in Ariadne&#39;s shoulder.
+
+&quot;Hey... $shortName... you&#39;re doing very well with it, you know...?&quot;
+
+&quot;I mean, I&#39;ve had... a pretty quiet life, $Name... I can&#39;t even imagine the kind of pressure you&#39;ve got to be under, just on a normal day... so I understand that this has got to be... hard... and I&#39;m here for you... okay...?&quot; Ari holds you tight, curling her fingers through your hair.
+
+&quot;Ariadne...? I&#39;ve... actually been wondering about that... You&#39;ve... never really told me what life in Eresos was like... at least before... uh... I mean...&quot; Ari laughs, pulling back to look into your eyes.
+
+&quot;I know, I know... before I got exiled...... It was... musical... There were lots of sorcerers studying near the maw... and you could always hear them practicing... And, almost every night, the elders would bring us together in a big circle to tell stories about ghosts and... uhm...&quot; Ari&#39;s eyes lose their nostalgic shine and she coils a finger through her hair. You try and fail to hold your laughter back.
+
+&quot;Well... did your elders think you&#39;d be like &#39;&#39;this&#39;&#39; with a demon?&quot; You gesture outward from Ariadne&#39;s lap. Ari laughs with you.
+
+&quot;Well, princess, did the king ever think you&#39;d do &#39;&#39;this&#39;&#39; with a human?&quot; She kisses you. 
+You linger here, pressing your forehead to Ari&#39;s, switching between kissing, laughter, and counting the stars in her eyes...
+You don&#39;t ever want to go... but you have a mission... so eventually, [[you head out. -&gt;VevereIntro]]](dismissiveRes|
+</tw-passagedata><tw-passagedata pid="77" name="VevereIntro" tags="" position="6000,8300" size="100,100">After hours of scouring the capitol&#39;s rooftops, you finally reach the house you&#39;ve been searching for. You swing off the roof and onto a balcony wreathed in flowers. You try to peer through the glass door, but whoever was last home pulled the curtains. You have no choice but to knock.
+
+
+...
+
+
+...
+
+
+The wait is rather torturous.
+
+
+...
+
+
+...
+
+
+Your mind races with all the things that could have happened to her...
+
+
+...
+
+
+...
+
+
+What if she&#39;s in the Ashtomb...? What if Father brought her there and is interrogating her as you sit around...?
+
+
+...
+
+
+...
+
+Maybe she ran? She might have known something was coming and left, that could be it...
+
+
+...
+
+
+...
+
+
+Maybe she-
+You&#39;re cut off by the door ahead of you sliding open, then a gasp, then two frail arms surrounding you.
+
+&quot;Oh, $Name, dearie... you came!&quot; Your Vevere is as chipper as ever. You curse yourself for ever worrying. 
+
+&quot;Oh... uh... good evening, Vevere... sorry to... well, barge into your garden... I guess...&quot; Through the door, you can see a cozy studio, stocked with all the reagants and implements that you played with as a child. You never quite picked up the arts, but you always loved spending summers here, failing happily with your Vevere.
+
+&quot;Oh ~nonsense~, dearie... I know we live in strange times... The spirits told me you were coming, so I made dinner for three.&quot; She gives you a wide grin as she takes off a thoroughly-dusted apron... you... did you even mention Ari was here?
+
+&quot;Uh... wait... Vevere... three? Did your spirits... um.... tell you something...?&quot; All you can muster is a shy smile, but your Vevere places a frail hand on your cheek.
+
+&quot;No, dearie, why would I trouble them with that? The &#39;&#39;entire&#39;&#39; capitol is saying you eloped, and I know you wouldn&#39;t try to hide someone you love from your Vevere, now, would you...?&quot; You weren&#39;t expecting her to be this smug about it... but you relent and call Ari down from the roof. She doesn&#39;t take the fall as gracefully, but she dusts herself off. (if:$introIndex is 1)[Ariadne adjusts her daisy before giving your Vevere a short bow.
+
+&quot;Uhm... good evening, ma&#39;am... I... I am Ariadne of Eresos...&quot; Ari takes your hand, and you can feel her cowering behind you, somewhat.
+
+
+You all share a moment of terrified silence.
+
+&quot;Uhm... $Name... dearie... is she...?&quot; Your vevere raises an eyebrow. You only bow your head. She furrows her brow as she walks past you to look over a blushing Ari.
+
+&quot;Hmmm... well, she&#39;s certainly much prettier than most of the humans I&#39;ve seen... Very strong looking... good for throne defending...&quot; Ari freezes as Vevere finishes her inspection, patting you on the back.
+
+&quot;You definitely could have picked worse humans, dearie. I did think she&#39;d be a bit taller, but she seems like a sweetheart. You two come on in, now.&quot; You get a toothy grin from your Vevere, and [[you escort Ari in-&gt;dinnerTime]].](if: $introIndex is 2)[ Ari puts her arm around your waist and smiles at Vevere.
+
+&quot;Good evening madame, I&#39;m Ariadne... I&#39;m... uhm... the princess&#39;s wife...&quot; Ari blushes as she stumbles over her words. You hold her close. Vevere stares at the two of you with a furrowed brow, pacing around you both before coming to a stop directly by you, and whispering to you.
+
+&quot;You know... I didn&#39;t expect you to &#39;&#39;actually&#39;&#39; have eloped... much less with a human... you could have warned me and I would have stopped updating my wedding speech plans.&quot; You burst into laughter.
+
+&quot;Oh, well, Vevere, maybe we can have a ceremony after...&quot;
+
+...
+
+
+...
+
+
+...
+
+Ariadne finishes your thought in your absence.
+
+&quot;Oh, yknow, once we&#39;re not so busy all the time, you know-&quot; Vevere has a grave expression.
+
+&quot;Dearie... you can&#39;t fool me... I know what you&#39;re doing here... don&#39;t worry about telling me.&quot; She returns to her usual smile.
+
+&quot;But come now, you two look like you haven&#39;t even had a proper married dinner yet, come on in...&quot; Vevere leads. Ari gives you a worried glance, but you return a smile, [[leading her inside-&gt;dinnerTime]].](if: $introIndex is 3)[Ari gives a deep bow.
+
+&quot;Madame, I am... uhm... Ariadne... th-the future queen of The Abyss!&quot; If she were anyone but herself, you&#39;d hold out hope that this was a scheme and not just Ari&#39;s people skills at work. Your Vevere gives Ariadne an inquisitive look while you sit in silence.
+
+
+...
+
+
+
+...
+
+
+&quot;Well, she seems nice. Now you two come for dinner, just because you&#39;re the queens doesn&#39;t mean you get to skip meals.&quot; Vevere winks at you. You take Ari&#39;s hand and [[lead her inside-&gt;dinnerTime]].](if: $introIndex is 4)[You stifle your laughter, for the sake of Ari&#39;s first impression.
+
+&quot;Vevere, this is my girlfriend, Ariadne... she... uh... she &#39;&#39;is&#39;&#39; a human... just... thought I&#39;d say that upfront...&quot; You cover your stumbling with an awkward grin. Vevere furrows her brow and comes closer to inspect Ari.
+
+&quot;Hmm... this is very nice armor, dear... where did you get it...?&quot; Vevere peers into Ari&#39;s eyes as if this answer would somehow decide everything.
+
+&quot;Oh... uhm... I made it myself, ma&#39;am...&quot; Ari is sheepish, but smiling.
+
+Vevere waits in silence for a few seconds, peering both of you up and down.
+
+
+...
+
+
+
+...
+
+
+&quot;Okay, the spirits have told me all I need to know. I like her.&quot; Ariadne&#39;s eyes light up and you take her hand.
+
+[[&quot;Come on in, now, dearie... we have &#39;&#39;much&#39;&#39; do discuss...&quot;-&gt;dinnerTime]]]</tw-passagedata><tw-passagedata pid="78" name="dinnerTime" tags="" position="5700,8400" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
