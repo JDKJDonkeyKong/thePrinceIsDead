@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Prince Is Dead" startnode="57" creator="Twine" creator-version="2.3.8" ifid="D8D20777-060A-450A-9FA2-5B416443930D" zoom="1" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">del {
+<tw-storydata name="The Prince Is Dead" startnode="57" creator="Twine" creator-version="2.3.8" ifid="D8D20777-060A-450A-9FA2-5B416443930D" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">del {
 	background-color: inherit;
 	text-decoration: line-through;
 }
@@ -34,7 +34,14 @@ tw-link:hover, .enchantment-link:hover {
 body, tw-story
 {
   font-family: Lucida Sans Unicode, "Lucida Grande", sans-serif;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="beginningNaming" tags="" position="3375,350" size="200,200">&lt;h1&gt;The Prince Is Dead&lt;/h1&gt;
+}
+
+tw-story[tags="ascent"] 
+{
+	background-color: #360028;
+	color: #F2DFE6;
+
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="notGoodStuff" color="red"></tw-tag>,<tw-tag name="ascent" color="purple"></tw-tag><tw-passagedata pid="1" name="beginningNaming" tags="" position="3375,350" size="200,200">&lt;h1&gt;The Prince Is Dead&lt;/h1&gt;
 &lt;h2&gt;-60 km: A Shared Sanctum&lt;/h2&gt;
 (if:$trigFlag is 1)[(set:$trigFlag to 0)(save-game:&quot;starterSave&quot;)]
 No matter how hard you try, you can never truly escape your position in The Abyss.
@@ -1858,7 +1865,7 @@ You apologize to Ari and sequester yourself in a corner, producing a simple syri
 &quot;Only on the inside, Ari~~, and that hasn&#39;t been for a while.&quot; Your coyness can&#39;t seem to shake her concern, but she holds you a little tighter now.
 
 With your routine finally done for the morning, the two of you give Payla your goodbyes [[and head out-&gt;darkMoonOpen]].](finallyLeaving|
-</tw-passagedata><tw-passagedata pid="44" name="falseStart" tags="" position="5050,8225" size="100,100">UwU
+</tw-passagedata><tw-passagedata pid="44" name="falseStart" tags="" position="5675,8000" size="100,100">UwU
 
 [[The ink dries to a deep crimson, and the fiend gives a curt bow before slithering out of the room -&gt;beddingTime]] 
 
@@ -1872,7 +1879,8 @@ With your routine finally done for the morning, the two of you give Payla your g
 (set: $Wis to 8)
 (set: $Cha to 12)
 (set: $tenderFlower to 1)
-(set: $rapierFlag to 1)</tw-passagedata><tw-passagedata pid="45" name="darkMoonOpen" tags="" position="3300,3500" size="100,100">Before long, you&#39;ve passed far beyond the lights of the waterways&#39; township, following the water towards the next hurdle on your path.
+(set: $rapierFlag to 1)
+(set: $introIndex to 2)</tw-passagedata><tw-passagedata pid="45" name="darkMoonOpen" tags="" position="3300,3500" size="100,100">Before long, you&#39;ve passed far beyond the lights of the waterways&#39; township, following the water towards the next hurdle on your path.
 (save-game:&quot;defaultSave&quot;)
 &lt;h2&gt;-2000 km: The Aspect of Treachery&lt;/h2&gt;
 
@@ -4420,11 +4428,11 @@ Ari only gives you a concerned look.
 
 Below... everything looks peaceful. You can only imagine what things must be like for everyone living below right now... You wonder what they must think is going on...
 
-Knowing what you do... would they still blame you...? Do you even blame yourself...? You... don&#39;t have any easy answers... just a lot of time to think about it. You&#39;re snapped from your reverie as Ari sits beside you, overlooking the capitol with you.
+Knowing what you&#39;re doing... would they still blame you...? Do you even blame yourself...? You... don&#39;t have any easy answers... just a lot of time to think about it. You&#39;re snapped from your reverie as Ari sits down beside you, overlooking the capitol with you.
 
 &quot;Hey... how are you feeling, love?&quot;
-
-[&quot;Tired...&quot;]&lt;tired| [
+[
+&quot;Tired...&quot;]&lt;tired| [
 &quot;Worried...&quot;]&lt;worried| [
 &quot;Better, now...&quot;]&lt;better| [
 &quot;Homesick...&quot;]&lt;homesick| [
@@ -4448,13 +4456,13 @@ Eventually, though... you find the energy to leave... [[Your Vevere needs you to
 
 &quot;Until the end... I can definitely do that...&quot; You coil your fingers through Ari&#39;s hair as she lays upon your chest.
 The two of you stay like this for some time... two hearts, mixing together above the capitol... staring outwards from the top of the bottom of the world...
-You wish you could stay like this forever... but... until the end... [[You&#39;ve got to keep fighting onward-&gt;VevereIntro]].](worriedRes| [ Ariadne wraps her arms around you, nuzzling into your cheek.
+You wish you could stay like this forever... but... until the end... [[You&#39;ve got to keep fighting onward-&gt;VevereIntro]].](worriedRes|[Ariadne wraps her arms around you, nuzzling into your cheek.
 
 &quot;Oh, you...&quot; Ariadne lays back, and you recline to lay with her.
 
-&quot;You know... I never did anticipate something like this... $shortName...&quot; You look over. Ari&#39;s eyes are shining in the lantern light of the capitol. You feel your heart racing. Ari&#39;s hand is on your face, and she tenderly rubs your cheek with her thumb.
+&quot;You know... I never did anticipate something like this... $shortName...&quot; You look over. Ari&#39;s eyes are shining in the lantern light of the capitol. You feel your heart racing, then Ari&#39;s hand is on your face, tenderly rubbing your cheek with her thumb.
 
-&quot;You know... I have to ask... all that stuff last night... that wasn&#39;t some weird //bloodlust// thing... right...?&quot; Ariadne is fiddling with something on her back. You shake your head, but, before you can elaborate, Ari interrupts you with a thumb over your lips.
+&quot;You know... I have to ask... all that stuff last night...? That wasn&#39;t some weird //bloodlust// thing... right...?&quot; Ariadne is fiddling with something on her back. You shake your head, but, before you can elaborate, Ari interrupts you with a thumb over your lips.
 
 &quot;Good... both because I&#39;d feel bad if it were my blood that set you off... and... because... well...~&quot; Ariadne hoists off her now freed breastplate. You suddenly find it very hard to breathe normally.
 
@@ -4496,7 +4504,11 @@ You pull Ariadne closer, and the two of you stay like this for some time, peerin
 
 &quot;Tsk tsk... we can&#39;t have that, can we $shortName?&quot; Ariadne gently lays you down against the rooftop, before throwing one leg over your body.
 
-Ari nuzzles into your neck, and you feel your warmth return, if only to your face. You wrap your arms around Ariadne&#39;s waist. She feels... strong... like all the world couldn&#39;t move her... You anchor yourself to her, and she dots all your exposed flesh in kisses. She eventually tires, simply laying over you as you cling to her... [[you don&#39;t mind...-&gt;VevereIntro]]](coldRes| [Ari pouts, grabbing your wrist to pull you into her embrace.
+Ari nuzzles into your neck, and you feel some warmth return... if only to your face. You wrap your arms around Ariadne&#39;s waist. 
+
+In your grasp, she feels... strong... like all the world couldn&#39;t move her... You anchor yourself to her, and she dots all of your exposed skin in kisses. 
+
+Eventually, she tires, simply laying over you as you cling to her... [[you don&#39;t mind...-&gt;VevereIntro]]](coldRes| [Ari pouts, grabbing your wrist to pull you into her embrace.
 
 &quot;No, no, you&#39;re wrong. It does matter. Talk to me, $Name.&quot; You melt into Ari&#39;s arms, and she strokes your hair tenderly.
 
@@ -4513,7 +4525,7 @@ Ari nuzzles into your neck, and you feel your warmth return, if only to your fac
 &quot;Well... did your elders think you&#39;d be like &#39;&#39;this&#39;&#39; with a demon?&quot; You gesture outward from Ariadne&#39;s lap. Ari laughs with you.
 
 &quot;Well, princess, did the king ever think you&#39;d do &#39;&#39;this&#39;&#39; with a human?&quot; She kisses you. 
-You linger here, pressing your forehead to Ari&#39;s, switching between kissing, laughter, and counting the stars in her eyes...
+You linger here, pressing your forehead to Ari&#39;s, switching between kisses, laughter, and counting the stars in her eyes...
 You don&#39;t ever want to go... but you have a mission... so eventually, [[you head out. -&gt;VevereIntro]]](dismissiveRes|
 </tw-passagedata><tw-passagedata pid="77" name="VevereIntro" tags="" position="6000,8300" size="100,100">After hours of scouring the capitol&#39;s rooftops, you finally reach the house you&#39;ve been searching for. You swing off the roof and onto a balcony wreathed in flowers. You try to peer through the glass door, but whoever was last home pulled the curtains. You have no choice but to knock.
 
@@ -4542,7 +4554,7 @@ Your mind races with all the things that could have happened to her...
 ...
 
 
-What if she&#39;s in the Ashtomb...? What if Father brought her there and is interrogating her as you sit around...?
+What if she&#39;s in the Ashroot...? What if Father brought her there and is interrogating her as you sit around...?
 
 
 ...
@@ -4559,7 +4571,7 @@ Maybe she ran? She might have known something was coming and left, that could be
 ...
 
 
-Maybe she-
+[Maybe she-]&lt;doc|(click:?doc)[==
 You&#39;re cut off by the door ahead of you sliding open, then a gasp, then two frail arms surrounding you.
 
 &quot;Oh, $Name, dearie... you came!&quot; Your Vevere is as chipper as ever. You curse yourself for ever worrying. 
@@ -4648,14 +4660,15 @@ You sit in concerned silence as Ari and Vevere&#39;s dinner smalltalk turns to c
 &quot;Good news! We have a room wh-... $shortName...? Is everything alright, love?&quot;
 [
 &quot;I&#39;m... uh... I&#39;m good. It&#39;s just been a while since I&#39;ve been here.&quot;]&lt;fine| [
-&quot;The... the Arms... I feel like that should... mean something... but I&#39;ve never heard of it...&quot;]&lt;weapon|{(click:?fine)[(replace:?weapon)[](show:?fineR)] (click:?weapon)[(replace:?weapon)[](show:?weaponR)]}
+&quot;The... the Arms... I feel like that should... mean something... but I&#39;ve never heard of it...&quot;]&lt;weapon|{(click:?fine)[(replace:?weapon)[](show:?fineR)] (click:?weapon)[(replace:?fine)[](show:?weaponR)]}
 [
 Ariadne heads to the other side of the table and slides a chair next to you, sitting and watching you intently.
-&quot;Good memories or bad?&quot; She gives a soft smile, placing a reassuring hand on your leg.
+&quot;Good memories or bad?&quot; She gives a soft smile, placing a reassuring hand on your leg. {(click:?good)[(replace:?mostly)[](show:?goodR)] 
+ (click:?mostly)[(replace:?good)[](show:?goodR)]}
 [
 &quot;Good...&quot;]&lt;good| [
 &quot;//Mostly// good...&quot;]&lt;mostly|
-{(click:?good)[(replace:?mostly)(show:?goodR)] (click:?mostly)[(replace:?good)(show:?goodR)]}
+
 [&quot;Yeah... yeah I get that vibe from her... She seems... wise... Oh, uhm... is she actually... well... magic? Or... yknow?&quot; You knew the question was coming. You laugh.
 
 &quot;Oh //Vevere// is really talented... she helped me perform my expunging, back in the day... since... since Dad wouldn&#39;t...&quot; You trail off, and Ari gives you a worried look.
@@ -4666,15 +4679,15 @@ Ariadne heads to the other side of the table and slides a chair next to you, sit
 
 &quot;P-promise...?&quot; Your voice is shaking. You take Ari&#39;s hand.
 
-&quot;I promise... now... let&#39;s... let&#39;s get some sleep, okay...? It&#39;s been... a day...&quot; You smile at her, and the two of you [[shuffle off towards Vevere&#39;s spare room-&gt;beddingTime]].](goodR|
-](fineR| [
+&quot;I promise... now... let&#39;s... let&#39;s get some sleep, okay...? It&#39;s been... a day... and it sounds like your old woman has some big plans for tomorrow.&quot; You smile at her, and the two of you [[shuffle off towards Vevere&#39;s spare room-&gt;beddingTime]].](goodR|](fineR|
+[
 Ariadne heads to the other side of the table and slides a chair next to you, sitting and watching you, holding her head in her hands.
 
 &quot;I... I&#39;m not really sure... I was kind of hoping &#39;&#39;you&#39;d&#39;&#39; get it, then you could explain it to me... I guess that&#39;s about expected though.&quot; You laugh and take Ari&#39;s hand in yours.
 
 &quot;Well... it just feels like I should know... but it feels all foggy... like... like part of me remembers, but part doesnt...&quot; You close your eyes and try to //force// a memory by focusing. It obviously fails. When you open your eyes, Ari is staring at you. You can&#39;t tell if it&#39;s expectation or adoration in her eyes, but she doesn&#39;t &#39;&#39;immediately&#39;&#39; start laughing at you.
 
-&quot;You know... I don&#39;t think you can just force yourself to remember something, $shortName... how about we just get some rest? It&#39;s been a hectic day.&quot; Ari stands and pulls you with her. Together, you [[shuffle off towards Vevere&#39;s spare room-&gt;beddingTime]].](weaponR|</tw-passagedata><tw-passagedata pid="79" name="beddingTime" tags="" position="5400,8525" size="100,100">&quot;You&#39;re //sure// you can&#39;t stay... $shortName...?&quot; You shuffle around on the side of the bed. Ari&#39;s eyes are shimmering, and you struggle to look at her.
+&quot;You know... I don&#39;t think you can just force yourself to remember something, $shortName... how about we just get some rest? It&#39;s been a hectic day. Your... uhm... that word... said she&#39;d save it all for the morning, anyway.&quot; Ari stands and pulls you with her. Together, you [[shuffle off towards Vevere&#39;s spare room-&gt;beddingTime]].](weaponR|</tw-passagedata><tw-passagedata pid="79" name="beddingTime" tags="" position="5400,8525" size="100,100">&quot;You&#39;re //sure// you can&#39;t stay... $shortName...?&quot; You shuffle around on the side of the bed. Ari&#39;s eyes are shimmering, and you struggle to look at her.
 
 &quot;I just... I don&#39;t want to risk hurting you... I don&#39;t know if what happened last night will...... will happen again...&quot; Ari wraps her arms around you, pressing her face into your shoulder.
 
@@ -4711,11 +4724,11 @@ Ariadne takes a deep, labored breath, wiping a tear from her eyes.
 
 She seems... peaceful...
 (set: $theLie to 1)
-When she finally seems to be out, you grab your bag and head to the door. You take one last look back... your heart aches of yearning... but you have no choice. [[You step out-&gt;theOldRoom]].](proR|</tw-passagedata><tw-passagedata pid="80" name="theOldRoom" tags="" position="5100,8600" size="100,100">You reach your old bedroom.
+When she finally seems to be out, you grab your bag and head to the door. You take one last look back... your heart aches of yearning... but you have no choice. [[You step out-&gt;theOldRoom]].](proR|</tw-passagedata><tw-passagedata pid="80" name="theOldRoomPt2" tags="ascent" position="5100,8800" size="100,100">You reach your old bedroom.
 (if: $loopFlag &gt; 0)[
 
 
-Wait... wait what...?
+Wait... wait... what...?
 
 ]
 You&#39;re lucky Vevere kept it mostly intact. Swiping a few piles of empty boxes away, you set your bag down and get to work. (if: $loopFlag &gt; 4)[
@@ -4807,7 +4820,7 @@ Your body is... betraying you... and it&#39;s winning...]
 You&#39;re... stuck... or something...]
 
 
-Your (link: &quot;thou&quot;)[(set: $loopFlag to it + 1)(goto:&quot;theOldRoom&quot;)](if:$loopFlag &gt; 3)[ghts are clouding over...
+Your (link: &quot;thou&quot;)[(set: $loopFlag to it + 1)(goto:&quot;theOldRoom&quot;)](if:$loopFlag &gt; 2)[ghts are clouding over...
 
 
 ...
@@ -4821,7 +4834,7 @@ Your chest feels heavy... The corners of your vision are dimming... (if: $loopFl
 ...
 
 
-You r[ea]&lt;h|(click:?h)[==ch for the (link:&quot;next r&quot;)[(set: $loopFlag to it + 1)(goto:&quot;theOldRoom&quot;)](if:$loopFlag &gt; 6)[ope, but you [s]&lt;i|(click:?i)[==lip. Your r[estraints bu]&lt;j|(click:?j)[==rn your ankle and wrist badly.
+You r[ea]&lt;h|(click:?h)[==ch for the (link:&quot;next r&quot;)[(set: $loopFlag to it + 1)(goto:&quot;theOldRoom&quot;)](if:$loopFlag &gt; 4)[ope, but you [s]&lt;i|(click:?i)[==lip. Your r[estraints bu]&lt;j|(click:?j)[==rn your ankle and wrist badly.
 
 ...(if: $loopFlag &gt; 10)[
 
@@ -4842,7 +4855,7 @@ You dig your claws into the b[ed be]&lt;l|(click:?l)[==side you, pulling yoursel
 Color s[tarts to]&lt;p|(click:?p)[== [fade f]&lt;o|(click:?o)[==[ro]&lt;n|(click:?n)[==m th[e w]&lt;q|(click:?q)[==orld... (if: $loopFlag &gt; 10)[It&#39;s... it&#39;s too late...]
 
 
-You (link:&quot;try&quot;)[(set: $loopFlag to it + 1)(goto:&quot;theOldRoom&quot;)] (if: $loopFlag &gt; 10)[to call out... but nothing comes from your lips...
+You (link:&quot;try&quot;)[(set: $loopFlag to it + 2)(goto:&quot;theOldRoom&quot;)] (if: $loopFlag &gt; 10)[to call out... but nothing comes from your lips...
 
 You focus on a single point... at the corner of the room... a bright red curtain... it fades...
 
@@ -4864,8 +4877,516 @@ Is [no]&lt;t|(click:?t)[==th[i]&lt;u|(click:?u)[==ng left...
 
 
 
-[[And you fall unconscious...-&gt;whereAreYouKasio]]]]]]</tw-passagedata><tw-passagedata pid="81" name="whereAreYouKasio" tags="" position="5300,9100" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="82" name="NOTE ABOUT THIS ONE BC ILL FORGET WHILE DEBUGGING" tags="" position="5400,9100" size="100,100">YOU AWAKEN IN CORE, VEVERE IS THERE BC SHE FOUND YOU
-FOR CLIMACTIC REASONING</tw-passagedata></tw-storydata>
+[[And you fall unconscious...-&gt;whereAreYouKasio]]]]]]</tw-passagedata><tw-passagedata pid="81" name="whereAreYouKasio" tags="" position="5400,9100" size="100,100">(save-game: &quot;defaultSave&quot;)
+(unless: $theLie is 1)[
+&lt;h2&gt;-4500 km: The Covenant of Accursed Blood&lt;/h2&gt;] (else:)[
+&lt;h2&gt;-4500 km: The Wellspring of Shattered Promises&lt;/h2&gt;]
+
+
+When you finally awaken... you feel warm.
+
+
+...
+
+
+Maybe... maybe it was all a dream?
+
+
+...
+
+
+You figure, if you never open your eyes... you won&#39;t have to worry about it...
+
+
+...
+
+
+But you know better than that...
+
+
+...
+
+
+Yet, still, your eyelids feel... heavy.
+
+
+...
+
+
+Shifting your weight around some, you realize that... no... no, your entire &#39;&#39;body&#39;&#39; feels like that... 
+
+
+...
+
+
+You eventually gather the energy to open your eyes... and you see... a bright light, hanging in the sky...?
+
+For a second, your mind wanders. Maybe, in this world, you&#39;ve wandered to the surface...
+The delusion doesn&#39;t last.
+When you finally sit up, you feel your crippling reality. The dark bricks underneath you, the winding streets in every direction around you... this is... The Abyssal Core...
+
+[This is... home...]&lt;home|(click:?home)[==
+
+You... you weren&#39;t supposed to be here... not based your memory... You were in... the capitol... and... Ari...
+
+Ari... she...
+
+Your mind starts racing too fast to handle in your current state, you rush to stand but... your legs give out... you fall flat on your face. You lay for a second in a heap of your own failings.
+
+
+...
+
+
+...
+
+
+...
+
+
+And then you feel a hand upon your back.
+
+You try to jump out of the way, but, with your legs constantly burning, you only succeed in flipping yourself over. Above you... is your Vevere.
+
+&quot;Very rude to run out on an old woman without saying goodbye, dearie...&quot; She helps pull you into a sitting position and sits beside you.
+
+[&quot;Vevere, why are &#39;&#39;you&#39;&#39; here?!&quot;]&lt;huh1| [
+&quot;Vevere, why am &#39;&#39;I&#39;&#39; here?!]&lt;huh2|
+{(click:?huh1)[(replace:?huh2)[](show:?why1)]
+ (click:?huh2)[(replace:?huh1)[](show:?why2)]}[
+ &quot;Dearie, I simply followed where the spirits told me you would be.&quot; Your look of desperation lets Vevere know how useless this answer is.
+ 
+ &quot;Well, your darling woke me in the middle of the night. Said she&#39;d torn the old room up looking, but you were nowhere to be found. So... I followed you out here... I didn&#39;t expect to see my darling $Name like this, though...&quot; Vevere looks... upset... and she strokes your head. But, there&#39;s a much more important question... (show:?andThen)](why1| [
+ &quot;I&#39;m not entirely sure, dear... Your darling woke me up when she couldn&#39;t find you... Your room was all torn up... The spirits told me I&#39;d find you here.&quot; She looks... worried... and she pats you on the back... but you have a much more pressing question... (show:?andThen)](why2| [
+ 
+ &quot;A-and Ari...?&quot; Your Vevere averts her gaze. You try to reach an arm out towards her... but your hand just flops about some...&quot;
+(click:?asker)[(show:?theTruth)]
+[&quot;Where.... where is Ari... Vevere...?&quot;]&lt;asker|](andThen|[You feel your tears start.
+
+
+...
+
+
+You wait approximately three lifetimes for Vevere to answer. Before she even starts speaking, you&#39;re already doubled over and sobbing.
+
+
+...
+
+
+&quot;She... she got taken... She was inconsolable... that girl... started yelling for you... someone must have called up the guards...&quot; Vevere holds her head in her hands.
+
+
+...
+
+
+...
+
+
+&quot;I&#39;m... I&#39;m sorry... dearie...&quot;
+
+
+
+...
+
+
+
+...
+
+
+
+...
+
+
+
+...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+You lost her again.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+You... got this close... and you lost her again.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+You want to ask so much more... but your lungs have been wreathed in dark flame... all the crushing pressure, of the world above and your mission below... it&#39;s suffocating you...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+It&#39;s hard to breathe, through the sobs and your pitiable state...
+
+
+
+
+
+
+
+
+
+
+
+After a short while... [[you black out-&gt;theDream]].](theTruth|</tw-passagedata><tw-passagedata pid="82" name="theDream" tags="ascent" position="5800,9200" size="100,100">...
+
+
+You awaken in your bed, ready to start another day of lectures and practice.
+
+The bed feels... far too soft to the touch... you really must ask Father to replace it... It&#39;s mostly plain. You&#39;ve never put much into personalizing your room.
+
+You stand... you&#39;ll get a bonus lecture if you&#39;re late... you open the door to head out. 
+
+It leads to... your dressing room... another thing you&#39;ve barely touched... it&#39;s stocked with plenty of clothes that you&#39;d never want to wear... You glance over into the mirror, and...
+
+
+
+
+
+
+
+
+...
+
+
+
+
+
+
+What...?
+
+
+
+
+
+
+
+
+
+...
+
+
+
+
+
+
+
+You see... a pitiful creature...
+
+
+
+
+
+
+...
+
+
+
+
+
+It&#39;s eyes have gone dark... nothing but twin voids with rings to remind of their old form...
+
+
+
+
+...
+
+
+
+When you open your mouth out of shock... you see it bare long fangs at you...
+
+
+
+
+
+...
+
+
+
+Your eyes glance upwards...
+
+
+
+
+...
+
+
+
+At the sides of its head... nested among a mop of greasy hair... two massive spires of bone coil, curving upwards and above the view of the mirror.
+
+
+
+
+...
+
+
+
+You place a hand on the mirror... hiding the creature underneath a mass of gaunt flesh and unwieldy, long claws...
+
+
+
+
+
+
+...
+
+
+
+
+
+And then you remember...
+
+
+
+
+
+...
+
+
+
+
+
+This is... this isn&#39;t where you are... you... you don&#39;t know if you&#39;ll ever reach these halls again... because you...
+
+
+
+
+
+...
+
+
+
+
+
+You... lost someone...
+
+
+
+
+
+
+...
+
+
+
+
+
+Someone... you loved...
+
+
+
+
+
+
+
+...
+
+
+
+
+
+
+
+Someone... you &#39;&#39;love&#39;&#39;...
+
+
+
+
+
+
+...
+
+
+
+
+
+
+
+They... they took her...
+
+
+
+
+
+
+
+Theres... only one place they&#39;d keep someone like her...
+
+
+
+
+
+
+Ariadne... she&#39;s in the Ashroot... and you... you&#39;re &#39;&#39;here&#39;&#39;...
+
+
+
+
+
+
+
+
+You look down... on the vanity, sits a rod of shimmering golden metal... It feels... important
+
+
+
+
+
+
+You reach out... gently... when it&#39;s nearly in your grasp... you freeze.
+
+
+
+...
+
+
+
+You steel your nerves.
+
+
+
+
+
+You touch it. [[And then...-&gt;bedAndBreakfast]]</tw-passagedata><tw-passagedata pid="83" name="bedAndBreakfast" tags="" position="6200,9300" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="84" name="theOldRoom" tags="" position="5100,8600" size="100,100">You reach your old bedroom.
+(set:$loopFlag to 1)
+You&#39;re lucky Vevere kept it mostly intact. Swiping a few piles of empty boxes away, you set your bag down and get to work.
+
+[You are not going to take any risks.]&lt;a|(click:?a)[==
+
+You take a deep breath, and pull out Ari&#39;s [r]&lt;b|(click:?b)[==ope.
+
+... 
+
+You shake yourself.
+
+...
+
+
+
+You tie a loop around one post, connecting the other side to your offhand. You c[an]&lt;c|(click:?c)[== do the res(click:?c)[==t one handed.
+
+...
+
+
+What? 
+
+
+...
+
+
+You tie the rest of your ro[pe]&lt;e|(click:?e)[== around the remaining [po]&lt;f|(click:?f)[==sts. You need to hurry. 
+
+
+What even &#39;&#39;is&#39;&#39; this... 
+
+Your b[re]&lt;g|(click:?g)[==athing gets heavy. You s[[t-&gt;theOldRoomPt2]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
