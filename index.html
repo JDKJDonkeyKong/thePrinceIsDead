@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Prince Is Dead" startnode="57" creator="Twine" creator-version="2.3.8" ifid="D8D20777-060A-450A-9FA2-5B416443930D" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">del {
+<tw-storydata name="The Prince Is Dead" startnode="57" creator="Twine" creator-version="2.3.8" ifid="D8D20777-060A-450A-9FA2-5B416443930D" zoom="0.25" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">del {
 	background-color: inherit;
 	text-decoration: line-through;
 }
@@ -34,6 +34,7 @@ tw-link:hover, .enchantment-link:hover {
 body, tw-story
 {
   font-family: Lucida Sans Unicode, "Lucida Grande", sans-serif;
+  word-wrap: break-word;
 }
 
 tw-story[tags="ascent"] 
@@ -41,7 +42,14 @@ tw-story[tags="ascent"]
 	background-color: #360028;
 	color: #F2DFE6;
 
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="notGoodStuff" color="red"></tw-tag>,<tw-tag name="ascent" color="purple"></tw-tag><tw-passagedata pid="1" name="beginningNaming" tags="" position="3375,350" size="200,200">&lt;h1&gt;The Prince Is Dead&lt;/h1&gt;
+}
+
+tw-story[tags="Stygia"] 
+{
+	background-color: #0E000A;
+	color: #797073;
+
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="notGoodStuff" color="red"></tw-tag>,<tw-tag name="ascent" color="purple"></tw-tag>,<tw-tag name="Stygia" color="yellow"></tw-tag><tw-passagedata pid="1" name="beginningNaming" tags="" position="3375,350" size="200,200">&lt;h1&gt;The Prince Is Dead&lt;/h1&gt;
 &lt;h2&gt;-60 km: A Shared Sanctum&lt;/h2&gt;
 (if:$trigFlag is 1)[(set:$trigFlag to 0)(save-game:&quot;starterSave&quot;)]
 No matter how hard you try, you can never truly escape your position in The Abyss.
@@ -74,7 +82,7 @@ And... there weren&#39;t... really many suitors, either...
 
 (set: $Name to &quot;Anastasia&quot;)
 (set: $shortName to &quot;Ana&quot;)
-(set: $splitName to &quot;A~ na~ sta~ si~ a~&quot;)
+(set: $splitName to &quot;A~na~sta~si~a~&quot;)
 (set: $Str to 8)
 (set: $Dex to 12)
 (set: $Con to 16)
@@ -89,7 +97,7 @@ When your time came, you took the name Basilia, declaring yourself the one herb 
 
 (Set: $Name to &quot;Basilia&quot;)
 (set: $shortName to &quot;Basi&quot;)
-(set: $splitName to &quot;Ba~ si~ li~ a~&quot;)
+(set: $splitName to &quot;Ba~si~li~a~&quot;)
 (set: $Str to 12)
 (set: $Dex to 8)
 (set: $Con to 12)
@@ -104,7 +112,7 @@ When the time came, you took the name Calypso, hoping to fight for what you are 
 
 (set: $Name to &quot;Calypso&quot;)
 (set: $shortName to &quot;Cal&quot;)
-(set: $splitName to &quot;Ca~ lyp~ so~&quot;)
+(set: $splitName to &quot;Ca~lyp~so~&quot;)
 (set: $Str to 8)
 (set: $Dex to 8)
 (set: $Con to 8)
@@ -120,7 +128,7 @@ When the time came, you, rather indulgently, took the titaness&#39;s name, perha
 
 (set: $Name to &quot;Dionne&quot;)
 (set: $shortName to &quot;Di&quot;)
-(set: $splitName to &quot;Di~ on~ ne~&quot;)
+(set: $splitName to &quot;Di~on~ne~&quot;)
 (set: $Str to 12)
 (set: $Dex to 8)
 (set: $Con to 12)
@@ -136,7 +144,7 @@ When the time came, you took the name Eurydice, hoping to disprove the ending of
 
 (set: $Name to &quot;Eurydice&quot;)
 (set: $shortName to &quot;Eury&quot;)
-(set: $splitName to &quot;Eu~ ry~ di~ ce~&quot;)
+(set: $splitName to &quot;Eu~ry~di~ce~&quot;)
 (set: $Str to 8)
 (set: $Dex to 12)
 (set: $Con to 8)
@@ -151,7 +159,7 @@ When the time came, you took the name Freyja, with the intent to fulfill these a
 
 (set: $Name to &quot;Freyja&quot;)
 (set: $shortName to &quot;Freyja&quot;)
-(set: $splitName to &quot;Frey~ ja~&quot;)
+(set: $splitName to &quot;Frey~ja~&quot;)
 (set: $Str to 16)
 (set: $Dex to 12)
 (set: $Con to 8)
@@ -167,7 +175,7 @@ It is with this goal that you took the name Galatea.
 
 (set: $Name to &quot;Galatea&quot;)
 (set: $shortName to &quot;Gala&quot;)
-(set: $splitName to &quot;Gal~ a~ te~ a~&quot;)
+(set: $splitName to &quot;Gal~a~te~a~&quot;)
 (set: $Str to 8)
 (set: $Dex to 12)
 (set: $Con to 8)
@@ -183,7 +191,7 @@ Ever steadfast, you took the name Hypatia, hoping to shrug off the slings of you
 
 (set: $Name to &quot;Hypatia&quot;)
 (set: $shortName to &quot;Hyp&quot;)
-(set: $splitName to &quot;Hy~ pat~ i~ a~&quot;)
+(set: $splitName to &quot;Hy~pat~i~a~&quot;)
 (set: $Str to 8)
 (set: $Dex to 8)
 (set: $Con to 12)
@@ -200,7 +208,7 @@ When you took the name Irina, it was partially to laugh at your old self, but yo
 
 (set: $Name to &quot;Irina&quot;)
 (set: $shortName to &quot;Irina&quot;)
-(set: $splitName to &quot;I~ ri~ na~&quot;)
+(set: $splitName to &quot;I~ri~na~&quot;)
 (set: $Str to 8)
 (set: $Dex to 16)
 (set: $Con to 12)
@@ -220,7 +228,7 @@ Thus, when the time came, you took the name Kara, hoping that, in lieu of divine
 
 (set: $Name to &quot;Kara&quot;)
 (set: $shortName to &quot;Kara&quot;)
-(set: $splitName to &quot;Ka~ ra~&quot;)
+(set: $splitName to &quot;Ka~ra~&quot;)
 (set: $Str to 16)
 (set: $Dex to 12)
 (set: $Con to 8)
@@ -238,7 +246,7 @@ Thus, when the time came, you took the name Lilith, hoping to fight against grea
 
 (set: $Name to &quot;Lilith&quot;)
 (set: $shortName to &quot;Lily&quot;)
-(set: $splitName to &quot;Li~ li~ th~&quot;)
+(set: $splitName to &quot;Li~li~th~&quot;)
 (set: $Str to 8)
 (set: $Dex to 8)
 (set: $Con to 16)
@@ -256,7 +264,7 @@ You found this idea comforting, that all it took to create something new was to 
 
 (set: $Name to &quot;Nova&quot;)
 (set: $shortName to &quot;Nova&quot;)
-(set: $splitName to &quot;No~ va~&quot;)
+(set: $splitName to &quot;No~va~&quot;)
 (set: $Str to 12)
 (set: $Dex to 16)
 (set: $Con to 8)
@@ -271,7 +279,7 @@ You didn&#39;t care much for the duties of Princess of The Abyss, and you spent 
 
 (set: $Name to &quot;Olympia&quot;)
 (set: $shortName to &quot;Oly&quot;)
-(set: $splitName to &quot;O~ lym~ pi~ a~&quot;)
+(set: $splitName to &quot;O~lym~pi~a~&quot;)
 (set: $Str to 16)
 (set: $Dex to 8)
 (set: $Con to 8)
@@ -286,7 +294,7 @@ When you told your guardian your new name, she commissioned the royal sculptor t
 
 (set: $Name to &quot;Rose&quot;)
 (set: $shortName to &quot;Rose&quot;)
-(set: $splitName to &quot;Ro~ se~&quot;)
+(set: $splitName to &quot;Ro~se~&quot;)
 (set: $Str to 8)
 (set: $Dex to 12)
 (set: $Con to 8)
@@ -301,7 +309,7 @@ When the time came, you took the name Sappho, out of appreciation for her art, a
 
 (set: $Name to &quot;Sappho&quot;)
 (set: $shortName to &quot;Sappho&quot;)
-(set: $splitName to &quot;Sap~ pho~&quot;)
+(set: $splitName to &quot;Sap~pho~&quot;)
 (set: $Str to 8)
 (set: $Dex to 12)
 (set: $Con to 8)
@@ -309,8 +317,8 @@ When the time came, you took the name Sappho, out of appreciation for her art, a
 (set: $Wis to 12)
 (set: $Cha to 16)
 </tw-passagedata><tw-passagedata pid="17" name=" SomethingElseSelect" tags="" position="3800,500" size="100,100">{(set: $Name to (prompt: &quot;What is your name?&quot;, &quot;Cressida&quot;))
-(set: $shortName to $Name)
-(set: $splitName to $Name)
+ (set: $shortName to (prompt: &quot;What is a nickname for your name?&quot;, &quot;Cresi&quot;))
+ (set: $splitName to (prompt: &quot;What is... uhm... your name, but split with tildes at... uhm... every syllable? (Such as: Hy~pat~i~a~)&quot;, &quot;Cress~i~da~&quot;))
 (set: $Str to 8)
 (set: $Dex to 8)
 (set: $Con to 8)
@@ -1865,13 +1873,13 @@ You apologize to Ari and sequester yourself in a corner, producing a simple syri
 &quot;Only on the inside, Ari~~, and that hasn&#39;t been for a while.&quot; Your coyness can&#39;t seem to shake her concern, but she holds you a little tighter now.
 
 With your routine finally done for the morning, the two of you give Payla your goodbyes [[and head out-&gt;darkMoonOpen]].](finallyLeaving|
-</tw-passagedata><tw-passagedata pid="44" name="falseStart" tags="" position="5675,8000" size="100,100">UwU
+</tw-passagedata><tw-passagedata pid="44" name="falseStart" tags="" position="9400,10125" size="100,100">UwU
 
-[[The ink dries to a deep crimson, and the fiend gives a curt bow before slithering out of the room -&gt;beddingTime]] 
+[[The ink dries to a deep crimson, and the fiend gives a curt bow before slithering out of the room -&gt;welcomeBackToLife]] 
 
 (set: $Name to &quot;Anastasia&quot;)
 (set: $shortName to &quot;Ana&quot;)
-(set: $splitName to &quot;A~ na~ sta~ si~ a~&quot;)
+(set: $splitName to &quot;Anastasia~&quot;)
 (set: $Str to 8)
 (set: $Dex to 12)
 (set: $Con to 16)
@@ -1880,7 +1888,9 @@ With your routine finally done for the morning, the two of you give Payla your g
 (set: $Cha to 12)
 (set: $tenderFlower to 1)
 (set: $rapierFlag to 1)
-(set: $introIndex to 2)</tw-passagedata><tw-passagedata pid="45" name="darkMoonOpen" tags="" position="3300,3500" size="100,100">Before long, you&#39;ve passed far beyond the lights of the waterways&#39; township, following the water towards the next hurdle on your path.
+(set: $introIndex to 2)
+(set: $termEndear to &quot;wife&quot;)
+(set: $weaponIndex to 1)</tw-passagedata><tw-passagedata pid="45" name="darkMoonOpen" tags="" position="3300,3500" size="100,100">Before long, you&#39;ve passed far beyond the lights of the waterways&#39; township, following the water towards the next hurdle on your path.
 (save-game:&quot;defaultSave&quot;)
 &lt;h2&gt;-2000 km: The Aspect of Treachery&lt;/h2&gt;
 
@@ -2229,7 +2239,7 @@ You take your time with this one. You were a bit upset at how brief Ari had to b
 ...
 
 You pull away, and Ariadne collapses to the floor in a haze.
-&quot;So... I believe that we&#39;re even now, A~ ri~ ad~ ne~.&quot;
+&quot;So... I believe that we&#39;re even now, A~ri~ad~ne~.&quot;
 You swear that Ari&#39;s is blushing //through// her hands.
 
 Demaetria shoots you a look from the back of the room, [but you only smile at her]&lt;haGetFucked|.(click:?haGetFucked)[==
@@ -4373,25 +4383,25 @@ You&#39;ve heard of humans being... //weird// about this before. You don&#39;t g
 [
 Ariadne cocks her head. You tap your left ear, next to your Apollonian Daisy, and she instinctively does the same before hiding her face in shame.
 “I… uhm… I forgot that was there… I guess I got so used to wearing it…” Ari wrings her hands nervously, until you take one of them, leaving a small kiss upon it.
-
+(set: $termEndear to &quot;lover&quot;)
 “Well… let’s get going then, lover… We’re needed in the capitol.” You give Ariadne an uncharacteristically confident smile. She stifles her laughter, [[for your sake-&gt;intoTheCity]].
 ](daisyIntro| [
 Ariadne gives you a wide-eyed look before collapsing to the floor, clutching her heart. You drop to her side, panicked, but she falls into a fit of laughter, ending in a sigh.
 
 “You… uhm… you definitely know how to shock a girl… $shortName… I… uhm… figured this would be coming a while later… but I… I would… like that…” Ari’s blushed face droops. You lift it in your hand.
 
-“I’m… um… g-glad… uh…” You try to keep your composure, but there are far too many stars in Ariadne’s eyes tonight. You fall back Your flushed face has failed you. Ari, hoping to succeed where you failed, throws one leg over your body, and pulls your face close to hers, biting her lip.
+“I’m… um… g-glad… uh…” You try to keep your composure, but there are far too many stars in Ariadne’s eyes tonight. You fall back and struggle to meet her gaze. Ari, hoping to succeed where you failed, throws one leg over your body, and pulls your face close to hers, biting her lip.
 
 “You know, $Name… I came to this place for revenge… not to marry some bashful little princess…” Ari strokes your cheek with her thumb before pressing her forehead against yours.
 
-“But… well... I think I can accept getting both.”
+“But… well... I think I like &#39;Both&#39; much more.”
 
 In the next moment, she kisses you, and, in the next, you collapse into a sapphic heap while Ariadne laughs over you, stroking your back tenderly.
-
+(set: $termEndear to &quot;Wife&quot;)
 “Come now… we need to get to the capitol, don’t we, $splitName?~” You take a few more minutes to recover, before you finally continue [[towards the capitol-&gt;intoTheCity]].
 ](marriageIntro| [
 Ariadne’s face goes red, and she twirls a finger through her hair.
-
+(set: $termEndear to &quot;Girlfriend&quot;)
 “Oh… uhm… that… you know, I do like how that sounds… ‘future queen’...” You take Ari’s hand.
 
 “Well you’ll never get a coronation if we don’t keep up the pace. Let’s go, love.” Ariadne gives you a soft smile, and you can see those stars in her eyes once more.
@@ -4399,7 +4409,7 @@ Ariadne’s face goes red, and she twirls a finger through her hair.
 Hand in hand, [[you finally reach the Abyssal Capitol-&gt;intoTheCity]].
 ](queenIntro| [
 “Oh… uhm… that would… actually be super helpful… uhm… thanks, love.” Ari gives you a tender smile, and you offer her your hand. 
-
+(set: $termEndear to &quot;Girlfriend&quot;)
 Together, you finally reach [[the Abyssal Capitol-&gt;intoTheCity]].
 ](helpIntro|</tw-passagedata><tw-passagedata pid="75" name="intoTheCity" tags="" position="6800,8000" size="100,100">This ancient city has felt so distant for so long... but you&#39;ve finally arrived.
 When you emerge from the old tunnels into a side alley, you&#39;re greeted by the humming of the Abyssal Capitol&#39;s East Wing. You wait expectantly, hoping to catch some of the East&#39;s typical street music... but nothing comes. Ariadne pulls herself up behind you.
@@ -5354,7 +5364,19 @@ You steel your nerves.
 
 
 
-You touch it. [[And then...-&gt;bedAndBreakfast]]</tw-passagedata><tw-passagedata pid="83" name="bedAndBreakfast" tags="" position="6200,9300" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="84" name="theOldRoom" tags="" position="5100,8600" size="100,100">You reach your old bedroom.
+You touch it. [[And then...-&gt;theArms]]</tw-passagedata><tw-passagedata pid="83" name="theArms" tags="" position="6200,9300" size="100,100">You awaken... this time you&#39;re certain...
+
+You&#39;re wrapped in cheap blankets and you&#39;ve got some sort of ointment applied on spots all over your body. You leap to your feet instantly. Your body still aches, but you keep going through it.
+
+Across from you, your Vevere sits in a rocking chair, snoring away.
+
+With a quick glance from the window, you recognize where you are, an old inn run by one of Father&#39;s friends... you never spoke to the man... but you&#39;ve been here before, and, more importantly, you know the way out from here.
+
+Before you can leap into action, though, something catches your eye. On a coffee table directly in front of your Vevere... a tube of golden metal shines... you... you don&#39;t know why, but... when you go... [you don&#39;t leave it behind.]&lt;takeArm|(click:?takeArm)[==
+
+You burst into the street below. The core&#39;s false sun has stopped beating down as harshly... Ari has been in the Ashroot for... probably near a day now... You don&#39;t &#39;&#39;really&#39;&#39; have a plan... but you don&#39;t have time to think about that. If you wait much longer, it will all be over.
+
+You run for what feels like hours, your legs smoulder in dark flame beneath you. You can&#39;t let them stop. They carry you, until you reach [[a familiar place...-&gt;theCliffOverlook]]</tw-passagedata><tw-passagedata pid="84" name="theOldRoom" tags="" position="5100,8600" size="100,100">You reach your old bedroom.
 (set:$loopFlag to 1)
 You&#39;re lucky Vevere kept it mostly intact. Swiping a few piles of empty boxes away, you set your bag down and get to work.
 
@@ -5386,7 +5408,890 @@ You tie the rest of your ro[pe]&lt;e|(click:?e)[== around the remaining [po]&lt;
 
 What even &#39;&#39;is&#39;&#39; this... 
 
-Your b[re]&lt;g|(click:?g)[==athing gets heavy. You s[[t-&gt;theOldRoomPt2]]</tw-passagedata></tw-storydata>
+Your b[re]&lt;g|(click:?g)[==athing gets heavy. You s[[t-&gt;theOldRoomPt2]]</tw-passagedata><tw-passagedata pid="85" name="theCliffOverlook" tags="" position="6600,9400" size="100,100">As a kid, you used to come here to get away from your woes...
+
+[Back then...]&lt;a|(click:?a)[== it all seemed so simple... When things got too hard, you&#39;d just head out to the cliff... Here, you could read for hours, looking out at the grove ahead...
+
+[Back then...]&lt;b|(click:?b)[== you didn&#39;t know what lies beneath... but now it seems to follow you everywhere...
+
+[And now...]&lt;c|(click:?c)[== here you are... and... you can&#39;t run any longer...
+
+
+Some hundreds of feet below lies Ashroot Prison... its walls seem to blot out the sky from its level... but from here... it seems insignificant.
+
+[You approach the cliff.]&lt;d|(click:?d)[==
+
+Below... hundreds of people will be having the worst experiences of their lives... if they&#39;re lucky enough to be new to it...
+
+Among them... among them is the woman you love...
+
+[You begin humming an incantation.]&lt;e|(click:?e)[== You first learned this melody in your youth... You&#39;d always find your way up to the top of Vevere&#39;s home... She got tired of protecting you from your mistakes... so she taught you how to keep yourself safe... You wonder how she&#39;s doing... Has she even woken yet to see you gone...?
+
+Your body is wreathed in waves of undulating light. You reach out, and the Ashroot is smaller than the outline of your hand... everything seems much less threatening from the clifftops.
+
+[You take a deep breath.]&lt;f|(click:?f)[== You wonder if they recognized Ariadne... If they did... gods know what she might be going through right now... You can&#39;t think about it too much or you&#39;ll lose your focus.
+
+
+[You hang one foot over the edge. You&#39;re afraid.]&lt;g|(click:?g)[== You wonder if Ariadne might not recognize you... You don&#39;t know if you&#39;d blame her... This... this //thing// you&#39;ve become... You&#39;ve always been afraid of what slumbers within...
+
+
+[[And then... you plummet-&gt;highWall]].</tw-passagedata><tw-passagedata pid="86" name="highWall" tags="" position="7000,9500" size="100,100">You land on your feet on the outermost wall of the Ashroot Prison.
+
+You don&#39;t believe you&#39;ve been seen. Exterior patrols are light. Breaking in is usually easier than breaking out... but you&#39;re not even sure where to begin getting inside...
+[
+Find a hidden access point]&lt;vent| (if:$Cha &gt; 8)[
+Steal a Uniform and finesse your way inside]&lt;soci| (if:$Int &gt; 12)[
+Attempt an extremely risky blink spell]&lt;tele|  {
+(click-replace:?vent)[(replace:?soci)[]=(replace:?tele)[](show:?ventGo)]
+(click-replace:?soci)[(replace:?vent)[](replace:?tele)[](show:?sociGo)]
+(click-replace:?tele)[(replace:?vent)[](replace:?soci)[](show:?teleGo)]}[
+You&#39;re able to find a small outcropping, where the outer walls come much closer to the prison&#39;s main building. From there, you skirt around the edge of the building.
+
+In a perfect design, there&#39;d be one access point, in and out, but you highly doubt Father paid //perfect// wages to his architects.
+
+Your suspicions are quickly proven right. From your vantage point, you can see a lone door on the very back of the compound, as well as a vent which feeds in warm air from outside.
+
+It would probably be much louder to take the door, but you might have better visibility inside. That speed could be crucial, but there&#39;s nothing that would slow you down &#39;&#39;more&#39;&#39; than being dead...
+
+You decide to take...
+
+[[The Door-&gt;loaderEntrance]]
+[[The Vents-&gt;ventEntrance]]](ventGo| [
+You stalk around the outer wall for some time. Luckily, some prey comes to you, a guard clearly on break. They sit, staring into a wall, massaging their scalp and groaning. 
+
+You hope that you don&#39;t cause any permanent injuries when you land on them. You wouldn&#39;t want to die while on a break either.
+
+With a new, incredibly loose guard uniform, you wait a beat before returning to the front door. Feeling your horns bump the top of your tall helm, you thank the gods for the absurd headwear your father likes all of his guards to wear. 
+
+When you approach the front door, the two guards present wave you in, with barely a glance in your direction.
+
+You take a deep breath... and [[you enter the Ashroot-&gt;frontDoorDisguise]].](sociGo| [
+This is an awful idea. You don&#39;t have much to go on, though.
+
+You need to get inside a building that you barely know, and you need to be fast. You can work the rest out inside, but you need to get in.
+
+You take a deep breath, and start a quiet chant.
+
+Your muscles ache as the stygia flows into you... You feel your organs constricted in black flame. [You can&#39;t stop.]&lt;abb|(click:?abb)[== Failure isn&#39;t an option.
+
+Ariadne needs you. You can feel the darkness within ripping your being into shreds. You quake under the immense pressure.
+
+Until... finally... [[you black out-&gt;inTheCell]].
+
+You feel ](teleGo|</tw-passagedata><tw-passagedata pid="87" name="loaderEntrance" tags="" position="7200,9800" size="100,100">You hide in waiting for the next worker to take the back door out.
+
+The door opens, out comes a worker.
+The door swings to a close, taking a brief moment to fully shut.
+
+In this time, you leap down from your position on the wall, pulling the door back open. Past it, you see a warehouse, bustling with workers.
+
+There&#39;s no time to reconsider. You slide in, hiding behind a crate full of mechanical parts. You don&#39;t have time to really //understand// the shape of the room, so you just follow along the left wall, keeping behind any cover you can find.
+
+Over time, you find yourself hiding from fewer workers and more guards. Before you&#39;ve even realized it, you start seeing cell blocks. You&#39;d scoff at the security in this place, but you expect resistance to come rather soon. You duck into a hallway, expecting a hiding spot, but, instead, you find it goes on for quite some time. [You... feel an odd need to investigate...]&lt;a|(click:?a)[==
+
+
+At the end of the hall, sits a lone room, unguarded. You creep towards the door to listen in.
+
+Inside, you hear a voice humming... there&#39;s a mechanical whirring as if the source of the voice is... messing with some sort of tools...
+
+...
+
+And, then, he speaks...
+
+&quot;Now, now, dear... have you finally woken up? I would //love// to get this round started already...&quot;
+
+Nobody responds. You... you feel a pit in your stomach. You try the door&#39;s handle... it&#39;s locked...
+
+[Knock]&lt;knockKnock|
+(if: $Str &gt; 8)[Open. The. Door.]&lt;swole|
+{(click:?knockKnock)[(set:$entryFlag to 2)(replace:?swole)(show:?whosThere)] 
+(click:?swole)[(set:$entryFlag to 3)(replace:?knockKnock)(show:?swoleFlex)]} [
+
+...
+
+...
+
+...
+
+The door opens only a crack. You see a head poke out, in an adorned guard helm. 
+
+You steel yourself.
+
+When the door swings towards closing, [[you jam a boot inside-&gt;foundYou]].](whosThere| [
+You take a deep breath, and center yourself on the door.
+
+You make a few dry runs on the door, stopping just short of it. This is definitely going to hurt.
+
+You steel yourself, and [[charge directly into the door, collapsing it off its hinges-&gt;foundYou]].](swoleFlex|
+</tw-passagedata><tw-passagedata pid="88" name="ventEntrance" tags="" position="7300,9600" size="100,100">It&#39;s a tight squeeze, but you can fit your body inside the heating ducts.
+
+You can hear the ambiance of the prison around you. Guards are chatting. You can clearly make out whispers from prisoners, where you assume you&#39;ve passed cell blocks. You are... mostly guessing, on your directions.
+
+You drop down a floor. You can&#39;t imagine how ridiculous you look in the process of this, but you figure you&#39;ll be out soon.
+
+Off to your side, you notice one duct which goes straight for an incredibly long time. You... get a hunch... Maybe your Vevere has sent you some of her spirits&#39; guidance...
+
+
+
+[...]&lt;a|(click:?a)[==
+
+
+
+...
+
+
+As you approach the end of this long duct, the voices around you taper off.
+
+It&#39;s just you, some cold metal, and a mind-numbing darkness.
+
+
+...
+
+
+... (set:$entryIndex to 1)
+
+
+You reach the end of the line. One last vent remains.
+
+Through it, you hear a single voice, faintly humming to itself...
+[Peer through...
+]&lt;looksie| 
+[[Slice the grate, and fall in.-&gt;foundYou]]
+(click-replace:?looksie)[Past the grate, you see a guardsmen, their helm is adorned by red paint and equipped with goggles. They look over a set of tools. You can&#39;t make out the rest of the room from this view.
+]</tw-passagedata><tw-passagedata pid="89" name="frontDoorDisguise" tags="" position="7200,9300" size="100,100">Inside the prison, patrols are regular and constant...
+
+You enter a staff room directly inside... you need a second to breathe... and there should be some sort of map... Inside, another guard greets you.
+
+&quot;Ah, heard some new girl was transferring in tonight... that must be...&quot; The man freezes, looking up at you... You anticipate the worst.
+
+&quot;I... wow... I didn&#39;t expect someone that tall... must be new muscle... I&#39;m... Officer Gaelen...&quot;
+(if: $Cha &gt; 12)[
+&quot;Good evening, Officer... I just got brought in from the Scindos patrols... Could you direct me to Enhanced Interrogation?&quot; ]&lt;congratulations|[
+&quot;Pleasure.&quot;]&lt;search|[
+&quot;...&quot;]&lt;lost| {
+} [
+
+&quot;Oh... well of course.&quot; Gaelen gets a slick grin across his face, putting out his arm. You restrain yourself from snarling, but he coughs and drops  his arm. 
+(set: $guideFlag to 2)
+Gaelen descends the prison, [[and you follow-&gt;outsideTheChamber]].](uDidIt| [
+The officer grumbles some and walks off. You have some time alone.
+
+A paired schedule and map are posted on the wall. It seems to corroborate the officer&#39;s statement. Some new recruit named Euprixia &#39;&#39;was&#39;&#39; supposed to show up... you don&#39;t know what happened with her, but, luckily for you, she was assigned near the very back of the prison.
+
+Her task?
+(set: $guideFlag to 1)
+[[Watch over the Enhanced Interrogation Chamber-&gt;outsideTheChamber]].](keepLooking| [
+You keep walking. The officer grabs your arm.
+
+&quot;Hey! Hey new girl, you don&#39;t ignore your captain...&quot; His eyes are fiery.
+
+&quot;Let me see your... what...?&quot; He takes the ID card pinned to your armor. He looks between it and you in disbelief. The officer shoots his arm out towards your helmet, but you catch his hand.
+
+&quot;Who... who are &#39;&#39;you&#39;&#39;...?&quot; On instinct, your claws come out, directly into Officer Gaelen&#39;s arm. He starts to shake.
+
+
+[...]&lt;AR|(click:?AR)[==
+
+
+
+[...]&lt;AE|(click:?AE)[==
+
+
+
+[...]&lt;AA|(click:?AA)[==
+
+
+
+[...]&lt;AD|(click:?AD)[==
+
+
+
+[...]&lt;AY|(click:?AY)[==
+
+
+
+You don&#39;t have long until the entire prison is on alert.
+(set:$guideFlag to 0)
+[[You have to go. Now. -&gt;outsideTheChamber]]](interrogate|</tw-passagedata><tw-passagedata pid="90" name="inTheCell" tags="" position="7300,9400" size="100,100">You awaken... laying on cold stone..
+
+You rub your eyes and sit up through your shattering headache. Around you, you see dozens of fiends sleeping in cots. From the corner, a lone figure watches you intently, speaking in a soft voice.
+
+&quot;Strange... I didn&#39;t see the guard bring anyone new in... what&#39;s your deal, stranger?&quot; You try to focus on the form, but they never seem quite perceptible. You feel compelled to brutal honesty.
+
+&quot;I... uh... I broke in... I&#39;m... here to... save... someone...&quot; Your voice trails off as you become woefully self conscious. The voice laughs.
+
+&quot;Well... if they&#39;re in here... I&#39;m afraid you&#39;re out of luck, love... not much chance either of you make it out, now.&quot; You stand, stepping towards the voice. It seems to fade further into the corner.
+
+[&quot;I... please... I got her caught... I can&#39;t lose her again...&quot;]&lt;dak|(click:?dak)[== You feel your tears start.
+
+The voice goes silent for a moment.
+
+
+...
+
+
+A small piece of metal lands beside you.
+
+&quot;Fine... this will give you &#39;&#39;one&#39;&#39; shot out there... just don&#39;t come crying when I&#39;m right... They&#39;ll just beat you more for trying... There&#39;s no escaping the Ashroot... Goodbye, stranger...&quot; With this, the form fades away, totally imperceptible. You roll the small metal file in your hand.
+
+One try...
+
+
+...
+
+
+
+[[Time to make it count...-&gt;sneakingOut]]</tw-passagedata><tw-passagedata pid="91" name="sneakingOut" tags="" position="7500,9300" size="100,100">You slide out from your cell and onto a metal walkway.
+
+The only way back out has several guards... but that&#39;ll be a problem for Escaping $Name... You should probably be more worried for her, but you advance deeper inside the prison along the walkway.
+
+
+...
+
+
+
+...
+
+
+
+At the end of the walkway, there&#39;s a grate, hot air is flowing from it. Looking off the edge, there&#39;s a significant fall, but, at the bottom, a long hallway. You can&#39;t see anyone guarding it from your current position...
+[
+[[Take the ducts-&gt;ventEntrance]]]&lt;goVen|[
+Jump for it.]&lt;jump| (click-replace:?jump)[(show:?jumping)(replace:?goVen)[]]
+[
+You whisper a short cantrip, covering yourself in a film of light, and you vault over the railing.
+
+Upon landing, you immediately make your way into the long hallway. You&#39;re not sure if you were spotted on the way in, but you don&#39;t have time to think about it.
+
+You aren&#39;t sure why, but you //feel something// about this hallway. Maybe it&#39;s a hunch, maybe you&#39;ve got spirits guiding you now.
+
+
+...
+
+
+... (set: $entryIndex to 3)
+
+
+...
+
+
+At the end of the hallway, you find an unmarked door.
+
+From inside, you can hear a man humming... You have a bad feeling about all of this... but you&#39;ve made your choice, and there&#39;s no time.
+
+[You extend your claws.]&lt;dag|(click:?dag)[==
+
+With a swift cut, you remove the door&#39;s hinges... You forgot to check if it was even locked... but you banish the thought as you [[kick down the door-&gt;foundYou]].](jumping|</tw-passagedata><tw-passagedata pid="92" name="outsideTheChamber" tags="" position="7500,9100" size="100,100">(if: $guideFlag is 0)[You move through the prison&#39;s halls at an animalistic pace. Some guards call out to you, but you ignore them. The risk of them chasing you is much more manageable than the risk of you standing still for too long.
+
+The back of the prison opens into a large, circular room with cell blocks and branches in every direction. One catches your eyes, a long hallway that leads out further than you can see, with no guards inside. You get some strange looks approaching it, but nobody stops you.
+
+You have more time to breathe within the hall, but you have to keep going.
+
+
+...
+
+
+]{
+}(if:$guideFlag is 1)[You work your way towards the back of the prison. Most guards don&#39;t stop you. 
+On the lower floor, one does. You give him the story you&#39;ve gathered about being a new transfer. He just laughs and points you towards a long hallway in the back. That must be Enhanced Interrogation...
+
+You thank him, and you head on your way, into the foreboding long hall...
+
+...
+]{
+}(if: $guideFlag is 2)[Gaelen tries to make smalltalk, explaining the cell blocks&#39; contents as the two of you pass. You stay quiet in hope he&#39;ll speed up. He doesn&#39;t.
+
+At the end of your third lecture on what a //panopticon// is for, the two of you reach the mouth of a long passage, where Gaelen stops.
+
+&quot;End of the line... Only the assigned guard is allowed beyond this point... You know, if you ever would maybe wan-&quot; [You push past the officer]&lt;AA|(click:?AA)[==, towards the door at the hall&#39;s end. He stomps off.]
+
+You weren&#39;t sure she&#39;d be here... but... you can feel something in your bones... as you approach the door, it only grows.
+
+
+...
+
+
+...
+
+
+...
+
+
+End of the line... The door towers over you. Inside, you hear a low voice... humming. Before you have time to think, you knock.
+
+
+...
+
+
+...
+
+
+...
+
+
+The door cracks open, only slightly. The room inside seems dark... and a face pokes out, in a guard helm adorned in red.
+
+&quot;Yes... I was hoping to be busy, soon. Be quick.&quot;
+
+(if: $Cha &gt; 14)[&quot;Officer Gaelen sent me to protect you. He fears possible struggle with the prisoner today.&quot;]&lt;de1|
+[&quot;...&quot;]&lt;de2| {(click:?de1)[(replace:?de2)(show:?de1Outro)]
+(click:?de2)[(replace:?de1)(show:?de2Outro)]} [
+
+&quot;Ah... of course... I don&#39;t think she&#39;ll have much of //that// left in her, but I wouldn&#39;t deny you the show, eh?&quot; He nudges you with his elbow and laughs. You feel every muscle in your body tense in desire to wrap around this man&#39;s throat, but you force a weak laugh. (set:$entryIndex to 4)
+[[He opens the door more to allow you in.-&gt;foundYou]]][
+
+... (set:$introIndex to 2)
+
+
+...
+
+
+&quot;Okay... just stay outside, will you? I don&#39;t need protection &#39;&#39;inside&#39;&#39; my quarters, you imbecile.&quot; He huffs, and goes to slam the door.
+
+[[You stop it with your boot.-&gt;foundYou]]](de2Outro|</tw-passagedata><tw-passagedata pid="93" name="foundYou" tags="" position="7900,9500" size="100,100">(if:$entryIndex is 1)[You fall from the vent, colliding immediately with the room&#39;s sole inhabitant... [besides]&lt;a|(click:?a)[==......
+
+You shake yourself. The guard beneath you seemingly passed out from shock. Luckily, the room is stocked with a variety of restraints. It isn&#39;t hard to lock him up, before finally turning your focus to the center of the room and...
+
+...]{
+
+}(if:$entryIndex is 2)[You launch yourself through the door, grabbing onto the guard within. He barely responds in his shock, and you slam his head to the floor...
+
+... 
+
+You don&#39;t have time to feel bad about your violent instincts, though. The room around you is stocked with a variety of restraints, so you drop your new friend in the corner. Hopefully he isn&#39;t capable of breaking out of handcuffs...
+
+And then you turn your focus to the center of the room... to...
+
+...]{
+
+}(if:$entryIndex is 3)[Underneath the collapsed door, you find the room&#39;s guard. His helmet is covered in red. You lift him up... 
+
+It&#39;s... just the paint job... He&#39;s still breathing.
+
+Thankfully, the room around you is stocked with restraints, so you leave the guard tied up in the corner. He shouldn&#39;t be an issue for you now. 
+
+Finally, you turn your attention to the center of the room... and...
+
+...]{
+
+}(if:$entryIndex is 4)[Once inside, you take a restrained peek, you&#39;re definitely in the right place...
+
+&quot;So... are you ready for the festivities to begin? Orion has said that this one contains especially crucial information... She might even tell us where the prince is...&quot; You can hear the interrogater giggling underneath his helmet...
+
+
+You take a deep breath. The path of incredible violence is rarely a good choice. You should be staying as careful as possible right now. It would be a &#39;&#39;very&#39;&#39; bad idea to exact any incredible violence right now.
+
+
+...
+
+
+...
+
+
+[You hoist the interrogator by his neck.]&lt;ultraviolence|(click:?ultraviolence)[==
+
+
+...
+
+
+...
+
+
+With the interrogator crumpled into a heap and restrained with some excess handcuffs, you turn your focus to the center of the room... and...
+
+...]
+
+Ariadne... 
+
+
+...
+
+
+She&#39;s... lying limp on a raised metal slab...
+
+
+...
+
+
+You... approach her... her body is covered in bruises... she&#39;s got several new scars... 
+
+
+...
+
+
+You place a hand on her cheek... and feel your tears start...
+
+
+...
+
+
+(if:$theLie is 1)[&quot;Ari... I... I&#39;m keeping my promise, okay...?&quot; Color starts to fade from the world.](else:)[&quot;Ari... I... I... I&#39;m sorry...&quot; Color starts to fade from the world.]
+
+
+
+...
+
+
+&quot;I... I won&#39;t let them hurt you any more...&quot; You lift Ari into your arms. 
+You hear boots hitting bricks in the hallway behind you.
+
+
+You turn towards the doorway. 
+Shouting echoes through the long hall.
+
+
+...
+
+
+It&#39;s... too late... 
+&#39;&#39;You&#39;&#39;... were too late...
+
+
+...
+
+
+You take a deep breath, cradling Ariadne in your left arm while your claws extend on your right. She feels... fragile... you&#39;re afraid you&#39;ll break her if you take a single step.
+
+The first guard bursts in, brandishing a glaive in your direction.You... freeze... and you can feel him peer into your soul.
+
+For a single moment, he lets down his weapon, taking a single step towards you... but then three more guards pile in behind him. You back into the corner of the room, but there&#39;s nowhere left to retreat.
+
+...
+
+[You&#39;re surrounded...]&lt;grot|(click:?grot)[==
+
+
+...
+
+
+A line forms around you... trapping you in a circle of blades...
+
+You hold Ari close... The world around you is painted in a grim monocolor.
+
+Without trying to, you let out a snarl, and slash the air in front of you...
+
+The circle starts to close in... It&#39;s hard for you to breathe...
+
+
+...
+
+
+You&#39;re pressed into a corner... You silently wish that they don&#39;t recognize you... 
+
+The fate of a creature like yourself is less cruel than the fate waiting for you outside...
+
+
+...
+
+
+You feel tears running off your face. This was... your fault...
+
+
+
+...
+
+
+
+[You feel... something... touch your cheek.]&lt;toch|(click:?toch)[== When you look down... Ariadne&#39;s eyes are open.
+
+
+
+...
+
+
+
+Color returns to the world. You fall backwards, shielding Ari with both of your arms. You hear metal hit brick. The circle in front of you stirs.
+
+
+...
+
+
+...
+
+
+You lay, silently, holding Ari... You want to tell her that you&#39;re sorry...
+
+
+
+[You want to tell her that you wish you could have kept her safe.]&lt;aa|(click:?aa)[==
+
+[You want to tell her that you&#39;re sorry you got her into this...]&lt;ab|(click:?aa)[== [that you should have stopped her from getting this deep...]&lt;ac|(click:?ac)[==
+
+[You want to tell her that you shouldn&#39;t have made her journey so much harder...]&lt;aca|(click:?aca)[==
+
+[You want to tell her that you&#39;re sorry you couldn&#39;t be someone you&#39;re not... or someone good enough to see this through...]&lt;acaa|(click:?acaa)[==
+
+[You... you want to tell her that you&#39;re sorry for loving her...]&lt;acab|(click:?acab)[== [and for letting that lead her here...]&lt;acabb|(click:?acabb)[==
+
+[You want to apologize... that your stories both end here...]&lt;acabbb|(click:?acabbb)[==
+
+
+...
+
+
+[But... you can&#39;t...]&lt;acac|(click:?acac)[== so instead, you just sit still and wait for what you know is coming...
+
+You hold Ariadne tight, and prepare for the end...
+
+A guard breaks from the circle... You see him coming towards you... It  happens so slowly... but there&#39;s nothing you can do...
+
+You close your eyes... and [[let the world go to black-&gt;theBattleField]].</tw-passagedata><tw-passagedata pid="94" name="theBattleField" tags="ascent" position="8200,9700" size="100,100">You are... on a battlefield...
+
+The ground beneath you is littered with... bodies... some humans... some fiends... The stench... you hoped never to encounter it...
+
+Behind a demonic phalanx... you see... Father... or... King Orion... 
+
+He is standing next to a tall woman... she looks... more like a silhouette than any living being you&#39;ve seen before...
+
+This woman... she has a hand on Orion&#39;s as he holds... a short metal rod, from which sprouts a blade... formed from black flame and wrapped in white light...
+
+Orion swings this blade through the air, launching waves of flame onto the armies beyond his...
+
+The silhouetted lady... takes her hand off of the blade... and she looks directly at you.
+
+[[And then the world fades back to black.-&gt;theStygia]]</tw-passagedata><tw-passagedata pid="95" name="theStygia" tags="Stygia" position="8400,9900" size="100,100">You... awaken...?
+
+
+...
+
+
+
+It&#39;s hard to say for certain...
+
+
+
+...
+
+
+
+The world remains dark around you...
+
+
+
+And your body is frozen still...
+
+
+
+...
+
+
+
+Even your thoughts feel... clouded...
+
+
+
+...
+
+
+
+...
+
+
+
+...
+
+
+
+Two forms slowly come into focus, in front of you.
+
+
+
+
+...
+
+
+
+Both simple outlines in white light... one resembles a kite shield... the other... a scepter...?
+
+
+...
+
+
+...
+
+
+What?
+
+
+...
+
+
+...
+
+
+You... never thought much about the after life... but... this seems... oddly specific... Does everyone who dies have to pick this...?
+
+
+
+...
+
+
+...
+
+
+Are these... different afterlives...? Do you pick one and get to stay with all the people who picked your own...? Is there a shield hell and a staff hell...?
+
+
+...
+
+
+...
+
+
+And... well, if so... which one... would Ari pick...?
+
+
+...
+
+
+You sulk because you don&#39;t know what you&#39;re supposed to do...
+
+
+...
+
+
+A sullen princess, even in death...
+
+
+...
+
+
+You notice that your arm has regained function... It seems as if you&#39;re definitely supposed to pick one of these... but... why?
+
+
+...
+
+
+...
+
+
+You sigh...
+
+
+You reach out and grab...
+
+[
+The Shield]&lt;shield|[
+The Scepter]&lt;scepter|{
+(click-replace:?shield)[(replace:?scepter)[](show:?shieldGo)]
+(click-replace:?scepter)[(replace:?shield)[](show:?scepterGo)]}
+[(set:$weaponIndex to 0)You take the shield...(show:?andThen)](shieldGo|{
+}[(set:$weaponIndex to 1)You take the scepter...(show:?andThen)](scepterGo|{
+}[
+
+
+...
+
+
+You expect some blinding flash of light... maybe you get visited by a ghost who conveniently explains all the things you&#39;ve never been deemed important enough to understand...
+
+
+Your new weapon stays in your hand, though...
+
+
+And then...
+
+
+Reality comes back into focus...
+
+
+...
+
+
+You&#39;re... still in the Ashroot...
+
+
+The glaive is yet to hit you... or Ariadne...
+
+
+She&#39;s still safely tucked away below you...
+
+
+...
+
+
+You&#39;re... alive... both of you...
+
+
+In your outstretched hand... is a shimmering rod of golden metal...
+
+
+From which sprouts a massive (if:$weaponIndex is 0)[shield](else:)[scepter] formed of black flame, and surrounded in swirling ethereal runes...
+
+[[And then time resumes.-&gt;welcomeBackToLife]]](andThen| </tw-passagedata><tw-passagedata pid="96" name="welcomeBackToLife" tags="" position="8600,10100" size="100,100">(if:$weaponIndex is 0)[The once-fatal glaive bounces cleanly off your shield. Its wielder is knocked to the ground.
+
+Murmurs fill the ring surrounding you. Several guards attempt to fit blows underneath the shield, but your arm moves effortlessly to throw them off. You keep your shield at the ready as you lift Ariadne up and get on your feet. When a stray blade flies your way, you //flick// the shield into it. The shockwave created dissipates through the crowd, knocking swathes of guards off of their feet.
+
+You go on the aggressive, flinging bodies away in waves. As you advance, some guards start to abandon their posts. You keep Ari cradled gently in your offhand.
+
+After you push your attackers out of the interrogation chamber and hallway, your shield swells to form a room-filling barricade. You take a moment to breathe, and you look down to Ariadne... She&#39;s awake. You... struggle to find any words... so you just smile down at her. You hope that you look less terrifying than you feel.
+
+(if: $theLie is 1)[&quot;Yknow... I never doubted you&#39;d come... I knew you wouldn&#39;t break a promise like that...&quot; She gives you a weak smile, before nesting closer in to your body. She&#39;s much easier to carry when cooperating.](else:)[&quot;How shameful... the daring knight has to be rescued by her beautiful princess $termEndear...&quot; She laughs weakly, nesting closer to your body. You&#39;re happy to see she hasn&#39;t changed a bit.]
+
+When you take down your barricade... the prison beyond is... barren... Seemingly, the guard gave up after seeing what you can, little to your prior knowledge, do. You can&#39;t blame them, really...
+You keep your shield up all the way out, but nobody arrives... save for some prisoners who just got a rude awakening... the Ashroot is totally empty...
+
+When you finally reach the outer wall again, the gate is still wide open... Hard to lock down when everybody is runnning for their lives, you figure.
+You wander out... past the Ashroot... past it all... you doubt this place will be safe for long.
+
+Once you&#39;ve finally reached the woods beyond the Ashroot&#39;s clearing, you stop to gather your bearings. You set your shield down, and it becomes a metal tube again, and you lay against a tree, cradling Ariadne in your arms.]{
+
+}(else:)[The glaive collides with your sceptre, falling harmlessly aside.
+
+Murmurs fill the ring of blades surrounding you. One by one... the guards lay down their weapons, and kneel.
+
+You back further against the corner... what are they planning?
+
+
+...
+
+
+...
+
+
+...
+
+
+...
+
+
+But nothing ever comes... they&#39;re just kneeling to you... You stand and take a few tentative steps towards the crowd... none of them move...
+
+You... choose not to question the strange gift you&#39;ve received... you bring Ariadne out through the long hallway... where crowds of guards flock to meet you... all kneeling in your presence...
+
+You stop for a moment to catch your breath... You look down to Ariadne and... her eyes are open. You want to say something... but you&#39;re still struggling to hold back tears, so you just smile down at her. You hope that you look less terrifying than you feel.
+
+(if: $theLie is 1)[&quot;Yknow... I never doubted you&#39;d come... I knew you wouldn&#39;t break a promise like that...&quot; She gives you a weak smile, before nesting closer in to your body. She&#39;s much easier to carry when cooperating.](else:)[&quot;How shameful... the daring knight has to be rescued by her beautiful princess $termEndear...&quot; She laughs weakly, nesting closer to your body. You&#39;re happy to see she hasn&#39;t changed a bit.]
+
+You... have got to get to the bottom of this. You pull aside one of the kneeling guards and you brandish your sceptre at him. He doesn&#39;t resist.
+
+&quot;Wh-why are you all &#39;&#39;doing&#39;&#39; this...? What is going on...?&quot; The guard simply looks up to you and laughs.
+
+&quot;My liege! We would do anything for you! Please lead The Abyss to glory!&quot; You... feel ill...
+
+You need to get out... and they seemingly have no desire to stop you... and so you run. You run far, far away. Past the prison, past it all... You don&#39;t stop until you reach the woods beyond.
+You fling your sceptre to the ground, where it shrinks back into its original tube form... You sit down beside it, cradling Ariadne in your arms.]
+
+You watch her, wordlessly... she still looks rather frail...
+
+Much further into these woods, and you&#39;ll approach the palace grounds... but you need some place to stay... Ariadne doesn&#39;t need to exert herself right now... You stand back up, ready to keep going, but Ari turns up to face you, placing a hand on your shoulder.
+
+&quot;(print: $shortName&#39;s 1st)-$shortName... that&#39;s... really you... isn&#39;t it...?&quot; She&#39;s tearing up, staring into your eyes.
+[
+&quot;Unfortunately...&quot;]&lt;sadddRes| [
+&quot;It&#39;s really me, darling...&quot;]&lt;loveyRes| {
+(click:?sadddRes)[(replace:?loveyRes)[](show:?sadddRR)]
+(click:?loveyRes)[(replace:?sadddRes)[](show:?loveyRR)]}[Ari pouts. With significant effort, she lifts an arm to pull you down into range of her kiss.
+
+&quot;You look... &#39;&#39;bewitching&#39;&#39;... my beloved savior... If I weren&#39;t... well... about half dead... this is probably where I&#39;d basically choke you with a hug.&quot; She smiles, tucking herself further into your arm. You grin down at her.
+
+&quot;You&#39;re just happy that your $termEndear gained about an extra foot on you, aren&#39;t you, A~ri~ad~ne~?&quot; Ari sulks into your shoulder, but her blush betrays the truth.(show:?takingGround)](sadddRR| {
+}[Ari smiles. With significant effort, she lifts an arm to pull you down into range of her kiss.
+
+&quot;I&#39;m... glad... Gotta say, overall, fan of the new look, beloved.&quot; She grins and nests herself deeper in your arms. You can&#39;t help smiling at her.
+
+&quot;You just always wanted your $termEndear to be able to carry you around, didn&#39;t you, A~ri~ad~ne~?&quot; Her blushing denial is undercut as she hides her face in your bicep. (show:?takingGround)](loveyRR|
+
+[Not far from here, the path to the palace will begin. Luckily for you two, you&#39;ve got a vague memory of an old winter home Father had here... You could find it more easily, but he stopped taking you when you were rather young... It probably won&#39;t be guarded, though... 
+Father hasn&#39;t left the palace grounds in years...
+
+As you snake around the half-overgrown forest paths, Ari rouses again and prods you. Her voice is softer this time.
+
+&quot;Uhm... $shortName... I... I should probably ask.. whatever has... uhm... happened to you......&quot; She presses back against you. She&#39;s shaking. You start to inquire, but she cuts you off. You can hear the tears in her eyes.
+
+&quot;You&#39;re... you&#39;re going to be okay... right...? I... I just... p-please tell me you&#39;ll be okay...&quot; Ari has broken into gentle sobs. You hold her tight, cooing over her.
+[
+&quot;I can&#39;t be certain... but... I&#39;m feeling much better with you back...&quot;]&lt;improving|(click:?improving)[(replace:?labored)[](replace:?selfish)[](replace:?puberty)[](show:?improvingR)] [
+&quot;I... I don&#39;t know... but I&#39;m going to try my hardest...&quot;]&lt;labored|(click:?labored)[(replace:?improving)[](replace:?selfish)[](replace:?puberty)[](show:?laboredR)] [
+&quot;Right now... I&#39;m far more worried about //you// being okay...&quot;]&lt;selfish|(click:?selfish)[(replace:?improving)[](replace:?labored)[](replace:?puberty)[](show:?selfishR)] [
+&quot;I&#39;m gonna be okay... I&#39;ve been through far worse...&quot;]&lt;puberty|(click:?puberty)[(replace:?selfish)[](replace:?improving)[](replace:?labored)[](show:?pubertyR)]
+[
+&quot;I....... Okay... I... I&#39;m glad... It&#39;s just a bit concerning seeing you like this... I mean, I still absolutely adore you... but I&#39;d be pretty freaked out if I was suddenly taller... and stronger... and had... uhm... even prettier eyes...&quot; While Ari is distracted staring up at you, you sneak a surprise kiss on her forehead.
+
+&quot;Well... I&#39;m glad you like it, love... Usually when I have weird changes, they happen a lot slower than this... and usually medicine can help with them, but...&quot; Ari laughs and snuggles back into your arm for [[the rest of your trip through the woods-&gt;cottageCoreCottageCORECOTTAGECORE]].](improvingR| [
+&quot;I... I know you will... I&#39;m just worried... What would even be the point of this all if I lost you...?&quot; Ari looks up at you. You brush a tear from her cheek with your thumb.
+
+&quot;Already forgotten about getting your revenge, eh?&quot; You lift Ariadne to give her a short peck on the cheek. She wraps her arms around you to hold herself there.
+
+&quot;No... but... what&#39;s even left for me after that...? I&#39;ve got all of my plans for the future right here...&quot; Ari presses her forehead against yours. She kisses you, and you both laugh.
+
+&quot;Okay... very well, then... I&#39;ll make sure not to die, that way, after you retire from adventuring, we can spend the rest of our days failing to grow flowers, making awful paintings together, all the typical marriage things...&quot; Ari takes your face in her hands, giving one of your cheeks a light pinch.
+
+&quot;I&#39;ll have you know I&#39;m a &#39;&#39;wonderful&#39;&#39; painter... you... uhm... got the other one right though... Beginners luck...&quot; Ariadne blushedly settles back in, snuggling into your arm for [[the remainder of your trip through the woods-&gt;cottageCoreCottageCORECOTTAGECORE]].](laboredR| [
+&quot;I... no... no, that isn&#39;t right... You... you need to take care of yourself, $Name...&quot; Ari turns away from you, wiping her tears.
+
+&quot;I... I know... I just... I want you to be safe...&quot; Your eyes fall downwards. Ari rolls over and pulls herself up towards your face, taking your chin in one hand to bring your gaze to hers.
+
+&quot;You deserve happiness too, $Name... I&#39;m... not in a good spot right now... but you&#39;ve got something... weird going on... and I... I just...&quot; Ari breaks into a fit of sobs and wraps her arms around you, burying her face in your neck.
+
+&quot;I&#39;m just... I&#39;m so scared of losing you... $shortName... Please... please take care of yourself... I love you too much to lose you over something stupid...&quot; You return Ari&#39;s embrace, trying your hardest to hold back your own tears.
+
+&quot;Okay... I... I&#39;ll try my best... I love you too... and I&#39;ll be much happier once we can stop risking our lives every other day...&quot; You both laugh through light tears. Ari kisses you on the cheek, and she returns to her held position, snuggling into your arm. The two of you stay like this for [[the remainder of your journey through the woods-&gt;cottageCoreCottageCORECOTTAGECORE]].](selfishR| [
+&quot;Do you get massive growth spurts, bulging muscles, and enormous horns very often, $shortName...?&quot; Ari holds back laughter.
+
+&quot;Oh no, not usually... I did one time, but my doctor helped me with that one... still recovering from it, in a way...&quot; You&#39;re laughing, but Ariadne has a hand over her mouth, and her face has gone red. You narrow your eyes with concern, but Ari moves to cover her eyes as she speaks.
+
+&quot;OhMyGods(print:$shortName)IDidn&#39;tMeanToBringThatUpIfYou&#39;reSensitiveAboutThatYouCanJustDropMeOffInTheCellWhereYouSavedMeImSoSorryPle-&quot; You silence Ari with a thumb over her lips, and you pull her in for a kiss. Your tried and true method never fails. She moves her hand and meets your eyes again.
+
+&quot;Ari~, Ari~, Ari~... it&#39;s okay... things like that don&#39;t upset me that much, now...&quot; You give Ari&#39;s cheek a playful nuzzle and catch a glance of her eyes getting starry again.
+
+&quot;I&#39;m... a lot less self conscious, now, anyway... I used to get Duercas to trim my horns so nobody would give me weird looks... But... it doesn&#39;t really bother me when I&#39;m with you...&quot; You feel your own cheeks flushing now. Ariadne pulls herself upwards and wraps her arms around you. 
+
+The two of you walk like this for some time, before Ari eventually snuggles back into your arm. Apparently humans can only whisper &quot;I love you&quot; so many times before they need a rest. Ari stays tucked away for [[the remainder of your journey through the woods-&gt;cottageCoreCottageCORECOTTAGECORE]].](pubertyR|
+
+](takingGround|</tw-passagedata><tw-passagedata pid="97" name="cottageCoreCottageCORECOTTAGECORE" tags="" position="8300,10600" size="100,100">(save-game: &quot;defaultSave&quot;)
+&lt;h2&gt;-4650 km: A Moment, United&lt;/h2&gt;
+
+By the time you reach the old lodge, the Abyssal Core&#39;s false sun is already drooping down towards the horizon.
+
+You let yourself in with Dad&#39;s old hidden key. He never listened when you said his &quot;inside-the-plant&quot; strategy was obvious... You guess this is just his punishment for that.
+
+The lodge&#39;s interior has always had a strange chill throughout it. You lay Ariadne down on a cushion and begin a low hum, stoking a fire in the old hearth. Ari stirs from the cold of your absence, and you hear her sigh to herself. The logs burst into a crackling black flame, and you look over to see Ari watching you, her grinning face propped up in her hands.
+
+&quot;Oh, don&#39;t mind me, $shortName~... just taking in the sights and sounds..&quot; You tut at Ari, draping a blanket over her.
+[
+&quot;Yeah...? Well hopefully the sound isn&#39;t too annoying, love...&quot;]&lt;hear|(click:?hear)[(replace:?seee)[](show:?hearR)][
+&quot;Well... like what you see, love?&quot;]&lt;seee|(click:?seee)[(replace:?hear)[](show:?seeeR)][Ariadne gives a honeyed laugh and extends a hand for you to take.
+
+&quot;How could I ever grow tired of my wonderful $termEndear&#39;s beautiful singing voice? If &#39;&#39;I&#39;&#39; sounded that good, I would probably get into sorcery too...&quot; You pull yourself close to Ari, cuddling up with her in front of the fire.
+
+&quot;Well... I sort of got into sorcery to practice my singing... My voice didn&#39;t sound much like this at the beginning...&quot; You twirl a finger through your hair, and Ari pulls you down, kissing you and staying close to whisper in your ear.
+
+&quot;Well, prin~cess~...... maybe tonight I can make you ~sing~ for me, hmm...?&quot; You restrain your laughter by nuzzling into Ariadne&#39;s neck.
+
+&quot;Ari, Ari... as your $termEndear, it&#39;s basically my job to protect you from your near-constant acts of absurd hubris... And... right now... you&#39;re recovering from serious physical trauma... All you need tonight is &#39;&#39;lots&#39;&#39; of rest... and maybe some soup... I doubt the Ashroot was generous with food...&quot; Ari laughs, wrapping her arms around you and kissing between your horns.
+
+&quot;Okay, okay... doctor&#39;s orders... I do wish you&#39;d let me have &#39;&#39;some&#39;&#39; hubris though, $shortName~...&quot; The two of you stay like this for a while, all tender embraces and laughter... but... [[you did say Ari needed soup...-&gt;cottagecoreCookingTender]]](hearR| [Ariadne gives a honeyed laugh and extends a hand for you to take.
+
+&quot;I &#39;&#39;adore&#39;&#39; what I see, love... You&#39;re still the same woman I fell for back in the waterways... just... a bit more... &#39;feral&#39;...? I think that fits...&quot; You snicker to yourself and plant a short kiss on Ari&#39;s forehead.
+[
+&quot;Well... I&#39;m glad you weren&#39;t scared off by me basically proposing on a first date... those were strange days...&quot;]&lt;propl|(click:?propl)[(replace:?feral)[](show:?proplR)] [
+&quot;And I&#39;d hope me being &#39;feral&#39; is a good thing... then?&quot;]&lt;feral|(click:?fearl)[(replace:?propl)[](show:?feralR)] [Ari smirks and takes your chin in her hand.
+
+&quot;I always knew //something// seemed strange about that whole night... I probably //would// have agreed if you actually had... Now I&#39;m just sad that they took my daisy, though...&quot; Ari releases her grip and turns her blushed face downwards. You nuzzle against her cheek.
+
+&quot;Well... how about, when this is all over... we travel out and I get us a new set... I mean, I&#39;m not any less your $termEndear without one... but I bet we could make some people super mad...&quot; Ariadne looks at you, with her usual starry eyes.
+
+And then she&#39;s on top of you.
+
+The two of you spend hours like this, nuzzling one another, trading kisses, and engaging in all the varied crafts that wandering mouths are wont to engage in.
+
+Ari&#39;s stamina is weak in her current state though, so, after some time together, [[you lay her down by the fire to get her rest-&gt;cottagecoreCookingTender]]](proplR|[Ari smirks and takes your chin in her hand.
+
+&quot;Oh I certainly believe it is...&quot; She rolls on top of you, pinning you by your hand and snickering to herself.
+
+&quot;$shortName~... haven&#39;t you ever looked at a woman and thought to yourself... &#39;Gods... I wish she would throw me through a solid wall&#39;...?&quot; Ariadne bites her lip, but your confused look drains some of her confidence.
+
+You don&#39;t let this chance go to waste.
+
+You flip over, this time, you keep Ari gently held beneath you. Your grip is weak... you wouldn&#39;t want to hurt her while she&#39;s like this... but she melts in your grasp.
+
+Your warm breath mixes and you give her a long, wordless kiss... which she then returns... and you continue for what feels like hours.
+
+Neither of you makes it out without several marks to remember your time by... but you eventually leave Ari swaddled in a blanket, [[resting in front of the fire-&gt;cottagecoreCookingTender]].](feralR|
+
+
+](seeeR|</tw-passagedata><tw-passagedata pid="98" name="cottagecoreCookingTender" tags="" position="7900,10700" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
