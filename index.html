@@ -109,7 +109,7 @@ tw-story[tags="Creditos"] tw-link, tw-story[tags="Creditos"] .enchantment-link {
 
 tw-story[tags="Creditos"] tw-link:hover, tw-story[tags="Creditos"] .enchantment-link:hover {
     color: #66CC00; 
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Stygia" color="blue"></tw-tag>,<tw-tag name="Stygia-Act-2" color="red"></tw-tag>,<tw-tag name="ascent" color="purple"></tw-tag>,<tw-tag name="notGoodStuff" color="red"></tw-tag>,<tw-tag name="the-stars" color="yellow"></tw-tag>,<tw-tag name="creditos" color="green"></tw-tag>,<tw-tag name="Creditos" color="green"></tw-tag>,<tw-tag name="starterus" color="orange"></tw-tag><tw-passagedata pid="1" name="beginningNaming" tags="" position="3500,500" size="200,200">&lt;h1&gt;The Prince Is Dead&lt;/h1&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Creditos" color="green"></tw-tag>,<tw-tag name="Stygia" color="blue"></tw-tag>,<tw-tag name="Stygia-Act-2" color="red"></tw-tag>,<tw-tag name="ascent" color="purple"></tw-tag>,<tw-tag name="creditos" color="green"></tw-tag>,<tw-tag name="notGoodStuff" color="red"></tw-tag>,<tw-tag name="starterus" color="orange"></tw-tag>,<tw-tag name="the-stars" color="yellow"></tw-tag><tw-passagedata pid="1" name="beginningNaming" tags="" position="3500,500" size="200,200">&lt;h1&gt;The Prince Is Dead&lt;/h1&gt;
 &lt;h2&gt;-60 km: A Shared Sanctum&lt;/h2&gt;
 (if:$trigFlag is 1)[(set:$trigFlag to 0)(save-game:&quot;starterSave&quot;)]
 No matter how hard you try, you can never truly escape your position in The Abyss.
@@ -631,7 +631,7 @@ You close in a little to ask your next question, but she cuts you off, stammerin
 
 &quot;I&#39;m... uh... Ariadne... of Eresos. I&#39;m a knight, back in my home... and... and I&#39;ve come to kill the Demon King!&quot; (set: $bondageFlag to 1)
 
-[[&quot;What??&quot; -&gt;soMuchToLose]]]</tw-passagedata><tw-passagedata pid="26" name="soMuchToLose" tags="" position="4475,1300" size="100,100">Ariadne clearly knew how she&#39;d sounded, and she immediately begins fidgeting with her hands.
+[[&quot;What??&quot; -&gt;soMuchToLose]]]</tw-passagedata><tw-passagedata pid="26" name="soMuchToLose" tags="" position="4400,1300" size="100,100">Ariadne clearly knew how she&#39;d sounded, and she immediately begins fidgeting with her hands.
 ...
 For some time... you both just stare at eachother..
 
@@ -934,12 +934,12 @@ Then, she charges across the room and wraps her arms around you tightly, whisper
 
 The two of you have... quite the road ahead of you. But, for now, bathing in the neon light of these fungal gardens, you feel... oddly content.
 
-[[You hold on to that feeling for as long as you can, hoping it can sustain you on the journey to come. -&gt;TheJourneyBegins]]]</tw-passagedata><tw-passagedata pid="30" name="TheJourneyBegins" tags="" position="4600,1800" size="100,100">(save-game: &quot;defaultSave&quot;)
+[[You hold on to that feeling for as long as you can, hoping it can sustain you on the journey to come. -&gt;TheJourneyBegins]]]</tw-passagedata><tw-passagedata pid="30" name="TheJourneyBegins" tags="" position="4580,1800" size="100,100">
 &lt;h2&gt;-230 km: A Trial For Two&lt;/h2&gt;
 
-You&#39;ve always taken The Abyss&#39;s rapid transport system for granted. You never really put any thought into the distance from the core to the Abyssal Dungeon.
+You&#39;ve always taken The Abyss&#39;s rapid transport system for granted. The distance from the core to the Abyssal Dungeon typically never crosses your mind.
 
-But that all changed, because now you&#39;re escorting a human. Ariadne&#39;s entire being would be destroyed if she took any of your routes, so the only way back down is the long route.
+But that&#39;s all changed, because now you&#39;re escorting a human. Ariadne&#39;s entire being would be destroyed if she took any of your routes, so the only way back down is the long way.
 
 The hardest part was calming Ariadne&#39;s nerves so she wouldn&#39;t jump at any passing guard. You gave her a strict &quot;No Extraordinary Violence&quot; policy. In a stroke of unusual luck, you packed a change of clothes to help hide your decidedly non-Abyssal companion. With Ariadne stretching the arms on your &quot;I hate my entire body and want to become a blob&quot; robes, the two of you could safely begin the long process of descending The Abyss.
 
@@ -957,13 +957,13 @@ You have to stop walking when you double over in tears of laughter. Ariadne pout
 &quot;Uhm... I was just wondering... why //did// you agree to come with me...?&quot; Your heart quickens.
 [
 &quot;I... I just didn&#39;t want you to get hurt...&quot;]&lt;dto1|(click:?dto1)[(replace:?dto2)[](show:?dtoC1)][
-&quot;I... uh... I made a promise a long time ago...&quot;]&lt;dto2|(click:?dto2)[(replace:?dto1)[](show:?dtoC2)]] [Ariadne blushes, and she freezes for a moment, before wrapping herself further into the blobification hood.
+&quot;I... uh... I made a promise a long time ago...&quot;]&lt;dto2|(click:?dto2)[(replace:?dto1)[](show:?dtoC2)]] [Ariadne blushes, and she freezes for a moment, before wrapping herself further into the blobification hood.(show:?dadTalk2)
 
 ](dtoC1|[Ariadne freezes and furrows her brow.
 
 &quot;You... you did //what//, Ms. $Name...?&quot; Your heart drops, and you turn away.
 
-&quot;It... it isn&#39;t that important... just dumb kids&#39; stuff...&quot; She blinks at you for a moment before her head droops again.
+&quot;It... it isn&#39;t that important... just dumb kids&#39; stuff...&quot; She blinks at you for a moment before her head droops again.(show:?dadTalk2)
 
 ](dtoC2||dadTalk2)[&quot;It&#39;s just... you seemed... surprisingly cool about the whole... uh... regicide thing. I... don&#39;t quite know the internal workings of The Abyss... do you... not like the king... or something? If it isn&#39;t too intrusive, I mean...&quot;
 
@@ -1133,7 +1133,7 @@ Ariadne puts visible effort into suppressing her laughter, but fails miserably. 
 &quot;I... I&#39;m so sorry, $shortName, I just... wasn&#39;t expecting that... I&#39;m not sure how I feel about the tough girl look on you.&quot; She&#39;s grinning like an absolute fool. It may be at your expense, but... you don&#39;t mind... (show: ?entrance)](headstrongAri|
 
 [&quot;So... ready, then?&quot; You look to Ariadne. She gives you a short nod and, with that, you begin heaving open the massive gate. It doesn&#39;t give as easily as you expect, but you open it wide enough to squeeze in.
-With one last tentative look into the dungeon behind you, the two of you [[take your first steps into chill air of the Abyssal Waterways.-&gt;waterOpen]]](entrance|]</tw-passagedata><tw-passagedata pid="32" name="waterOpen" tags="" position="4700,2100" size="100,100">(save-game: &quot;defaultSave&quot;)
+With one last tentative look into the dungeon behind you, the two of you [[take your first steps into chill air of the Abyssal Waterways.-&gt;waterOpen]]](entrance|]</tw-passagedata><tw-passagedata pid="32" name="waterOpen" tags="" position="4700,2100" size="100,100">
 &lt;h2&gt;-1100 km: A Moment, Hidden&lt;/h2&gt;
 
 A couple years back, wandering through the waterways would entail a lot of trudging through knee-high streams, probably some leeches, and a large variety of poisons. Luckily, the area has become something of a haven for eccentrics and those deemed degenerate. You spent a lot of time here, growing up. Now you mostly come by the pick up your medicine, but everyone is always so kind to you here. Even if the people here knew you before your time, they didn&#39;t act like it.
@@ -2028,7 +2028,7 @@ With your routine finally done for the morning, the two of you give Payla your g
 (set: $introIndex to 2)
 (set: $termEndear to &quot;wife&quot;)
 (set: $weaponIndex to 0)</tw-passagedata><tw-passagedata pid="40" name="darkMoonOpen" tags="" position="4100,2900" size="100,100">Before long, you&#39;ve passed far beyond the lights of the waterways&#39; township, following the water towards the next hurdle on your path.
-(save-game:&quot;defaultSave&quot;)
+
 &lt;h2&gt;-2000 km: The Aspect of Treachery&lt;/h2&gt;
 
 One small step along the path of the waterways, and the air goes chill around you. You&#39;ve entered an open cavern, flanked by trees and drowned in oppressive shadows. Your trip is mostly silent for the first few miles.
@@ -2048,6 +2048,7 @@ When the road finally forks, you head along the right path to continue towards t
 A fiend has noticed you dallying on the path, and she flags down your overcurious companion. This will //certainly// throw off your timetable.
 
 The fiend woman reaches you and drops in a theatrical bow.
+
 (if:$tenderFlower is 1)[
 &quot;Oh dearie me, I didn&#39;t expect to find newlyweds wandering the King&#39;s Conservatory. Tell me, dahlings, have you lost your way?&quot;
 
@@ -2571,7 +2572,7 @@ The two of you complete the rest of your departure silently. Ari dons her armor,
 
 Once you&#39;ve finally returned to the split road where this all began, you look back. Watching over you is Demaetria. Her right eye is shut, and the right side of her face, from her forehead to her chin, is covered in dark, red scars.
 
-[[You don&#39;t stick around for long. -&gt;theWoods]]](itsADeparture|</tw-passagedata><tw-passagedata pid="49" name="theWoods" tags="" position="4900,3900" size="100,100">(save-game:&quot;defaultSave&quot;)
+[[You don&#39;t stick around for long. -&gt;theWoods]]](itsADeparture|</tw-passagedata><tw-passagedata pid="49" name="theWoods" tags="" position="4900,3900" size="100,100">
 &lt;h2&gt;-2500 km: The Aspect of Treachery&lt;/h2&gt;
 
 The road along the Royal Conservatory is quiet.
@@ -4040,7 +4041,7 @@ She does it, because she...
 
 
 
-The Royal Conservatory is perpetually cold, hostile, and dark, but... in Ari&#39;s arms... [[it feels like home... -&gt;movingOnTogether]]</tw-passagedata><tw-passagedata pid="60" name="movingOnTogether" tags="" position="4200,4500" size="100,100">(save-game:&quot;defaultSave&quot;)
+The Royal Conservatory is perpetually cold, hostile, and dark, but... in Ari&#39;s arms... [[it feels like home... -&gt;movingOnTogether]]</tw-passagedata><tw-passagedata pid="60" name="movingOnTogether" tags="" position="4200,4500" size="100,100">
 &lt;h2&gt;-3100 km: What Remains of Detritus and Omens&lt;/h2&gt;
 
 Near the end of the Royal Conservatory, the paths become more rigid, and the road is dotted with provisional townships. As you near the Abyssal Capitol, guard patrols rapidly increase. You and Ariadne cover up more. You&#39;re not sure what might happen, but you don&#39;t want to be recognized. You&#39;re approaching the enduring village of Scindos when Ari pulls you aside and into a hidden clearing.
@@ -4361,7 +4362,7 @@ Ari stops you with an embrace.
 &quot;Of course, of course... you know, before I met you, I&#39;d go entire weeks without nearly dying...&quot; Ari lets out a sweet laugh, planting a brief kiss on your cheek.
 
 &quot;Hopefully you&#39;ll get those again soon, dearest. Now let&#39;s get going.&quot;
-[[And the two of you delve deeper still-&gt;tunneltime]].](meds|</tw-passagedata><tw-passagedata pid="69" name="tunneltime" tags="" position="5000,5500" size="100,100">(save-game:&quot;defaultSave&quot;)
+[[And the two of you delve deeper still-&gt;tunneltime]].](meds|</tw-passagedata><tw-passagedata pid="69" name="tunneltime" tags="" position="5000,5500" size="100,100">
 &lt;h2&gt;-3900 km: Convergence / Divergence&lt;/h2&gt;
 
 The tunnels from Alxyo&#39;s stockhouse are different from any other place you&#39;ve seen in the abyss.
@@ -5006,7 +5007,7 @@ Is [no]&lt;t|(click:?t)[==th[i]&lt;u|(click:?u)[==ng left...
 
 
 
-[[And you fall unconscious...-&gt;whereAreYouKasio]]]]]]</tw-passagedata><tw-passagedata pid="76" name="whereAreYouKasio" tags="" position="4300,6400" size="100,100">(save-game: &quot;defaultSave&quot;)
+[[And you fall unconscious...-&gt;whereAreYouKasio]]]]]]</tw-passagedata><tw-passagedata pid="76" name="whereAreYouKasio" tags="" position="4300,6400" size="100,100">
 (unless: $theLie is 1)[
 &lt;h2&gt;-4500 km: The Covenant of Accursed Blood&lt;/h2&gt;] (else:)[
 &lt;h2&gt;-4500 km: The Wellspring of Shattered Promises&lt;/h2&gt;]
@@ -6358,7 +6359,7 @@ As you snake around the half-overgrown forest paths, Ari rouses again and prods 
 
 The two of you walk like this for some time, before Ari eventually snuggles back into your arm. Apparently humans can only whisper &quot;I love you&quot; so many times before they need a rest. Ari stays tucked away for [[the remainder of your journey through the woods-&gt;cottageCoreCottageCORECOTTAGECORE]].](pubertyR|
 
-](takingGround|</tw-passagedata><tw-passagedata pid="92" name="cottageCoreCottageCORECOTTAGECORE" tags="" position="5400,7400" size="100,100">(save-game: &quot;defaultSave&quot;)
+](takingGround|</tw-passagedata><tw-passagedata pid="92" name="cottageCoreCottageCORECOTTAGECORE" tags="" position="5400,7400" size="100,100">
 &lt;h2&gt;-4650 km: A Moment, United&lt;/h2&gt;
 
 By the time you reach the old lodge, the Abyssal Core&#39;s false sun is already drooping down towards the horizon.
@@ -7351,7 +7352,7 @@ You smirk and lay backwards, arching upwards and staring into Ari&#39;s eyes. He
 
 &quot;Gods... okay, yeah, you&#39;re right... please do proceed. Uhm, do you need your hands for this darling?&quot; You interrupt your channeling with a snort and fall forwards in laughter.
 
-&quot;Not yet, darling... but they&#39;ll have their time to shine.&quot; You continue your melody, and tendrils of shadow dance from all corners of the room. One by one, the blot out stripes of light above you. Ari pulls in closer, nuzzling against your neck. You rest your chin atop her head and watch as [[the world goes dark.-&gt;theShadowBoneZone]]</tw-passagedata><tw-passagedata pid="104" name="theLastMorning" tags="" position="3975,9000" size="100,100">(save-game:&quot;defaultSave&quot;)
+&quot;Not yet, darling... but they&#39;ll have their time to shine.&quot; You continue your melody, and tendrils of shadow dance from all corners of the room. One by one, the blot out stripes of light above you. Ari pulls in closer, nuzzling against your neck. You rest your chin atop her head and watch as [[the world goes dark.-&gt;theShadowBoneZone]]</tw-passagedata><tw-passagedata pid="104" name="theLastMorning" tags="" position="3975,9000" size="100,100">
 &lt;h2&gt;-???? km: The Oath of Blood / The Pact of Stars&lt;/h2&gt;
 
 When you come to, the first thing you feel is the weight of Ari&#39;s arms around you.
@@ -8508,7 +8509,7 @@ $st[&quot;Please... $Name...&quot;] You smile at Stygia through your own tears.
 &quot;Good luck, Stygia...&quot;
 
 [[And the world goes white-&gt;inTheRingOfFire]]](theEnd|
-</tw-passagedata><tw-passagedata pid="120" name="inTheRingOfFire" tags="" position="5100,10100" size="100,100">(save-game:&quot;defaultSave&quot;)
+</tw-passagedata><tw-passagedata pid="120" name="inTheRingOfFire" tags="" position="5100,10100" size="100,100">
 &lt;h2&gt;+0 km: Forging The Dawn, Hand in Hand&lt;/h2&gt;
 
 The sensations of the world return to you one by one.
@@ -9071,7 +9072,7 @@ And...
 
 
 
-[[You&#39;re somewhere far, far away...-&gt;twoYearsLater]]]</tw-passagedata><tw-passagedata pid="124" name="twoYearsLater" tags="the-stars" position="5500,10700" size="100,100">Two years have passed since The Incident. (save-game:&quot;defaultSave&quot;)
+[[You&#39;re somewhere far, far away...-&gt;twoYearsLater]]]</tw-passagedata><tw-passagedata pid="124" name="twoYearsLater" tags="the-stars" position="5500,10700" size="100,100">Two years have passed since The Incident.
 ---
 You feel a chill breeze against your skin.
 
@@ -9136,7 +9137,7 @@ You pull yourself closer to Ari, nesting yourself in her arms, and, when you loo
 
 You just smile at her.
 
-[[And then the world falls out of focus.-&gt;twentyYearsEarlier]]](b2R|</tw-passagedata><tw-passagedata pid="125" name="twentyYearsEarlier" tags="ascent" position="4500,10700" size="100,100">The Incident will occur in twenty years. (save-game:&quot;defaultSave&quot;)
+[[And then the world falls out of focus.-&gt;twentyYearsEarlier]]](b2R|</tw-passagedata><tw-passagedata pid="125" name="twentyYearsEarlier" tags="ascent" position="4500,10700" size="100,100">The Incident will occur in twenty years. 
 ---
 When the world falls into place around you, a wave of torrid air washes over you.
 
@@ -9176,7 +9177,7 @@ Then... out of nowhere, she starts to shake, and the shadows around you are bani
 
 You reach out a... very small... hand, laying it on Stygia&#39;s cheek. She places her own hand over it, swaddling you in warm darkness...
 
-[[And then the world falls out of focus again.-&gt;oneMonthLater]]</tw-passagedata><tw-passagedata pid="126" name="oneMonthLater" tags="the-stars" position="5300,10900" size="100,100">One month has passed since The Incident (save-game:&quot;defaultSave&quot;)
+[[And then the world falls out of focus again.-&gt;oneMonthLater]]</tw-passagedata><tw-passagedata pid="126" name="oneMonthLater" tags="the-stars" position="5300,10900" size="100,100">One month has passed since The Incident 
 ---
 You come to, directly into a spell of fitful coughing.
 
@@ -9283,7 +9284,7 @@ You find it very easy to do the same yourself.
 
 You want to protest, but your mouth feels dry.
 
-[[And, before you can ask, the world falls out of focus again. -&gt;twoHoursEarlier]]](e2R|](c2R|](a2R|</tw-passagedata><tw-passagedata pid="127" name="twoHoursEarlier" tags="ascent" position="4700,11000" size="100,100">The Incident will occur in two hours. (save-game:&quot;defaultSave&quot;)
+[[And, before you can ask, the world falls out of focus again. -&gt;twoHoursEarlier]]](e2R|](c2R|](a2R|</tw-passagedata><tw-passagedata pid="127" name="twoHoursEarlier" tags="ascent" position="4700,11000" size="100,100">The Incident will occur in two hours. 
 ---
 You vision returns to you, and you&#39;re in the throne room.
 
@@ -9378,7 +9379,7 @@ She smiles.
 
 
 
-[[And the world falls out of focus, yet again. -&gt;fiveMonthslater]]](aC|</tw-passagedata><tw-passagedata pid="128" name="fiveMonthslater" tags="the-stars" position="5400,11100" size="100,100">Five months have passed since The Incident. (save-game:&quot;defaultSave&quot;)
+[[And the world falls out of focus, yet again. -&gt;fiveMonthslater]]](aC|</tw-passagedata><tw-passagedata pid="128" name="fiveMonthslater" tags="the-stars" position="5400,11100" size="100,100">Five months have passed since The Incident. 
 ---
 The first thing to appear in your vision is Ari’s face above you. She strokes your cheek with her thumb, and you quickly notice her other hand wandering, trailing across your skin. She’s pared down to only a light cloak, and you’ve been reduced even further.
 
@@ -9504,7 +9505,7 @@ As the world fades around you, the quiet sounds of night are replaced with an ec
 (if:$kidFlag is 1)[[[...but then the world fades again.-&gt;eightYearsLater]]]{
 }(else:)[[[...but then the world fades again.-&gt;sevenMinutesLater]]]
 
-](b2R|](a2R|</tw-passagedata><tw-passagedata pid="129" name="nineYearsEarlier" tags="ascent" position="4600,11600" size="100,100">The Incident will occur in nine years. (save-game:&quot;defaultSave&quot;)
+](b2R|](a2R|</tw-passagedata><tw-passagedata pid="129" name="nineYearsEarlier" tags="ascent" position="4600,11600" size="100,100">The Incident will occur in nine years.
 ---
 You&#39;re... in a forest...? 
 
@@ -9589,7 +9590,7 @@ Maybe your destiny started &#39;&#39;here&#39;&#39; all along...
 
 You nod to Euphemia.
 
-[[And the world around you fades into the shadows... -&gt;andItAllEnds]]](cC|</tw-passagedata><tw-passagedata pid="130" name="fiveYearsLater" tags="the-stars" position="5600,11500" size="100,100">Five years have passed since The Incident.  (save-game:&quot;defaultSave&quot;)
+[[And the world around you fades into the shadows... -&gt;andItAllEnds]]](cC|</tw-passagedata><tw-passagedata pid="130" name="fiveYearsLater" tags="the-stars" position="5600,11500" size="100,100">Five years have passed since The Incident.
 ---
 When you open your eyes, you see... yourself.
 
@@ -9634,7 +9635,7 @@ Ariadne reaches up, brushing a tear from your cheek.
 
 The two of you embrace.
 
-[[And the world crumbles around you. -&gt;nineYearsEarlier]]](bC|</tw-passagedata><tw-passagedata pid="131" name="eightYearsLater" tags="the-stars" position="5800,11300" size="100,100">Eight years have passed since The Incident. (save-game:&quot;defaultSave&quot;)
+[[And the world crumbles around you. -&gt;nineYearsEarlier]]](bC|</tw-passagedata><tw-passagedata pid="131" name="eightYearsLater" tags="the-stars" position="5800,11300" size="100,100">Eight years have passed since The Incident. 
 ---
 You wake with a hand upon your shoulder.
 
@@ -9677,7 +9678,7 @@ You hold her tight, for as long as you can. You don&#39;t want to leave this mom
 
 But, slowly, the warm sunlight beaming onto your back, Ari&#39;s arms around you, the sound of her gentle, steady breathing... It all fades.
 
-[[And you&#39;re lost, yet again. -&gt;sevenMinutesLater]]](aC|</tw-passagedata><tw-passagedata pid="132" name="sevenMinutesLater" tags="Stygia-Act-2" position="5100,11300" size="100,100">Seven minutes have passed since The Incident. (save-game:&quot;defaultSave&quot;)
+[[And you&#39;re lost, yet again. -&gt;sevenMinutesLater]]](aC|</tw-passagedata><tw-passagedata pid="132" name="sevenMinutesLater" tags="Stygia-Act-2" position="5100,11300" size="100,100">Seven minutes have passed since The Incident. 
 ---
 The feeling of grass beneath you returns, and you&#39;re greeted by the sound of waves lapping at the rocks below you.
 (set: $st to (text-style:&quot;Emboss&quot;)+(text-style:&quot;Smear&quot;)+(text-color:#CB98F2))
@@ -9737,7 +9738,7 @@ $st[&quot;She suggests that you settle down... since you&#39;ll probably be in r
 
 You smile to her...
 
-[[And the world crumbles beneath you. -&gt;fiftyYearsEarlier]]](b2C|</tw-passagedata><tw-passagedata pid="133" name="fiftyYearsEarlier" tags="ascent" position="4300,11500" size="100,100">The Incident will occur in fifty years. (save-game:&quot;defaultSave&quot;)
+[[And the world crumbles beneath you. -&gt;fiftyYearsEarlier]]](b2C|</tw-passagedata><tw-passagedata pid="133" name="fiftyYearsEarlier" tags="ascent" position="4300,11500" size="100,100">The Incident will occur in fifty years.
 ---
 Once again, you find yourself on a battlefield... but... this time, Orion is directly beside you.
 
@@ -9871,7 +9872,7 @@ Either way, (link:&quot;here&quot;)[(reload:)] is a link to go back to the start
 
 
 
-</tw-passagedata><tw-passagedata pid="136" name="tryAgainTimeWoo" tags="" position="1000,10000" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="137" name="stygiaTime" tags="Stygia" position="4100,3200" size="100,100">The world around you is covered in shadows.
+</tw-passagedata><tw-passagedata pid="136" name="stygiaTime" tags="Stygia" position="4100,3200" size="100,100">The world around you is covered in shadows.
 
 
 
@@ -9887,7 +9888,7 @@ And then...
 
 
 
-[[She fades too.-&gt;abyssTime]]</tw-passagedata><tw-passagedata pid="138" name="footSave" tags="footer" position="4425,375" size="200,200">(if: (passage:)&#39;s name is not &quot;beginningNaming&quot; and (passage:)&#39;s name is not &quot;disclaimers&quot;)[(save-game:&quot;defaultSave&quot;)]</tw-passagedata></tw-storydata>
+[[She fades too.-&gt;abyssTime]]</tw-passagedata><tw-passagedata pid="137" name="footSave" tags="footer" position="4425,375" size="200,200">(if: (passage:)&#39;s name is not &quot;beginningNaming&quot; and (passage:)&#39;s name is not &quot;disclaimers&quot;)[(save-game:&quot;defaultSave&quot;)]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
