@@ -11,7 +11,7 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="The Prince Is Dead" startnode="52" creator="Twine" creator-version="2.3.8" ifid="D8D20777-060A-450A-9FA2-5B416443930D" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">del {
+<tw-storydata name="The Prince Is Dead" startnode="52" creator="Twine" creator-version="2.3.8" ifid="D8D20777-060A-450A-9FA2-5B416443930D" zoom="0.25" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">del {
 	background-color: inherit;
 	text-decoration: line-through;
 }
@@ -2138,62 +2138,68 @@ When the road finally forks, you head along the right path to continue towards t
 
 ...
 
-&quot;Uhm... yeah?&quot;
+&quot;Uh... yeah?&quot;
 
-&quot;What&#39;s... uh... down that way?&quot; Ari points down the leftwards path, where a tall gate flanked by fiends gives way to massive, moving beams of light.
+&quot;What&#39;s... uhm... what&#39;s down that way?&quot; Ari points down the leftwards path, where a tall gate flanked by fiends gives way to massive, moving beams of light.
 
-&quot;Oh... uhm... that&#39;s not... well...&quot; With one moment of hesitation, your fate has been sealed.
+&quot;Oh... uh... that&#39;s not... well...&quot; With one moment of hesitation, your fate has been sealed.
 
 A fiend has noticed you dallying on the path, and she flags down your overcurious companion. This will //certainly// throw off your timetable.
 
-The fiend woman reaches you and drops in a theatrical bow.
 
-(if:$tenderFlower is 1)[
-&quot;Oh dearie me, I didn&#39;t expect to find newlyweds wandering the King&#39;s Conservatory. Tell me, dahlings, have you lost your way?&quot;
+
+The fiend woman reaches you and drops in a theatrical bow.(if:$tenderFlower is 1)[
+
+&quot;Oh dearie me, I didn&#39;t expect to find newlyweds wandering the King&#39;s Conservatory. Tell me, darlings, have you lost your way?&quot;
 
 You are regretting your decisions at an astoundingly high rate, now, but Ari looks absolutely delighted.
+
 &quot;Oh we... uhm.... that...&quot; Ari has totally lost her ability to speak, so it falls to you.
 ](else:)[
-&quot;Oh dearie me, I didn&#39;t expect to find two beautiful maidens wandering the King&#39;s Conservatory. Tell me, dahlings, have you lost your way?&quot;
+
+&quot;Oh dearie me, I didn&#39;t expect to find two beautiful maidens wandering the King&#39;s Conservatory. Tell me, darlings, have you lost your way?&quot;
 
 You are regretting your decisions at an astoundingly high rate, now.]
 
-&quot;We&#39;re not lost, ma&#39;am, we were ju-&quot; She obviously wasn&#39;t going to accept that answer. You&#39;re not sure why you tried.
+&quot;We&#39;re not lost, ma&#39;am, we were ju-&quot; She obviously wasn&#39;t going to accept that answer. You&#39;re not sure why you even tried.
 
-&quot;Oh as I live and **breathe**!&quot; she feigns fainting, &quot;I didn&#39;t want to assume, but it must be so. Are you not the Honorable and Fair Princess $Name, ma&#39;am?&quot;
+&quot;Oh as I live and **breathe**!&quot; She feigns fainting. 
+
+&quot;I didn&#39;t want to assume, but it must be so. Are you not the Honorable and Fair Princess $Name, ma&#39;am?&quot;
 
 ...
 
-You have to admit, you do like having flattering epithets.
-&quot;I... yes... uhm... that&#39;s me...&quot; (if:$tenderFlower is 1)[Ari is still yet to recover from her sapphic coma.]
+You have to admit, you like the flattering epithets.
+
+&quot;I... yes... uh... that&#39;s me...&quot; (if:$tenderFlower is 1)[Ari is still yet to recover from her sapphic coma.]
 
 &quot;Oh //heavens//, I can&#39;t believe there was an entire royal wedding and nobody thought to invite //me//. For shame, King Orion. Why, I might just have to write him a strongly worded letter. What kind of royal wedding could it even be without the presence of Darkmoon Demaetria?&quot; She strikes a little pose as she drops her own name. 
 
-At this point, Ari(if:$tenderFlower is 1)[, back in the world of the living,] has finally caught on to the fiend&#39;s game.
+At this point, Ari(if:$tenderFlower is 1)[, back in the world of the living,] has caught on to the fiend&#39;s game.
 
-&quot;Okay... What do you want, Demaetria?&quot; You&#39;re ashamed of yourself for getting caught like this. She could be bluffing, but you don&#39;t want to know what Father would do if he&#39;d thought you&#39;d eloped. It&#39;s especially damning, because you&#39;re not even sure if //you&#39;ve// eloped or not. 
+&quot;Okay... fine... What do you want, Demaetria?&quot; You&#39;re ashamed of yourself for getting caught like this. She could be bluffing, but you don&#39;t want to know what Father would do if he&#39;d thought you&#39;d eloped. It&#39;s especially damning, because you&#39;re not even sure if //you&#39;ve// eloped or not. 
 
 &quot;Oh dear, I don&#39;t know what you mean. I might, however know one thing that could mend my broken heart...&quot; You&#39;re not sure if her theatrics make the extortion easier or harder.
 
 &quot;Perhaps... no... it would be too much to ask... but... maybe... The Darkmoon Theater could have Princess $Name, the Divinely Beautiful, show her face in our show tonight?&quot; Demaetria reaches out her hand.
 
-[Shake her hand.]&lt;handTo|(click-replace:?handTo)[You shake her hand.(show:?schemes)]
-[
+[Shake her hand.]&lt;handTo|(click-replace:?handTo)[You shake her hand.(show:?schemes)][
+
 &quot;Perfection! Your little lovebird can come too, chemistry is more important than talent anyway.&quot; Demaetria giggles to herself and disappears into a cloud of shadow.
 
 ...
 
-&quot;So... uh... we just agreed to that...?&quot; Ari seems absolutely dumbfounded. You place a reassuring hand on her back.
+&quot;So... uhm... we just agreed to that...?&quot; Ari seems absolutely dumbfounded. You place a reassuring hand on her back.
 
-&quot;No, no... //we// didn&#39;t... This one&#39;s all on me.&quot; You start to trudge  towards the gate, pulling Ari along.
+&quot;No, no... //we// didn&#39;t... This one&#39;s all on me.&quot; You trudge towards the gate, pulling Ari along.
 
-&quot;Uhm... $shortName...?&quot; She stops you before you&#39;ve even moved.
-&quot;Maybe we should... y&#39;know... make the... uh, y&#39;know... make the most of this... maybe just make this a little.. uhm...&quot; She twirls her hair around her finger and shifts her weight around.
+&quot;Uhm... $shortName...?&quot; She stops you for a moment.
+
+&quot;Maybe we should... y&#39;know... make the... uhm... make the most of this... maybe just make this a little.. uhm...&quot; She twirls her hair around her finger and shifts her weight around.
 
 Somehow, she&#39;s found a way to make getting blackmailed fun for you.
 
-&quot;Sure, Ari. It&#39;s a date.&quot; You plant a teasing kiss on her cheek.
-Ariadne takes your hand and [[the two of you shuffle towards the theatre-&gt;theatreDate]].
+&quot;Sure, Ari. It&#39;s a date.&quot; You plant a teasing kiss on her cheek. Ariadne takes your hand and [[the two of you shuffle off towards the theatre.-&gt;theatreDate]]
 ](schemes|</tw-passagedata><tw-passagedata pid="41" name="theatreDate" tags="" position="4100,3600" size="100,100">(save-game:&quot;defaultSave&quot;)
 
 &lt;h2&gt;~~-2000 km: The Aspect of Treachery~~&lt;/h2&gt;
@@ -2349,29 +2355,35 @@ Ari is cut off by the sound of stone crashing into stone, followed briefly after
 
 [[And then the world goes dark -&gt;stygiaTime]]](ohHeck|
 {(click:?charmy)[(replace:?silent)[](replace:?spooky)[](replace:?ohNo)[](show:?charmedAri)](click:?silent)[(replace:?charmy)[](replace:?spooky)[](replace:?ohNo)[](show:?silentTreatment)](click:?spooky)[(replace:?charmy)[](replace:?silent)[](replace:?ohNo)[](show:?spookTime)](click:?ohNo)[(replace:?charmy)[](replace:?silent)[](replace:?spooky)[](show:?ohHeck)]}](usher|
-</tw-passagedata><tw-passagedata pid="42" name="abyssTime" tags="" position="4300,3600" size="100,100">You awaken in a formless void.
+</tw-passagedata><tw-passagedata pid="42" name="abyssTime" tags="" position="4400,3600" size="100,100">You awaken in a formless void.
+
 The ground below you feels... soft... and cold... but you can&#39;t see anything around you.
+
 Your entire body feels //drained//, and your head feels unbelievably heavy.
 
-You fall in and out of consciousness. You hear voices around you, but they all mix together.
-Eventually, you give in and stop straining. You allow yourself to rest, and the world starts to slowly fade back in.
+You fall in and out of consciousness. You hear voices around you, but they all mix together. Eventually, you give in and stop straining. You allow yourself to rest, and the world starts to slowly fade back in.
 
-You&#39;re in the Darkmoon&#39;s Royal Suite. Based on what you can feel, Ari is laying over you, holding you with her face pressed into your shoulder. It&#39;s typically not a good sign if you can recognize your... companion... just by how they inconsolably cry over you... but at least it means Ari has yet to leave you behind. You can hear her now... she&#39;s sobbing. When you open your eyes, you see Demaetria, in the corner. She&#39;s dozed off. How long have you been out?
+You&#39;re in the Darkmoon&#39;s Royal Suite. Based on what you can feel, Ari is laying over you, holding you with her face pressed into your shoulder. It&#39;s typically not a good sign if you can recognize your... companion... just by how they inconsolably cry over you... but at least it means Ari has yet to leave you behind. You can hear her now... she&#39;s sobbing. When you open your eyes, you see Demaetria, in the corner. She&#39;s dozed off. 
+
+How long have you been out?
+
 With your bearings back, you wrap an arm around Ariadne, both to comfort her, and to brace her for when she startles half to death at your awakening. The two of you share this silent embrace for some time. You... missed this... missed Ari&#39;s warmth.
 
-&quot;y&#39;know, if you wanted a nap, you could have at least warned me... or maybe kept your heart beating while you took it...&quot; Ari whispers to you. You don&#39;t mind the closeness.
+&quot;Y&#39;know, if you wanted a nap, you could have at least warned me... or maybe kept your heart beating while you took it...&quot; Ari whispers to you. You don&#39;t mind the closeness.
 
-&quot;I... I typically try to keep my heart beating. I guess I just can&#39;t help myself around you, huh, Ari~?&quot;
+&quot;I... I typically try to keep my heart beating. I guess I just can&#39;t help myself around you, huh, Ari~?&quot; You attempt a sly smile, but your body is wracked with coughs.
 
 &quot;$shortName, if I wasn&#39;t scared a stray wind would come shatter you into pieces, I&#39;d punch you for that... but... uhm... I&#39;m... just... g-glad you&#39;re back... Please don&#39;t do that again, okay?&quot; She starts trembling. You keep her held tight. 
 
 &quot;It&#39;s a promise.&quot; The two of you lose track of time, but Demaetria wakes soon after to interrupt your embrace.
 
 Demaetria kneels at the foot of the bed.
+
 &quot;My liege... I am happy you are safe... Somewhere, a seal has been broken. I was lucky that it knocked out some of my stage equipment, or I might not have responded fast enough to rescue you...&quot;
+
 This is... the most genuinely emotive you&#39;ve ever seen her... 
-&quot;Your highness, I do hope you&#39;re feeling okay. Clearly, The Abyss will require your assistance, soon.&quot;
-You and Ari share an... uncomfortable glance.
+
+&quot;Your highness, I do hope you&#39;re feeling okay. Clearly, The Abyss will require your assistance, soon.&quot; You and Ari share an... uncomfortable glance.
 
 &quot;Uh... Demaetria...? What does this... well, //mean//?&quot; Your head is already throbbing, but it couldn&#39;t hurt to stuff in some more incomprehensible gibberish from Demaetria. After all, when would she ever waste your time?
 
@@ -2387,24 +2399,29 @@ You and Ari share an... uncomfortable glance.
 
 &quot;Very well...&quot; Demaetria stalks towards the door. Her eyes have gone cold. &quot;Just remember... nobody can escape their birthright forever, young prince. See you at your performance tonight...&quot;
 
-Ari&#39;s jaw is entirely slack. You have to restrain her sword hand, an effort that is exacerbated by your rapidly worsening headache. The top of your head burns, but Ari holds you while you suffer. &quot;I... I cannot believe the nerve on that woman... I do wish you&#39;d just let me perform acts of extraordinary violence sometimes, dear...&quot; You tear up a little... Ari just has that effect on you, sometimes. 
+Ari&#39;s jaw is entirely slack. You have to restrain her sword hand, an effort that is exacerbated by your rapidly worsening headache. The top of your head burns, but Ari holds you while you suffer. 
+
+&quot;I... I cannot believe the nerve on that woman... I do wish you&#39;d just let me perform acts of extraordinary violence sometimes, dear...&quot; You tear up a little... Ari just has that effect on you, sometimes.
+
 &quot;Uhm... do you need food or... anything...?&quot; You imagine you look horrific for her to be so worried.
 
 &quot;Uh... actually food would be nice... as long as you&#39;re eating too.&quot; Your &#39;sweet smile&#39; probably looks closer to the realm of &#39;raised corpse&#39;s grin&#39;, but you doubt Ari minds. As your... uh... travelling companion... seeks out some food for your absolutely crashed date, you feel around your head, expecting some sort of knot near the source of the headache. Maybe some debris fell on you... or...?
 
-You find... well... [[something worse-&gt;hornTime]].</tw-passagedata><tw-passagedata pid="43" name="hornTime" tags="" position="4400,3600" size="100,100">At the top of your head rest two, relatively small, but hard, bumps. Whatever //seal// Demaetria was talking about, its somehow started the regrowth of your horns.
+You find... well... [[something worse.-&gt;hornTime]]</tw-passagedata><tw-passagedata pid="43" name="hornTime" tags="" position="4500,3600" size="100,100">At the top of your head rest two, relatively small, but hard, bumps. Whatever //seal// Demaetria was talking about, its somehow started the regrowth of your horns.
 
 If you were in the core, this wouldn&#39;t be an issue. You could just talk to the royal physician, he&#39;d lecture you about getting good rest and avoiding stress to prevent maturation, but inevitably schedule you to have them cut back down. Back then... this wasn&#39;t really an issue, but Duercas is currently thousands of kilometers away... You can&#39;t stop yourself from rubbing at them. They feel foreign, almost infectious, but you&#39;re stuck with them for now.
 
 You hear the doorknob click, and you immediately jump to bury yourself in the royal blankets.
 
-&quot;Hey $shortName-&quot; You can hear Ari cover her mouth. She walks up towards the bedside, gently laying down next to the formless blob of cloth you&#39;ve made your home.
+&quot;Hey $shortName-&quot; Ari cuts herself off with a gasp. She walks up towards the bedside, gently laying down next to the formless blob of cloth you&#39;ve made your home.
+
 &quot;Hey $shortName... sorry... I didn&#39;t mean to wake you, if I did... Demaetria gave me some dumplings, said they&#39;d be better for you than anything they sell in the courtyard... I hope you&#39;re feeling better...&quot; Ari places an arm loosely around your blob.
+
 &quot;If you need me to go talk to Demaetria... if you don&#39;t think you&#39;ll be ready by tonight... just tell me and I can go let her know... no violence, I promise.&quot; Ari is cradling the blob. You finally break out of it and spread the blanket to her.
 
-&quot;I&#39;m... uh... I&#39;ll be okay for tonight, I think... just a long day...&quot; You put your arm around Ari. She pulls you into her embrace.
+&quot;I&#39;m... uh... I&#39;ll be okay for tonight, I think... just a long day...&quot; You put your arm around Ari, and she pulls you into an embrace.
 
-&quot;Yeah... yeah it&#39;s been a day... Also if... breaking seals... are contagious, you&#39;d better not be giving them to me.&quot; The two of you laugh together for a while. You feel... at peace. Whatever comes next, you feel like you can find a way through. You almost wish your performance //were// delayed, just so you could stay like this... but that gives you a more pressing question.
+&quot;Yeah... yeah I feel that too. Also if... breaking seals... are contagious, you&#39;d better not be giving them to me.&quot; The two of you laugh together for a while. You feel... at peace. Whatever comes next, you feel like you can find a way through. You almost wish your performance //were// delayed, just so you could stay like this... but that gives you a more pressing question.
 
 &quot;Uh... Ari...? What happened to the theatre...?&quot; 
 
@@ -2412,60 +2429,87 @@ You hear the doorknob click, and you immediately jump to bury yourself in the ro
 
 [&quot;It&#39;s okay, Ari. I&#39;m safe now.&quot;]&lt;jeck|(click:?jeck)[== You place a little kiss on your savior&#39;s cheek, and she returns it on your forehead. 
 
-&quot;You know, I&#39;m glad we&#39;re still doing the show. I think it&#39;ll be a fun little diversion from all this stress. Oh, you&#39;ll also be delighted to know that Demaetria gave me the lines for our roles, so we can practice~, if you feel up to it.&quot; Ariadne hands you a few loose sheets of paper. It&#39;s about as bad as you expected. Demaetria gave you a stupidly easy play, just so you coudn&#39;t possibly mess it up. You even performed the exact same play in your acting classes as a kid. You don&#39;t exactly //want// Demaetria to have more faith in you, what with the blackmail, but it does hurt your pride.
+&quot;You know, I&#39;m glad we&#39;re still doing the show. I think it&#39;ll be a fun little diversion from all this stress. Oh, you&#39;ll also be delighted to know that Demaetria gave me the lines for our roles, so we can practice~, if you feel up to it.&quot; Ariadne hands you a few loose sheets of paper. 
+
+It&#39;s about as bad as you expected. Demaetria gave you a stupidly easy play, just so you coudn&#39;t possibly mess it up. You even performed the exact same play in your acting classes as a kid. You don&#39;t exactly //want// Demaetria to have more faith in you, what with the blackmail, but it does hurt your pride.
 
 &quot;Oooh, you&#39;re to be my valiant knight. What a change of pace~&quot; Ari grins at you, and you try to smile back, despite your dissapointment. You&#39;ve been in this play several times, everyone always seems to cast you as the knight.
 
-The two of you attempt some staged readings of your lines. Mainly //you// do, Ari doesn&#39;t get many lines as the princess. It&#39;s not long before you have to take a break. You tell Ariadne that your head is acting up, and it certainly is, just... not because of your sickness. Ari holds you while you rest, going over your script so she can wrap her head around the plot. You wouldn&#39;t admit it to her, but the way Ari has progressed from playing with //her// hair when nervous to playing with //yours// makes you feel... warm... or... at home... or something... Even if you&#39;d like to admit it, you&#39;re not totally sure how you&#39;d describe the feeling. All you know is that you don&#39;t want it to stop. 
+The two of you attempt some staged readings of your lines. Mainly //you// do, as Ari doesn&#39;t get many lines as the princess. It&#39;s not long before you have to take a break. You tell Ariadne that your head is acting up, and it certainly is, just... not because of your sickness. Ari holds you while you rest, going over your script so she can wrap her head around the plot. 
+
+You wouldn&#39;t admit it to her, but the way Ari has progressed from playing with //her// hair when nervous to playing with //yours// makes you feel... warm... or... at home... or something... Even if you&#39;d like to admit it, you&#39;re not totally sure how you&#39;d describe the feeling. All you know is that you don&#39;t want it to stop. 
+
 You&#39;re not sure why reading through your lines would have Ari like this. Maybe she&#39;s nervous for you to kiss her hand in front of so many people, that&#39;s probably a much bigger deal to humans. You don&#39;t mind, though, and the two of you stay like this for some time, Ari reading intently, and you cuddling up to keep her comfortable.
-[[After some time, you fall asleep on Ari&#39;s shoulder-&gt;thePlay]].</tw-passagedata><tw-passagedata pid="44" name="thePlay" tags="" position="4500,3600" size="100,100">You awaken, still wrapped in Ariadne&#39;s arms. Both of your scripts are lain out in front of you. Ari gives you a peck on the cheek.
-&quot;Well good morning, oh Princess $shortName. I do hope you have received some rest on this fine morn.&quot; Ari&#39;s mocking butler voice shouldn&#39;t be as funny as it is, but it always makes you laugh somehow.
+
+[[After some time, you fall asleep on Ari&#39;s shoulder-&gt;thePlay]].</tw-passagedata><tw-passagedata pid="44" name="thePlay" tags="" position="4600,3600" size="100,100">You awaken, still wrapped in Ariadne&#39;s arms. Both of your scripts are lain out in front of you. Ari gives you a peck on the cheek.
+
+&quot;Well good morning, oh Princess $shortName. I do hope you have received some rest on this fine morn.&quot; Ari&#39;s mocking servant voice shouldn&#39;t be as funny as it is, but it always makes you laugh somehow.
+
 &quot;Oh... also Demaetria said we need to get backstage soon. Just so you know.&quot;
 
-Ari is already prepared, but you spend a short while looking over yourself. It&#39;s not easy to style your hair in a way that hides your horns but still looks nice. You could easily get one of the backstage professionals to help, but you&#39;d rather keep the crew away from your two new problems.
-As you preen, you catch glimpses of Ari, lying on the bed and shamelessly marvelling at you. You blow a kiss her way, and she nearly collapses.
+Ari is already prepared, but you spend a short while looking over yourself. It&#39;s not easy to style your hair in a way that hides your horns but still looks nice. You could easily get one of the backstage professionals to help, but you&#39;d rather keep the crew away from your new twin headaches. As you preen, you catch glimpses of Ari, lying on the bed and shamelessly marvelling at you. You blow a kiss her way, and she nearly collapses.
 
 Now, more presentable, the two of you finally head backstage. There, dozens of staff members flock to Ariadne&#39;s side, primping their princess to be flawless for the stage. Rather than staff, you simply have Demaetria, waiting for you.
-&quot;Princess $Name, you&#39;ve finally arrived. I&#39;m glad.&quot; She seems a lot less showey now, and her eyes look sunken. You&#39;ve never Demaetria like this. &quot;I&#39;ve prepared your armor. I never got time to find out your... ahem... proportions, so I&#39;ve set you up with heavy plate. It&#39;ll be a little loose, but you should be able to adjust it as needed. It&#39;s not like you&#39;re in any actual danger.&quot; She clearly tries to laugh, but it breaks into hacking coughs.
 
-&quot;Um... Demaetria...? Are you... doing okay?&quot; You&#39;d feel rude if you didn&#39;t at least ask.
+&quot;Princess $Name, you&#39;ve finally arrived. I&#39;m glad.&quot; She seems a lot less showey now, and her eyes look sunken. You&#39;ve never Demaetria like this. 
 
-&quot;Child... I will be fine. I simply need rest, since... well... ahem... don&#39;t concern yourself with me. Try to enjoy the show.&quot; Demaetria gives a weak snap and collapses into shadows. You&#39;re a little offput, but you doubt she&#39;d ever lead you astray. She probably //is// just tired. Your mind is more busy thinking about the play anyway. A stagehand wheels in your armor and it looks... shiny? Nice? You don&#39;t really know what you&#39;d want in armor. It&#39;s never been your style. You catch a glimpse of Ari beneath her cloud of attendants. She looks... distressed.
+&quot;I&#39;ve prepared your armor. I never got time to find out your... ahem... proportions, so I&#39;ve set you up with heavy plate. It&#39;ll be a little loose, but you should be able to adjust it as needed. It&#39;s not like you&#39;re in any actual danger.&quot; She clearly tries to laugh, but it breaks into hacking coughs.
 
-&quot;Hey... can you people leave her alone? She looks fine...&quot; You doubt the stagehands will even listen to you, but they all bow and head off. Sometimes royalty just has its perks.
-&quot;You look absolutely lost, Ariadne...&quot; She&#39;s looking in horror at the mirror, touching parts of her face and watching the makeup cake off. It was probably made someone with a far more ashen complexion. It looks like warpaint on her. Next to her, you see that a stagehand brought her outfit, a shimmering, floor-length black dress, complete with a tiara likely designed from a storybook, and a tall pair of heels, likely to bring Ari nearer to your height. It&#39;s cheesy, but you still think it&#39;s cute.
+&quot;Uh... Demaetria...? Are you... doing okay?&quot; You&#39;d feel rude if you didn&#39;t //at least// ask.
 
-&quot;I just... how do you ever deal with this, $shortName...? This is horrific.&quot; She&#39;s started removing all her assistants&#39; work.
+&quot;Child... I will be fine. I simply need rest, since... well... ahem... don&#39;t concern yourself with me. Try to enjoy the show.&quot; Demaetria gives a weak snap and collapses into shadows. You&#39;re a little offput, but you doubt she&#39;d ever lead you //too// astray. She&#39;s probably just tired. Your mind is more busy thinking about the play anyway. A stagehand wheels in your armor and it looks... shiny? Nice? You don&#39;t really know what you&#39;d want in armor. It&#39;s never been your style. You catch a glimpse of Ari beneath her cloud of attendants, and she looks... distressed.
 
-&quot;Oh I... uh... usually don&#39;t... They don&#39;t make much stuff in my... well... shade. I... I&#39;ve come to terms with it...&quot; Ari, slowly returning to her normal self, approaches you, taking your face in her hand.
+&quot;Hey... can you people leave her alone? She looks fine...&quot; You doubt the stagehands will even listen to you, but they all bow and head off. Sometimes royalty has its perks.
+
+&quot;You look absolutely lost, Ariadne...&quot; She&#39;s looking in horror at the mirror, touching parts of her face and watching the makeup cake off. It was clearly made someone with a far more Abyssal complexion, so it looks like ashy warpaint on her. Beside you, a stagehand wheels in Ari&#39;s outfit, a shimmering, floor-length black dress, complete with a tiara pulled straight from some storybook, and a tall pair of heels, likely to bring Ari nearer to your height. It&#39;s cheesy, but it&#39;s still cute.
+
+&quot;I just... how do you ever deal with this, $shortName...? This is horrific.&quot; She&#39;s started removing all of her assistants&#39; work.
+
+&quot;Oh I... uh... usually don&#39;t... They don&#39;t make much stuff in my... well... shade. I... I&#39;ve gotten used to it.&quot; Ari, slowly returning to her normal self, approaches you, taking your face in her hand.
 
 &quot;Well... who needs it? I think you look //just// fine without it.&quot; She hovers over you for a bit, but leaves you with only a wink.
-You slump, somewhat. Holding your face in your hands, you close your eyes and try to emotionally prepare yourself. The general racket behind you fades out and you focus on your breathing. You&#39;ve gone through plenty of this before. Just an hour or so of suffering, and it&#39;s over. You never even have to come back to the theatre.
 
-You&#39;re roused by Ariadne&#39;s voice.
-&quot;Oh, and $shortName...? Be careful not to trip, dear~~&quot;
+You slump over your vanity. Holding your face in your hands, you close your eyes and try to prepare yourself emotionally. The general racket behind you fades out, and you focus on your breathing. You&#39;ve gone through plenty of this before. Just an hour or so of suffering, and it&#39;s over. You never even have to come back to the theatre.
 
-And before you even fully see what&#39;s happened, the curtains rise, and [[Ari walks onstage in your armor-&gt;thePlayBegins]].</tw-passagedata><tw-passagedata pid="45" name="thePlayBegins" tags="" position="4600,3600" size="100,100">You&#39;ve read over the script Ariadne left you dozens of times. As a princess in a story written by people your dad&#39;s age, you only really come in near the end, when the knight needs a prize for his hard work.
-You&#39;ve never been more thankful to have your royal clout, Ari&#39;s stagehands are an absolute treasure for you, teaching you where to enter, when to say your lines, and updating you on how Ari is doing. They say she&#39;s doing an amazing job, nailing all of her lines with a powerful stage presence. You only wish you could be in the crowd to watch her. 
+You&#39;re roused by Ariadne&#39;s voice. 
+
+&quot;Oh, and $shortName...? Be careful not to trip, dear~&quot;
+
+And, before you even notice it happening, the curtains rise, and [[Ariadne walks onstage in your armor.-&gt;thePlayBegins]]</tw-passagedata><tw-passagedata pid="45" name="thePlayBegins" tags="" position="4700,3600" size="100,100">You&#39;ve read over the script Ariadne left you dozens of times. As a princess in a story written by people your dad&#39;s age, you only really come in near the end, when the knight needs a prize for his hard work.
+
+You&#39;ve never been more thankful to have your royal clout. Ari&#39;s stagehands are an absolute treasure for you, teaching you where to enter, when to say your lines, and updating you on how Ari is doing. They tell you that she&#39;s doing an amazing job, giving all sorts of praise for her delivery and stage presence. You only wish you could be in the crowd to watch her. 
 
 Two acts full of worrying and fretting later, you finally get in position. You take a deep breath as a small section of curtain [slides up.]&lt;curtainCall|(click:?curtainCall)[==
 
-You step out to finally meet the packed crowd. There are nearly no empty seats. You don&#39;t know why so many people would show up to such a boring play, but your thoughts are cut off by the crowd cheering... Most likely out of obligation. From your cardboard tower, your eye catches another at the back of the theatre. Demaetria is watching you. You give her a small smile and turn back to the stage. Your script commands you very directly to, &quot;Stand in place and look lovely&quot;, so you have plenty of time to watch Ariadne at work.
+You step out to finally meet the packed crowd. There are nearly no empty seats. You don&#39;t know why so many people would show up to such a boring play, but your thoughts are cut off by the crowd cheering... Most likely out of obligation. 
 
-Ari seems much more at home with a sword in hand. As she explains her clever ruse to the nefarious human horde (All played by fiends, obviously) your mind begins to wander. 
+From your wooden tower, your eye catches another at the back of the theatre. Demaetria is watching you. You give her a small smile and turn back to the stage. Your script commands you very directly to, &quot;Stand in place and look lovely&quot;, so you have plenty of time to watch Ariadne at work.
+
+Ari seems much more at home with a sword in hand. As she explains her clever ruse to the nefarious human horde (all played by fiends, obviously) your mind begins to wander.
+
 You worry what the crowd might be thinking. Ariadne looks majestic, but you feel like your costume //just// doesn&#39;t fit right. 
+
 As she woos your character with a soliloquoy you&#39;ve told many times yourself, you imagine that, somewhere in the crowd, there&#39;s a confused child, loudly asking his mother, &quot;Mummy, why is the princess being played by a man in a dress?&quot; 
-[You slowly descend a ramp from your starting position.]&lt;ramp|(click:?ramp)[== You assume that this child&#39;s mother would chide back, &quot;Now now, Acheron! We aren&#39;t allowed to criticize this due to &#39;Political Correctness.&quot; 
+
+[You slowly descend a ramp from your starting position.]&lt;ramp|(click:?ramp)[== You assume that this child&#39;s mother would chide back, &quot;Now now, Acheron! We aren&#39;t allowed to criticize this due to &#39;Political Correctness.&quot;
+
 [You extend your hand]&lt;hand|(click:?hand)[==, that Ari might kiss it and finally end this misery. You question how people might speak of this embarrassment back at the capitol, and you wonder if they&#39;ll go with &#39;Gangly Beast&#39; or &#39;Disgusting Perversion&#39; more often in their tales.
-Ariadne removes her helmet, and your breathing is now troubled both by your nerves and her beauty. You wonder if Demaetria will have to label the play a comedy afterwards, once everyone finally externalizes their laughter.
-Ari takes your hand in hers, and, before you can realize what she&#39;s doing, her mouth is on yours. She pulls away, turned to the crowd to bow, still holding onto you. You give a weak curtsy and the crowd... goes absolutely wild, clapping and cheering. The stage is littered with flowers, strangely including an Apollonian Daisy. As you ponder the type of person to spend so much on a thrown flower, Ari takes it from the stage, pinning it behind your ear with a kiss on your cheek.
+
+Ariadne removes her helmet, and your breathing is now troubled both by your nerves and her beauty. You wonder if Demaetria will have to label the play a comedy afterwards, once everyone finally externalizes the laughter they&#39;ve kept inside this entire time.
+
+Ari takes your hand in hers, and, before you can react, her lips are on yours. She pulls away, turning to the crowd to bow, keeping her hand around your own. 
+
+You give a weak curtsy and the crowd... goes absolutely wild, clapping and cheering. The stage is littered with flowers, strangely including an Apollonian Daisy. While you&#39;re still in shock, both from the crowd&#39;s reaction and the idea of throwing such an expensive flower to a performer, Ari takes it from the stage, pinning it behind your ear with a kiss on your cheek.
+
 You have to speed your retreat backstage to avoid publicly weeping.
-[[Even once you&#39;ve returned to sit at your vanity in disbelief, the crowd keeps cheering. -&gt;itsSoFuckingGay]]</tw-passagedata><tw-passagedata pid="46" name="itsSoFuckingGay" tags="" position="4700,3600" size="100,100">After Ariadne returns to her vanity, the two of you sit in silence for some time. Your eyes keep darting to the mirror. You... like the tiara and daisy look. You feel uncharacteristically pretty. 
-You decide to finally break the silence.
+
+[[Even once you&#39;ve returned to sit at your vanity in disbelief, the applause continues. -&gt;itsSoFuckingGay]]</tw-passagedata><tw-passagedata pid="46" name="itsSoFuckingGay" tags="" position="4800,3600" size="100,100">After Ariadne returns to her vanity, the two of you sit in silence for some time. Your eyes keep darting to the mirror. You... like the tiara and daisy look. You feel uncharacteristically pretty, even if you wouldn&#39;t wear it in public. You decide to finally break the silence.
 
 &quot;So Ari-&quot; Ariadne cuts you off, jumping in your direction before prostrating herself.
 
 &quot;OhMyGod(print:$Name)IAmSoSorryIShouldHaveSaidSomethingYouCanExecuteMeHereTakeMySwor-&quot; You lift Ari&#39;s face with your thumb so you can look into her eyes.
+
+
 You silence Ariadne by occupying her mouth with ~other tasks~.
 
 
@@ -2474,55 +2518,66 @@ You silence Ariadne by occupying her mouth with ~other tasks~.
 
 You take your time with this one. You were a bit upset at how brief Ari had to be before.
 
+
 ...
 
+
 You pull away, and Ariadne collapses to the floor in a haze.
-&quot;So... I believe that we&#39;re even now, A~ri~ad~ne~.&quot;
-You swear that Ari&#39;s is blushing //through// her hands.
+
+&quot;So... I believe that we&#39;re even now, A~ri~ad~ne~.&quot; Ari&#39;s blush seems to go straight through her hands.
 
 Demaetria shoots you a look from the back of the room, [but you only smile at her]&lt;haGetFucked|.(click:?haGetFucked)[==
+
+
 
 Once Ari finally recovers, the two of you stop by the royal accomodations to get some rest. Demaetria never comes by to see you, but you&#39;ve seemingly fulfilled your obligation, even if it set you back a day. Ariadne looks troubled as she lays waiting. You drop down beside her.
 
 &quot;Long day, huh, Ari?&quot; You place a supportive hand on her back, and she gives you a pained look before pulling you into an embrace.
 
-&quot;I&#39;m... uhm... I&#39;m sorry, $shortName... I shouldn&#39;t have dropped all that on you without warning...&quot; She sounds seriously choked up.
+&quot;I&#39;m... uhm... I&#39;m sorry, $shortName... I shouldn&#39;t have dropped all of that on you without warning...&quot; She sounds seriously choked up.
 
-&quot;Ari... It&#39;s okay. Your little stunt was... brave... or at least incredible...&quot; She pulls back to look into your eyes.
+&quot;Ari... It&#39;s okay. Your little stunt was... brave...&quot; She pulls back to look into your eyes.
 
-&quot;I... no... no, it wasn&#39;t okay of me, $Name... We... we shouldn&#39;t keep secrets from eachother, if we&#39;re going to be... uhm... y&#39;know...&quot;
+&quot;I... no... no, it wasn&#39;t okay of me, $Name... We... we shouldn&#39;t keep stuff like this secret from each other, if we&#39;re going to be... uhm... y&#39;know...&quot;
 
 ...
 
-&quot;B-besides...! Wouldn&#39;t it have been even more fun to go on this little caper together? Surprises are fun... but... if you had been uncomfortable with it, that would have been awful of me...! Trust is important in... uhm... you know...&quot; She struggles to meet your gaze.
+&quot;B-besides...! Wouldn&#39;t it have been even more fun to go on this little caper together? Surprises are fun... but... if you had been uncomfortable with it, that would have been awful of me...! Trust is important in... uhm... you know...&quot; Ari&#39;s gaze falls.
 
-&quot;Uh... y-yeah... I guess you&#39;re right. But... I&#39;m glad you did at least have your little caper alone... it was... uh... fun.&quot; You&#39;ve started blushing enough for Ari to go on the offensive.
+&quot;Uh... y-yeah... I guess you&#39;re right. But... even still... I&#39;m glad you did it... I... uhm... I had fun.&quot; You&#39;ve started blushing enough for Ari to go on the offensive.
 
-&quot;Well I&#39;m glad you enjoyed it, oh Princess $Name... and I&#39;m glad you didn&#39;t catch on to my secret scheme, that I just really wanted to see you in heels.&quot; You laugh into Ari&#39;s shoulder. She takes the daisy from behind your ear and places it next to her own.
-Ariadne pulls you back and presses her lips to yours, briefly.
+&quot;Well, I&#39;m glad you enjoyed it, oh Princess $Name... and I&#39;m glad you didn&#39;t catch on to my //other// secret scheme. I just really wanted to see you in heels.&quot; You laugh into Ari&#39;s shoulder. She takes the daisy from behind your ear and places it with her own on your bedside table. Ariadne pulls you back and presses her lips to yours, briefly.
+
 &quot;Now let&#39;s get some rest, dear. I&#39;m not the expert, but I ~doubt~ your dad and brother will let us win just on account of your cuteness and my dashing charm.&quot;
 
-&quot;Uh... y-yeah... goodnight...&quot;
+&quot;Uh... y-yeah... goodnight...&quot; Ariadne has already slipped into unconsciousness.
 
-Ariadne has already slipped into unconsciousness.
+
+...
+
 
 ...
 
-...
 
 You, on the other hand, can&#39;t seem to find peace.
 
-...
 
 ...
 
-You just hold Ari and lie with her, your eyes barely even closing.
 
 ...
 
+
+You just hold Ari and lie with her, your eyes barely ever closing.
+
+
 ...
 
-[[There&#39;s just too much running through your head. You sneak out to the courtyard for fresh air -&gt;anOffer]]</tw-passagedata><tw-passagedata pid="47" name="anOffer" tags="" position="4800,3600" size="100,100">In the chill, quiet air of the courtyard, you feel like you can finally breathe. You feel... guilty.
+
+...
+
+
+[[There&#39;s just too much running through your head. You lay Ariadne down, and you sneak out to the courtyard for some fresh air. -&gt;anOffer]]</tw-passagedata><tw-passagedata pid="47" name="anOffer" tags="" position="4900,3600" size="100,100">In the chill, quiet air of the courtyard, you feel like you can finally breathe. You feel... guilty.
 
 You settle into a corner far from the main theatre and sit for some time, resting your head on your knees.
 
@@ -2532,7 +2587,7 @@ You settle into a corner far from the main theatre and sit for some time, restin
 
 ...
 
-[You need to be honest with eachother.]&lt;b|(click:?b)[==
+[You need to be honest with each other.]&lt;b|(click:?b)[==
 
 ...
 
@@ -2572,10 +2627,11 @@ You settle into a corner far from the main theatre and sit for some time, restin
 
 ...
 
-[A voice cuts the silence around you.
-&quot;My liege... are you unwell?&quot;]&lt;g|(click:?g)[==
+[A voice cuts the silence around you.]&lt;g|(click:?g)[==
 
-You look up to Demaetri. She hangs her head.
+&quot;My liege... are you unwell?&quot;
+
+You look up to Demaetria. She hangs her head.
 
 &quot;I... I am sorry, my liege... but... might I sit with you?&quot;
 
@@ -2585,7 +2641,7 @@ You look up to Demaetri. She hangs her head.
 
 ...
 
-&quot;My liege... you simply must return to the core... I can&#39;t claim to understand... //whatever// it is you&#39;ve become... but... The Abyss needs a new king...&quot;
+&quot;My liege... you simply &#39;&#39;must&#39;&#39; return to the core... I can&#39;t claim to understand... //whatever// it is you&#39;ve become... but... The Abyss needs a new king...&quot;
 
 ...
 
@@ -2601,7 +2657,7 @@ You look up to Demaetri. She hangs her head.
 
 ...
 
-&quot;The throne needs you, young prince... just based off of what I can see, soon you&#39;ll need it too... Soon enough, those things will be out of your control... your father could guide you...&quot;
+&quot;The throne needs you, young prince... just from what I can see, soon you&#39;ll need it, too... Soon enough, you&#39;ll lose control... You can&#39;t handle this alone, but your father could guide you...&quot;
 
 ...
 
@@ -2613,13 +2669,13 @@ You look up to Demaetri. She hangs her head.
 
 ...
 
-&quot;Please... my liege... whatever this is, it will never last... your father will accept you back if you go soon, he can tutor you to be a wise and great king... We all ne-&quot; 
+&quot;Please... (text-style: &quot;upside-down&quot;)+(text-style: &quot;mirror&quot;)+(text-style: &quot;rumble&quot;)+(text-style: &quot;blurrier&quot;)[&#96;&lt;&#96;m▀╪╖ò&#96;&gt;&#96;]... whatever this is, it will &#39;&#39;never&#39;&#39; last... Your father will accept you back if you return soon, he can tutor you to be a wise and great king... We all ne-&quot; 
 
-[[Demaetria places a hand on your shoulder, and your vision goes dark. -&gt;weDecline]]</tw-passagedata><tw-passagedata pid="48" name="weDecline" tags="" position="4900,3600" size="100,100">You wake up in the royal accomodations. Ariadne has placed your head in her lap, and she is playing with your hair.
+[[Demaetria places a hand on your shoulder, and your vision goes dark. -&gt;weDecline]]</tw-passagedata><tw-passagedata pid="48" name="weDecline" tags="" position="5000,3600" size="100,100">You wake up in the royal accomodations. Ariadne has placed your head in her lap, and she is playing with your hair.
 
 &quot;Tsk tsk, do they always let you sleep late in the core, $shortName-(print:$shortName&#39;s last)~?&quot;
 
-You&#39;re... not sure how you got here... maybe all of //that// was a bad dream...? Either way, at least you&#39;re comfortable here. You reach up to touch Ari&#39;s face... but...
+You&#39;re... not sure how you got here... Weren&#39;t you... somewhere else...? Either way, at least you&#39;re comfortable here. You reach up to touch Ari&#39;s face... but...
 
 &quot;Uhm... $shortName...?!&quot; Ariadne quickly rolls off the bed, dropping your head on the mattress.
 
@@ -2632,8 +2688,8 @@ You&#39;re... not sure how you got here... maybe all of //that// was a bad dream
 Your claws... they&#39;re caked in blood... you... you don&#39;t know what&#39;s happened... You suddenly find it hard to breathe.
 
 &quot;$shortName? What... what happened...? Are you... are you okay?&quot; Ari is trembling. You don&#39;t even know the answer yourself. 
-
-[&quot;...&quot;]&lt;silence| [
+[
+&quot;...&quot;]&lt;silence| [
 &quot;I... I&#39;m not sure where this came from...&quot;]&lt;fear|[
 &quot;Ari... please tell me you&#39;re not hurt...&quot;]&lt;concern|
 {(click:?silence)[(replace:?fear)[](replace:?concern)[](show:?silent)]
@@ -2665,13 +2721,14 @@ Ari wraps her arms around you, burying her face in your neck.
 
 You just hold onto her. You are too. (show:?itsADeparture)](afraid| [
 &quot;I... oh... oh $shortName, sweetheart... I&#39;m okay...&quot; Ari quickly checks over everywhere she had exposed. No marks of any kind.
+
 &quot;Don&#39;t worry about me, dear. You didn&#39;t hurt me.&quot; She gives you a soft smile. You struggle to return it. You&#39;re far more afraid of the alternative to an accidental scratching. (show:?itsADeparture)](concerned|[
 
-The two of you complete the rest of your departure silently. Ari dons her armor, you hold her hand when you take your medicine, all the while you can&#39;t stop thinking about that blood, or about last night, or about what Demaetria told you. Your thoughts race, as you step out into the darkness.
+The two of you complete the rest of your departure silently. Ari dons her armor, you hold her hand when you take your medicine, all the while you can&#39;t stop thinking about that blood, or about last night, or about what Demaetria told you. There&#39;s a dark patch in your memory. Your thoughts race as you step out into the darkness.
 
 Once you&#39;ve finally returned to the split road where this all began, you look back. Watching over you is Demaetria. Her right eye is shut, and the right side of her face, from her forehead to her chin, is covered in dark, red scars.
 
-[[You don&#39;t stick around for long. -&gt;theWoods]]](itsADeparture|</tw-passagedata><tw-passagedata pid="49" name="theWoods" tags="" position="4900,3900" size="100,100">
+[[You don&#39;t stick around. -&gt;theWoods]]](itsADeparture|</tw-passagedata><tw-passagedata pid="49" name="theWoods" tags="" position="5000,3900" size="100,100">
 &lt;h2&gt;-2500 km: The Aspect of Treachery&lt;/h2&gt;
 
 The road along the Royal Conservatory is quiet.
@@ -2789,7 +2846,7 @@ Maybe... maybe she&#39;s right...
 
 
 
-[[You curl up on the ground... -&gt;itsAllOver]]</tw-passagedata><tw-passagedata pid="50" name="itsAllOver" tags="" position="4800,3900" size="100,100">You... really found a way to ruin things, didn&#39;t you...
+[[You curl up on the ground... -&gt;itsAllOver]]</tw-passagedata><tw-passagedata pid="50" name="itsAllOver" tags="" position="4900,3900" size="100,100">You... really found a way to ruin things, didn&#39;t you...
 
 You lie in the darkness... It&#39;s... all you have, now...
 
@@ -2972,7 +3029,7 @@ She... isn&#39;t lying.
 &quot;Sorry, Demaetria...&quot; 
 You take a deep breath.
 
-[[&quot;But I&#39;m not going back.&quot; -&gt;pickingUpThePieces]]</tw-passagedata><tw-passagedata pid="51" name="pickingUpThePieces" tags="" position="4700,3900" size="100,100">The trails of the conservatory feel... colder, now that you&#39;re walking them alone. You can feel other travelers&#39; eyes on you.
+[[&quot;But I&#39;m not going back.&quot; -&gt;pickingUpThePieces]]</tw-passagedata><tw-passagedata pid="51" name="pickingUpThePieces" tags="" position="4800,3900" size="100,100">The trails of the conservatory feel... colder, now that you&#39;re walking them alone. You can feel other travelers&#39; eyes on you.
 
 You&#39;ve wasted so much time already, there&#39;s no telling where she&#39;s gone.
 
@@ -3220,7 +3277,7 @@ Content Warnings for:
  
 With that out of the way, I&#39;ll consign myself back to narrating thoughts! Whether you continue or not, I wish you only the best.
 
-[Hope you enjoy! Stay hydrated!]&lt;startTime|(click:?startTime)[(set: $trigFlag to 1)(go-to:&quot;beginningNaming&quot;)]</tw-passagedata><tw-passagedata pid="53" name="thePathOfStrife" tags="" position="4500,3800" size="100,100">With a deep breath, you step into the grotto.
+[Hope you enjoy! Stay hydrated!]&lt;startTime|(click:?startTime)[(set: $trigFlag to 1)(go-to:&quot;beginningNaming&quot;)]</tw-passagedata><tw-passagedata pid="53" name="thePathOfStrife" tags="" position="4500,3900" size="100,100">With a deep breath, you step into the grotto.
 Inside, you find a large clearing, lit from above by luminescent vines.
 On a wide stone in its center... you see her... rolling her Apollonian daisy under her fingers...
 
@@ -3637,7 +3694,7 @@ You shoot Ari a smug smile. She punches you on the shoulder.
 
 &quot;Just because I stopped trying to fight you doesn&#39;t mean I&#39;ve forgiven you, y&#39;know...? Just that... I guess... I&#39;ll try to listen.&quot; Ari&#39;s eyes are swollen from crying, but she&#39;s smiling.
 
-[[&quot;Right... right... well... I&#39;ll tell you everything I remember... from the beginning&quot; -&gt;theTale]]](tearsInRain|</tw-passagedata><tw-passagedata pid="54" name="thePathOfPain" tags="" position="4600,3800" size="100,100">Ari is... a bit bullheaded sometimes.
+[[&quot;Right... right... well... I&#39;ll tell you everything I remember... from the beginning&quot; -&gt;theTale]]](tearsInRain|</tw-passagedata><tw-passagedata pid="54" name="thePathOfPain" tags="" position="4700,3800" size="100,100">Ari is... a bit bullheaded sometimes.
 You don&#39;t want her self-destructive tendencies to get the better of her, and so, you walk directly into the most suspicious passage you&#39;ve ever seen.
 
 Inside the leftmost passage, it quickly gets too dark for even you to see. You struggle to keep your footing amongst the space-devouring roots, but you have to carry on. 
@@ -3759,7 +3816,7 @@ The man begins to tremble, staring into your eyes.
 
 He drops Ariadne on the ground. You leap onto him. When you stand back up, he is barely recognizable as a once-living being.
 
-You look to Ariadne... she isn&#39;t moving... you drop to your knees. You place a single, bloody hand upon her cheek. Your claws wrap around her face. Your breathing falters. The pall over your vision fades, and you (link-goto: &quot;collapse to the ground&quot;, &quot;boxOfCorpses&quot;)](enraged|</tw-passagedata><tw-passagedata pid="55" name="thePathWellTrodden" tags="" position="4600,3900" size="100,100">You step out into the well-trodden gravel pathway. You follow it for some time, before you hear the sounds of struggle in the distance. You move towards the source of the sound.
+You look to Ariadne... she isn&#39;t moving... you drop to your knees. You place a single, bloody hand upon her cheek. Your claws wrap around her face. Your breathing falters. The pall over your vision fades, and you (link-goto: &quot;collapse to the ground&quot;, &quot;boxOfCorpses&quot;)](enraged|</tw-passagedata><tw-passagedata pid="55" name="thePathWellTrodden" tags="" position="4700,3900" size="100,100">You step out into the well-trodden gravel pathway. You follow it for some time, before you hear the sounds of struggle in the distance. You move towards the source of the sound.
 
 From a small hole in the path&#39;s wooded edges, you hear a familiar voice calling out.
 
@@ -3819,7 +3876,7 @@ As you slip from consciousness, you hear them laughing over you.
 &quot;Oh dear, what a shame... to be a princess who no knight would care to save... Goodnight, $Name...&quot;
 
 [[And the world goes dark -&gt;darkWoods]]
-](whoopsie|</tw-passagedata><tw-passagedata pid="56" name="boxOfCorpses" tags="" position="4400,3800" size="100,100">You wake up... warm...
+](whoopsie|</tw-passagedata><tw-passagedata pid="56" name="boxOfCorpses" tags="" position="4500,3800" size="100,100">You wake up... warm...
 Every muscle in your body screams at you to sleep longer, but your eyes follow your mind and rouse from their slumber. You&#39;re propped against a rock, laying on the forest floor.
 You have to readjust to see in the dim light of the conservatory.
 
@@ -3869,7 +3926,7 @@ Ari looks... intrigued. She balances her head on her knees and looks away from y
 &quot;I... sure... start from the very beginning... after that... no promises...&quot;
 
 You give Ari a short smile.
-&quot;Okay... I can accept that... [[Here&#39;s how it all began... -&gt;theTale]]&quot;</tw-passagedata><tw-passagedata pid="57" name="darkWoods" tags="" position="4500,3900" size="100,100">When you wake up, you feel the breeze around you.
+&quot;Okay... I can accept that... [[Here&#39;s how it all began... -&gt;theTale]]&quot;</tw-passagedata><tw-passagedata pid="57" name="darkWoods" tags="" position="4600,3900" size="100,100">When you wake up, you feel the breeze around you.
 You open your eyes and see... Ariadne&#39;s face... She&#39;s looking ahead.
 You slowly get your bearings and realize... you&#39;re being carried.
 
@@ -10003,7 +10060,33 @@ And then...
 
 
 
-[[She fades too.-&gt;abyssTime]]</tw-passagedata><tw-passagedata pid="137" name="footSave" tags="footer" position="3300,2700" size="200,200">(if: (passage:)&#39;s name is not &quot;beginningNaming&quot; and (passage:)&#39;s name is not &quot;disclaimers&quot;)[(save-game:&quot;defaultSave&quot;)]</tw-passagedata></tw-storydata>
+[[She fades too.-&gt;ascentOne]]</tw-passagedata><tw-passagedata pid="137" name="footSave" tags="footer" position="3300,2700" size="200,200">(if: (passage:)&#39;s name is not &quot;beginningNaming&quot; and (passage:)&#39;s name is not &quot;disclaimers&quot;)[(save-game:&quot;defaultSave&quot;)]</tw-passagedata><tw-passagedata pid="138" name="ascentOne" tags="ascent" position="4300,3600" size="100,100">You are in... a forest...?
+
+You feel a tear roll off of your cheek, and you start to feel your own exhaustion.
+
+This isn&#39;t the Royal Conservatory... The same starless sky hangs above, but it feels much more vast.
+
+Your feet carry you of their own accord. You&#39;re not sure where you&#39;re heading, but you&#39;re winded when you collide &#39;&#39;hard&#39;&#39; with another form.
+
+It&#39;s Orion. He looms above you and places a hand on your shoulder.
+
+&quot;Ah, (text-style: &quot;upside-down&quot;)+(text-style: &quot;mirror&quot;)+(text-style: &quot;rumble&quot;)+(text-style: &quot;blurrier&quot;)[&#96;&lt;&#96;=Ö§«D&#96;&gt;&#96;]... My son... I had feared the worst. Come now, we must hurry away from here.&quot; You struggle out of his grip and back into a tree.
+
+&quot;Wait... we were supposed to-&quot; He grabs your neck, cutting you off with a snarl.
+
+&quot;Child... there is no time... You&#39;ve led us straight into a trap.&quot; He throws you to the ground, and, when you run off, he doesn&#39;t try to stop you.
+
+
+
+You run until your lungs catch fire. You&#39;re going &#39;&#39;somewhere&#39;&#39;... it&#39;s so close. Ahead, you see a blurry maelstrom of orange lights. You keep running.
+
+You trip over a root, right at the edge of a massive clearing, and you finally get through the treeline to see...
+
+An army... dozens of humans, all armed with blades and torches.
+
+You&#39;re frozen. You look skyward, and the endless void above seems to fill the entire world.
+
+[[And your entire world fades into nothingness. -&gt;abyssTime]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
