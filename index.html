@@ -1020,7 +1020,7 @@ You have to stop walking when you double over in tears of laughter. Ariadne pout
 
 &quot;OhMyGodMa&#39;amIAmSoSorryPleaseDon&#39;tKillMeIDidn&#39;tMeanThatPleaseDon&#39;tBeMadI-&quot; you cut her off, placing your hand on her head.
 
-&quot;It&#39;s alright... calm down, okay? I know you didn&#39;t mean anything bad by it...&quot; You look down to offer Ariadne a comforting smile, and you meet her gaze. She&#39;s got those stars in her eyes.
+&quot;It&#39;s alright... calm down, okay? I know you didn&#39;t mean anything bad by it...&quot; You look down to offer Ariadne a comforting smile, and you meet her gaze. She&#39;s got stars in her eyes.
 
 Ariadne turns away with her face in her hands.
 
@@ -1033,14 +1033,19 @@ Ariadne turns away with her face in her hands.
 &quot;Uhm... sorry about that, $Name... I guess I wasn&#39;t thinking too much about all the lesser demons who live down there...&quot; she bows her head in your direction.
 
 &quot;Don&#39;t beat yourself up about it... You haven&#39;t even //seen// most of the place yet.&quot; You pat Ariadne on the back to take her out of her bow.
+
 &quot;Now let&#39;s keep going. We have a lot of ground to cover.&quot; (show:?movingOn)](kingCoolRes|[&quot;Yeah... I&#39;m glad you can see it too... I... uhm... I&#39;d always assumed that nobody in The Abyss ever questioned the king... I guess that sounds a little awful, doesn&#39;t it?&quot; Ariadne lets out an awkward laugh and peeks at you from under her hood. Her eyes are sparkling, even in the dim torchlight, and she&#39;s watching you in... awe?... intrigue?... you&#39;re not entirely sure.
 
 &quot;Well... a lot of us don&#39;t...&quot; You focus straight down the path ahead.
+
 &quot;But... we can&#39;t worry about that right now.&quot; (show:?movingOn)](kingBadRes|
 ]
 |movingOn)[&quot;R-right! We need to keep a steady pace. Sorry for the distractions. Let&#39;s get mo-&quot;
 
-Ariadne is cut off by a strange sound underfoot. One you //hoped// she&#39;d recognize, but she&#39;s seemingly never stepped on an obvious trap before. You would have spotted this easily, but you were caught up and didn&#39;t think to check ahead of yourself. Accordingly, you&#39;ve got a couple seconds before all of the walls attempt to turn you two into large piles of meat.(if: $Str &gt; 8 or $Dex &gt; 8)[
+Ariadne is cut off by a mechanical sound underfoot. Your entire body tenses when you realize what&#39;s coming. 
+
+You should have been watching for traps, but you dropped your guard. Now, you&#39;ve got a few seconds before a storm of arrows brings your adventure to an early close.(if: $Str &gt; 8 or $Dex &gt; 8)[
+
 Tackle her to the ground to get below the firing line.]&lt;tackleTheCute|(if: $Con &gt; 11)[
 Protect her with your body.]&lt;bodyBlockTheCute|(if: $Int &gt; 8)[
 Put a ward up to protect you both.]&lt;shieldTheCute|[
@@ -1048,26 +1053,49 @@ Hit the dirt and hope she gets the message.]&lt;diveTheCute|{(click-replace: ?ta
 (click-replace: ?bodyBlocktheCute)[(replace:?tackletheCute)[](replace:?shieldTheCute)[](replace:?diveTheCute)[](show:?bodyBlockHer)]
 (click-replace: ?shieldTheCute)[(replace:?tackletheCute)[](replace:?bodyBlocktheCute)[](replace:?diveTheCute)[](show:?shieldHer)]
 (click-replace: ?diveTheCute)[(replace:?tackletheCute)[](replace:?bodyBlocktheCute)[](replace:?shieldTheCute)[](show:?diveHer)]}
-|tackleHer)[As soon as you recognize what&#39;s happening, you launch yourself into Ariadne, tucking her head into your shoulder as the two of you roll half the way across the room, settling down into a small heap before the arrows begin firing overhead. That was **far** too close. You don&#39;t notice it at the time, but even once you&#39;re safely out of the line of fire, you don&#39;t let go of Ariadne. You hold onto her for dear life.
-Maybe you&#39;re scared an errant arrow would hit her and you want to block it, maybe you&#39;re just scared and someone to cling to. 
-When did you even get so protective of this human? Do you just feel guilty for not warning her? You have no idea, but, in the moment, you can&#39;t make yourself let go of her. You&#39;re terrified of the prospect of her getting hurt. Even more-so than of yourself getting hurt. 
-Even after the arrows stop, you stay with her for a little while. She hasn&#39;t made a peep since she first stepped on the trap.
-The threat finally over, you lay her down, gently, and roll over to catch your breath. You rise to your knees and look over, expecting to see Ariadne stuttering some thanks to you, you instead see her, lying where you left her, her entire body convulsing. (show:?ariCalm)] |bodyBlockHer)[
-You quickly move into position in front of Ariadne, facing her. You begin humming a short sequence of notes as she stares at you, wide-eyed. Specks of light from every torch in the room fall to the ground and crawl towards your feet. You step into the light, and it stretches up your body, wreathing you in radiant light.
-You grab Ariadne, attempting to encircle her with your arms and tail, at least enough to block the arrows that come.
-For several minutes, you stand over her, thanking Father for giving you his height as you surround Ariadne in a blinding aurora, shrugging off arrows with nothing but a dull, throbbing pain.
-When the barrage finally ends, the light around you fades, and you collapse into a heap on the ground. (show: ?ariCare)] |shieldHer)[
+|tackleHer)[As soon as you recognize what&#39;s happening, you launch yourself into Ariadne, tucking her head into your shoulder as the two of you roll half the way across the room, settling down into a small heap before the arrows begin firing overhead. 
+
+That was **far** too close. 
+
+You don&#39;t notice it at the time, but even once you&#39;re safely out of the line of fire, you don&#39;t let go of Ariadne. You cling to her for dear life. Maybe you&#39;re scared an errant arrow would hit her and you want to block it, maybe you&#39;re just scared and need someone close.
+
+When did you even get so protective of this human? 
+
+You have no idea, but, in the moment, you can&#39;t make yourself let go of her. You&#39;re terrified by the prospect of her getting hurt, even more than you fear for your own safety. After the arrows stop, you stay with her for a little while. She hasn&#39;t made a peep since she first stepped on the trap.
+
+The threat finally over, you lay Ariadne down, gently, and roll over to catch your breath. You rise to your knees and look over, expecting to see Ariadne stuttering some thanks to you. 
+
+Instead, she doesn&#39;t move, lying where you left her, her entire body convulsing. (show:?ariCalm)] |bodyBlockHer)[
+You quickly move into position in front of Ariadne, facing her. You begin humming a short sequence of notes as she stares at you, wide-eyed. 
+
+Specks of light from every torch in the room fall to the ground, and the Aether pools them at your feet. You step into the light, and it stretches up your body, wreathing you in a radiant aura.
+
+You grab Ariadne, encircling her with your arms and tail, shielding her just enough to block the arrows&#39; line of fire.
+
+For several minutes, you stand over Ariadne, enveloping her in blinding light, shrugging off arrows with nothing but a dull, throbbing pain. You devote all your focus to steadying your breathing.
+
+
+
+When the barrage finally ends, the light around you fades, and [[you collapse, limp, into Ariadne&#39;s arms.-&gt;starsZero]]] |shieldHer)[
 You leap into action, moving directly in front of Ariadne. You hum a chain of a few notes, and globs of dark rush inwards from all corners of the room, surrounding the two of you in an inky cocoon. You stand perfectly still, focusing all your attention into stabilizing your breathing. All around, you hear the clamor of arrows bouncing off the darkness. You do your best to ignore them, just as you do your best to ignore the wide eyed stare Ariadne is giving you.
 
-After several minutes of teeth-grinding effort, the arrows finally stop. With one errant breath, the shield collapses, as do you. (show:?ariCare)] |diveHer)[
+After several minutes of teeth-grinding effort, the arrows finally stop. With one errant breath, the shield collapses, [[as do you.-&gt;starsZero]]] |diveHer)[
 You jump to the ground in front of Ariadne. She takes a beat and dives down after you, covering her head with her hands.
+
 As soon as she hits the floor, dozens of arrows fly overhead, just barely missing the tops of your heads.
 
 The two of you cower for several minutes. While you doubt the efficacy of Dad wasting so many arrows, you have to admit, you&#39;re still scared to stand back up, even after you&#39;re 100% certain that the arrows have stopped. 
 
 When you finally do stand, Ariadne doesn&#39;t get up with you. You look over and see her, still balled up on the ground, violently convulsing. (show: ?ariCalm)
 ][
-Fearing the worst, you pull back Ariadne&#39;s hood and you find her... crying. She&#39;s safe, just **very** shaken. You&#39;re far more relieved than you&#39;d admit to yourself. You lay down next to her and take her hand in yours, to try and signal your presence without startling her. When you squeeze her hand, she looks up at you, knelt over her, gently patting her back with your off hand.
+
+
+
+Fearing the worst, you pull back Ariadne&#39;s hood and you find her... sobbing. 
+
+She&#39;s safe, just **very** shaken. 
+
+You&#39;re far more relieved than you&#39;d admit to yourself. You lay down next to her and take her hand in yours, to try and signal your presence without startling her. When you squeeze her hand, she looks up at you, knelt over her, gently patting her back with your off hand.
 
 &quot;Shhhh, shhhh, hey... it&#39;s going to be okay, Ariadne...&quot; You don&#39;t exactly know &#39;&#39;how&#39;&#39; to help her, so you just try your best to support her and let her recover on her own.
 
@@ -1081,40 +1109,7 @@ Over the next few minutes, the convulsions die down, and her tears slowly stop c
 
 &quot;Uh... is it something I said..?&quot; When you ask this, Ariadne&#39;s face flushes bright red, and she immediately scrambles up.
 
-&quot;Oh, uh, wow, uhm, look at the time, we really need to keep going to stay on pace, we can&#39;t have... uh... far to go!&quot; You ignore that Ariadne hasn&#39;t appeared to have any timekeeping device yet, and you ignore her scrunching up the front of her hood. You stand up and dust yourself off. She //is// right... [[not much further, and you&#39;ll be out of the dungeon.-&gt;waterDoor]]
-](ariCalm|[
-When you come to, the first thing you see is Ariadne&#39;s face, shaded by the torchlight. You feel a warmth over you. Ariadne is cradling your head in her lap, unknowingly twisting your hair around her fingers. Seeing you wake, her eyes shimmer a little, and a sweet smile paints itself across her face. 
-
-&quot;There are better places to sleep than the ground y&#39;know, $Name...&quot; Her voice is uncharacteristically certain and dripping with the honeyed warmth that she always seems to emanate. You feel so at ease that you don&#39;t even worry about that very strange thought. 
-
-You also notice the source of your warmth. While you were out, it seems Ariadne started a small fire in the center of the room. Sitting on it is some sort of compact pot. As you wonder where she keeps these sorts of things, you notice the weight across your chest. You&#39;re draped in Ariadne&#39;s cloak. 
-
-&quot;You had me real worried, y&#39;know... I&#39;d n-never forgive you if you got hurt trying to protect me. I&#39;m... I&#39;m already putting you through a lot...&quot; The sheen around her eyes has started developing into full tears.
-
-&quot;Playing hero is just gonna get us both killed, y&#39;know... at least let the big, armed knight be the one to sacrifice herself, okay?&quot; She&#39;s still smiling beneath her tears. You instinctively reach out to brush them away.
-
-[&quot;I... can&#39;t let you do that...  I //did// say I&#39;d guide you, didn&#39;t I?&quot;]&lt;godImFuckingCryingTooNowThanks| (click: ?godImFuckingCryingTooNowThanks)[(show:?jesusChristImBawling)]
-
-[&quot;You&#39;re... just impossible, y&#39;know?&quot; Ariadne wipes the last of her tears and laughs to herself.
-
-&quot;Okay then... No dying! We&#39;ll get to the core, at least... No promises after that. Not that we&#39;ll ever get there if we keep running into things like this...&quot; She grumbles to herself.
-
-You can&#39;t help but laugh. She&#39;s got a point. You&#39;ve spent so long in this dungeon. If anything below manages to resist harder, you&#39;ll be at this for months.
-
-&quot;Hey, the way I see it, if we can make it through here, the core will be easy. I&#39;ve never heard of any adventurers even getting this far.&quot; You&#39;re tearing up some too at this point. It&#39;s been a tough day, or... days? You haven&#39;t been able to keep track with all the chaos. Father is probably worried sick.
-
-...
-
-
-...
-
-You laugh at the thought. If he was really that concerned, he&#39;d have the entire dungeon locked down already.
-
-&quot;Hey, uhm, $Name... I, uh, heated up some rations... if you&#39;d like some... or... you can eat normal food right?&quot; Ariadne is being entirely serious, but you can&#39;t stop even more laughter from spilling out. She pouts for a moment, but you thank her anyway, and fill one of her traveling cups with some of the dull, yellow broth she&#39;s heated up for you both.
-
-Rations have nothing on your royal accommodations... but... somehow... you don&#39;t mind.
-
-You&#39;ve got a long road ahead, but you&#39;re happy to take some time to rest before you reach [[the next major threshold. -&gt;waterDoor]]](jesusChristImBawling|](ariCare|]</tw-passagedata><tw-passagedata pid="31" name="waterDoor" tags="" position="4600,3000" size="100,100">After several nights of relative peace and days of slogging through traps of all sorts, your time in the dungeon is nearly through. As you reach the tail end of the Abyssal Dungeon, the danger gets extremely sparse. You rarely, if ever, come this way, since the express travel point lets out so much closer to the surface.
+&quot;Oh, uh, wow, uhm, look at the time, we really need to keep going to stay on pace, we can&#39;t have... uh... far to go!&quot; You ignore that Ariadne hasn&#39;t appeared to have any timekeeping device yet, and you ignore her scrunching up the front of her hood. You stand up and dust yourself off. She //is// right... [[not much further, and you&#39;ll be out of the dungeon.-&gt;waterDoor]]](ariCalm|]</tw-passagedata><tw-passagedata pid="31" name="waterDoor" tags="" position="4700,3000" size="100,100">After several nights of relative peace and days of slogging through traps of all sorts, your time in the dungeon is nearly through. As you reach the tail end of the Abyssal Dungeon, the danger gets extremely sparse. You rarely, if ever, come this way, since the express travel point lets out so much closer to the surface.
 
 &quot;This place looks... a lot older... are we near the end, $Name...?&quot; Ariadne has a good sense for these sorts of things. You probably wouldn&#39;t have guessed that, in her shoes.
 
@@ -1187,7 +1182,7 @@ Her gentle hand lingers on your cheek for a few moments longer than you expect..
 
 [&quot;So... ready, then?&quot; You look to Ariadne. She gives you a short nod and, with that, you heave open the massive gate. It doesn&#39;t give as easily as you expect, but you open it wide enough to squeeze in.
 
-With one last tentative look into the dungeon behind you, the two of you [[take your first steps into chill air of the Abyssal Waterways.-&gt;waterOpen]]](entrance|]</tw-passagedata><tw-passagedata pid="32" name="waterOpen" tags="" position="4600,3300" size="100,100">
+With one last tentative look into the dungeon behind you, the two of you [[take your first steps into chill air of the Abyssal Waterways.-&gt;waterOpen]]](entrance|]</tw-passagedata><tw-passagedata pid="32" name="waterOpen" tags="" position="4700,3300" size="100,100">
 &lt;h2&gt;-1100 km: A Moment, Hidden&lt;/h2&gt;
 
 A couple years back, wandering through the waterways would entail a lot of trudging through knee-high streams, probably some leeches, and a large variety of poisons. Luckily, the area has become something of a haven for eccentrics and those deemed degenerate. You spent a lot of time here growing up. Now you mostly stop by when you pick up your medicine, but everyone is always so kind to you here. Even if the people here knew you before your time, they don&#39;t treat you any different for it.
@@ -1217,7 +1212,7 @@ You find yourself in the awkward position of explaining the capitol&#39;s strang
 
 With your robes stowed away exactly where Ariadne keeps the rest of her gear, the two of you forge on towards the //real// waterways. On the way, Ariadne (if:$cosplayFlag is 1)[runs some ideas by you for characters she&#39;d resemble. You&#39;ve heard of none of them, so she settles on inventing a fake character.](else:)[practices her evil laugh some more. It would be insufferable if she were anybody else.]
 
-[[The sound of the waterways hits you before you reach its wall...-&gt;waterProper]]](carryOn|</tw-passagedata><tw-passagedata pid="33" name="waterProper" tags="" position="4500,3300" size="100,100">The town inside the waterways is nigh-perpetually //alive.//
+[[The sound of the waterways hits you before you reach its wall...-&gt;waterProper]]](carryOn|</tw-passagedata><tw-passagedata pid="33" name="waterProper" tags="" position="4600,3300" size="100,100">The town inside the waterways is nigh-perpetually //alive.//
 
 There is music playing out across the entire area of the town. Residents rest on the side of the streets, and markets cover every inch of unused space. You love it for being so unlike the core, and Ariadne seems to love it for being unlike the dungeon. You have physically stop her from charging off to check out every store she sees.
 
@@ -1351,7 +1346,7 @@ Ariadne gives a restrained laugh.
 
 &quot;Come on, then. I&#39;m getting tired of busy streets anyway. Let&#39;s find somewhere to get away from this.&quot; She gives you a brief wink, and you lose all function for a few moments.
 
-[[The two of you search the streets for somewhere empty enough to be alone, but decent enough for you to bring the other to, qualifications when somehow raise your standards immensely. -&gt;ohMyGodItsADate]]](oldWisdom|](bitchNoUDont|](andThen|</tw-passagedata><tw-passagedata pid="34" name="ohMyGodItsADate" tags="" position="4400,3300" size="100,100">The two of you fall into a rhythm as you walk the Waterways together. You thoroughly check every building on each street, while Ari watches you in dumbstruck admiration, occasionally catching you when you nearly wander into a drainage duct (or, sometimes, when you act like you are so Ari will //heroically rescue you//).
+[[The two of you search the streets for somewhere empty enough to be alone, but decent enough for you to bring the other to, qualifications when somehow raise your standards immensely. -&gt;ohMyGodItsADate]]](oldWisdom|](bitchNoUDont|](andThen|</tw-passagedata><tw-passagedata pid="34" name="ohMyGodItsADate" tags="" position="4500,3300" size="100,100">The two of you fall into a rhythm as you walk the Waterways together. You thoroughly check every building on each street, while Ari watches you in dumbstruck admiration, occasionally catching you when you nearly wander into a drainage duct (or, sometimes, when you act like you are so Ari will //heroically rescue you//).
 Eventually, you find somewhere you both think will suit the other, you settle for [
 
 Neraeus&#39;s Moonlight, a family-run grill, kept afloat by royal backing that you helped it secure]&lt;homeyGrill|[
@@ -1470,7 +1465,7 @@ You hadn&#39;t considered. It&#39;s been years since you&#39;ve had to sleep awa
 
 &quot;I... think I&#39;ve got... something...&quot; You hold your head for a while. You&#39;d been hoping to stay away to avoid complications, but you need a rest, and, if you need a rest, Ari //definitely// needs one...
 
-[[&quot;Uh... the place is just down the way... they should still take us.&quot;-&gt;lodgeTime]]](CafeConc| ](theMeans| ](flowerTimeCafe| ](cafeScene| </tw-passagedata><tw-passagedata pid="35" name="lodgeTime" tags="" position="4300,3300" size="100,100">All it takes is three neat raps upon the fifth door on Athinion. Obviously there&#39;s danger... but Ari is already losing her strength. You can&#39;t push the poor woman much further...
+[[&quot;Uh... the place is just down the way... they should still take us.&quot;-&gt;lodgeTime]]](CafeConc| ](theMeans| ](flowerTimeCafe| ](cafeScene| </tw-passagedata><tw-passagedata pid="35" name="lodgeTime" tags="" position="4400,3300" size="100,100">All it takes is three neat raps upon the fifth door on Athinion. Obviously there&#39;s danger... but Ari is already losing her strength. You can&#39;t push the poor woman much further...
 
 There&#39;s stirring from the house. Ari has started leaning on you to keep herself awake. You don&#39;t mind. The door creaks open to reveal a female fiend. She sees you and immediately throws her arms around you. Ari is shaken back into full consciousness, if only for a moment.
 
@@ -1563,7 +1558,7 @@ Ari has gone totally red in the face. You take her hand to guide her inside, as 
 [[You might have gone a bit overboard, but she doesn&#39;t seem too upset.-&gt;bedTime]]](ariFlirt|[
 (show:?welcomeIn)
 Ari gives you a sideways looks of confusion, but follows behind you when you enter.
-[[You&#39;re honestly no more sure than she is...-&gt;bedTime]]](ariWhat|</tw-passagedata><tw-passagedata pid="36" name="bedTime" tags="" position="4200,3300" size="100,100">Payla leads the two of you into her modest guest bedroom.
+[[You&#39;re honestly no more sure than she is...-&gt;bedTime]]](ariWhat|</tw-passagedata><tw-passagedata pid="36" name="bedTime" tags="" position="4300,3300" size="100,100">Payla leads the two of you into her modest guest bedroom.
 
 &quot;Now, now, it&#39;s not up to the royal standard, but it&#39;s what we&#39;ve got. Not every day that the princess needs to stop by, y&#39;know?&quot; Payla laughs. 
 
@@ -1830,7 +1825,7 @@ The tension drops from your muscles, but one last question burns in your mind.
 ...
 
 
-[[&quot;Why *do* you want to kill my father?&quot;-&gt;storyTime]]</tw-passagedata><tw-passagedata pid="37" name="storyTime" tags="" position="4100,3300" size="100,100">...
+[[&quot;Why *do* you want to kill my father?&quot;-&gt;storyTime]]</tw-passagedata><tw-passagedata pid="37" name="storyTime" tags="" position="4200,3300" size="100,100">...
 
 
 
@@ -1851,36 +1846,37 @@ The tension drops from your muscles, but one last question burns in your mind.
 &quot;R-right... well, when I was a young lass... I met the sweetest girl... She was getting tutored in magic by some old weaver in the town. She was supposed to stay the summer. We... well, we hit it off pretty quickly... but she...&quot; Ari&#39;s voice fades to nothing.
 [
 &quot;What happened to her?&quot;]&lt;aOne| [
-&quot;Euphemia...&quot;]&lt;bOne| (click:?aOne)[(replace:?bOne)[](show:?theAnomaly)]
-(click:?bOne)[(replace:?aOne)[]
+&quot;Euphemia...&quot;]&lt;bOne| (click:?aOne)[(replace:?bOne)[](show:?theAnomaly)
+](click:?bOne)[(replace:?aOne)[]
 
-&quot;H...H-how do you...?&quot; Ari&#39;s eyes well with tears.[
-(unless: $bondageFlag is 1)[Lie to her.]&quot;You... you called out to her in your sleep once...&quot;]&lt;L1| [
-&quot;...&quot;]&lt;L2|](click-replace:?L1)[(replace:?L2)[]&quot;You... you called out to her in your sleep once...&quot; (show:?pLie)][
+&quot;H...H-how do you...?&quot; Ari&#39;s eyes well with tears.
+[
+(unless: $bondageFlag is 1)[(Lie to her) ]&lt;liara|&quot;You... you called out to her in your sleep once...&quot;]&lt;L1| [
+&quot;...&quot;]&lt;L2|](click:?L1)[(replace:?L2)[](replace:?liara)[](show:?pLie)][
 
-&quot;Oh... o-of course...&quot; Ari sniffles and you wipe a tear from her cheek. (show:?theAnomaly)](pLie| (click:?L2)[(replace:?L1)[](show:?pViolence)][
+&quot;Oh... o-of course...&quot; Ari sniffles and you wipe a tear from her cheek. (show:?theAnomaly)
+](pLie|(click:?L2)[(replace:?L1)[](show:?pViolence)][
 
 &quot;How do you know her name, $shortName...?&quot; Ari backs away from you...
 She rips a dagger from her belt and points it your way. She&#39;s sobbing.
+
 &quot;Tell me... **Tell me... $shortName...**
- 
+
 This is... different... than the last time she had a blade pointed at you. You aren&#39;t afraid.
 
 You step towards her, and she trembles.
 
 &quot;(print:$Name&#39;s 1st)-$Name...&quot; Her aggressive expression quickly collapses into a mess of snot and tears.
 
-You reach her. She drops her dagger and falls into your arms. 
-
-You sit her down on Payla&#39;s cheap guest bed and hold her steady while she bawls.
+You reach her. She drops her dagger and falls into your arms. You sit with her on Payla&#39;s cheap guest bed and hold her steady while she bawls.
 
 &quot;I... I just miss her so m-much... $Name....&quot;
 
-&quot;I... I never should have trusted that... that t-thing... He... he took her from me... H-he killed Euphemia... b-but... I trusted him...&quot; Ari has to stop briefly to wail into your shoulder. You keep her held tight, both for her sake and your own.
+&quot;I... I never should have trusted that... that t-thing... He... he took her from me... H-he killed Euphemia... I never should have trusted him...&quot; Ari has to stop briefly to wail into your shoulder. You keep her held tight, both for her sake and your own.
 
-&quot;He... h-he led us into a trap... the king... arrived after he walked off... I never saw his bastard face again...&quot; Your stomach turns.
+&quot;He... h-he led us into a trap... the king... arrived after he walked off... I never saw his damned face again...&quot; Your stomach turns.
 
-&quot;And so... I trained... every day... to finally take revenge for Euphie... on the king... and that... prince... bastard... I&#39;ll make them **both** pay...&quot; A chill shoots down your spine. Something isn&#39;t sitting right with you... but you can&#39;t really ask.
+&quot;And so... I trained... every day... to finally take revenge for Euphie... on the king... and that... prince... bastard... I&#39;ll make them **both** pay...&quot; A chill shoots down your spine. Something isn&#39;t sitting right with you... but it would only hurt her to ask about it now.
 
 You hold Ari for some time before either of you speak again. She&#39;s clearly... fragile... right now, so you give her time, until she&#39;s cried all her tears. 
 
@@ -1889,11 +1885,11 @@ You divert Ari&#39;s attention with talk about the day behind you, and she start
 
 &quot;The elders didn&#39;t like us playing with the boy, but he was always so kind to... to us both...&quot; A sad smile crosses Ari&#39;s face... but it doesn&#39;t last.
 
-&quot;One day... the boy told Euphie and I that his dad was going to come up... that he could teach us some magic...&quot; Ari takes a break to breathe. She squeezes your hands, and you squeeze back to remind her of your presence.
+&quot;One day... the boy told Euphie and me that his dad was going to come up... that he could teach us some magic...&quot; Ari takes a break to breathe. She squeezes your hands, and you squeeze back to remind her of your presence.
 
 &quot;When we arrived... the boy said he&#39;d go get his dad... so we waited... Not long after... the... the...&quot; Ari trails off into fitful sobbing. You put your arms around her. She weeps on your shoulder until she regains her composure.
 
-&quot;Then the... well... the Demon King... showed up. He... he smashed Euphie into the ground... He would&#39;ve got me too, if he hadn&#39;t been so loud... some villagers heard him and came running. He was already gone when they arrived...&quot; You feel ill. Something in this isn&#39;t sitting right with you.
+&quot;Then the... well... the Demon King... showed up. I&#39;ll never forget his face. He... he smashed Euphie into the ground... He would&#39;ve got me too, if he hadn&#39;t been so loud... some villagers heard him and came running. He was already gone when they arrived...&quot; You feel ill. Something in this isn&#39;t sitting right with you.
 
 &quot;That&#39;s what became of me and Euphie... two town freaks enter, one total pariah leaves...&quot;
 
@@ -1903,11 +1899,11 @@ You divert Ari&#39;s attention with talk about the day behind you, and she start
 
 Your mouth is bone dry. You want to run, scream, cry... anything. You just keep listening.
 
-&quot;That&#39;s why I&#39;m here now... to kill the Demon King... his prince... whatever it takes to earn some hollow revenge... not that it&#39;ll give me anything back...&quot;
+&quot;That&#39;s why I&#39;m here now... to kill the Demon King... his prince... whatever it takes to earn some hollow revenge... maybe I can convince myself it&#39;ll give me back anything I&#39;ve lost...&quot;
 
-&quot;Honestly... I&#39;ve spent longer chasing revenge for Euphie than I&#39;d even known her. I probably would have been content to just die in that dungeon, but then you had to show up...&quot; Ari looks up admiringly into your eyes, and some of your worry settles.
+&quot;Honestly... I&#39;ve spent longer chasing revenge for Euphie than I&#39;d even known her. I probably would have been content to just die in that dungeon... but then you had to show up...&quot; Ari looks up to you, her eyes brimming with admiration... affection... or something else. You feel some of your worries settle.
 
-&quot;You&#39;ve made this all a lot more complicated for me, y&#39;know...?&quot; Ari gives you a faint smile, and you pull her close. The two of you lay in contented silence as Ariadne dries her tears. (show:?theVow)](theAnomaly|[
+&quot;You&#39;ve made this all a lot more complicated for me, y&#39;know...?&quot; Ari gives you a faint smile, and you pull her close. The two of you lay in contented silence as Ariadne dries her tears on your shoulder. (show:?theVow)](theAnomaly|[
 
 
 
@@ -1917,7 +1913,7 @@ You finally break the tension.
  
 Ariadne peers up from her comfortable spot, nested in the crook of your neck, with her arms around your midriff.
 
-&quot;Yes, $shortName?&quot; She laughs. You&#39;re glad she can laugh again.
+&quot;Yes, $shortName?&quot; She laughs. You&#39;re glad she can do that again.
  
 &quot;I... I&#39;ve made my choice.&quot; You place a gentle hand on Ari&#39;s cheek, so she doesn&#39;t worry about what you might say next.
  
@@ -1937,16 +1933,18 @@ Your breathing falters, and you take a beat to consider... Some things are best 
 
 &quot;$Name-(print:$Name&#39;s last)-(print:$Name&#39;s last)...&quot; She pouts, but there are stars in her eyes as she looks up to you.
 
+
+
 You just wish you could make this moment last forever.
 Your hand wanders to cup Ari&#39;s cheek.
 
 The journey ahead will be long. 
-Your eyes wander down her face, and you feel your heart racing.
+Your gaze sneaks down her face, and you feel your heart racing.
 
 You&#39;re ready for it, though. 
-Your thumb finds itself over Ari&#39;s bottom lip, and your breath quickens.
+Your thumb finds itself over Ari&#39;s bottom lip, as your breath quickens.
 
-Ari is the first to move, pulling you into her, for a quick peck. You know enough about Ari to predict that she&#39;ll back out and yell out her apologies and ask you to strike her down...
+Ari is the first to move, pulling you into her for a quick peck. You know enough about Ari to predict that she&#39;ll back away, yell out her apologies, and ask you to strike her down...
 
 
 
@@ -1962,7 +1960,7 @@ For a beautiful, perfect moment, not a single piece of either of your journeys m
 
 
 
-When this moment finally ends, Ari buries herself in your shoulder to avoid showing her blushing face. You toy with her hair to soothe her worries. She melts easily into your arms, and the weight of your decision seems to slide right off of you.
+When the moment finally ends, Ari buries herself in your shoulder to avoid showing her blushing face. You toy with her hair to soothe her worries. She melts easily into your arms, and the weight of your decision seems to slide right off of you.
 
 Sure... this could be a mistake. You &#39;&#39;did&#39;&#39; basically just agree to fight your dad to the death... but... with Ari around, he doesn&#39;t scare you that much anymore. You rest your head on her shoulder as she calms back down.
 
@@ -1985,17 +1983,19 @@ Before turning in, you take Ari&#39;s hand.
 
 &quot;Hey... uh... if anything happens, and you need someone... don&#39;t feel bad about waking me, okay...?&quot; Ari bursts into her sweet laughter.
 
-&quot;I&#39;m... glad... for that. Thanks for letting me know, $shortName... And thanks for giving the benefit of the doubt that I&#39;d ever miss a chance to pester you.&quot; She gives you a small peck on the lips to wish you goodnight, and the two of you finally get to sleep... right as the waterways begin to wake for the morning... [[but neither of you notice.-&gt;theMorningAfter]]](noSexBeforeMarriage|[
+&quot;I&#39;m... glad... for that. Thanks for letting me know, $shortName... And thanks for giving the benefit of the doubt that I&#39;d ever miss a chance to pester you.&quot; She gives you a small peck on the lips to wish you goodnight, [[and the two of you finally get to sleep...-&gt;theMorningAfter]]](noSexBeforeMarriage|[
 
 
 
-You each take one side of the bed to... prepare.
+You each take one side of the room to... prepare.
+
 You use all the strength in your body to avoid looking towards the center of this room.
-You doubt Ari would mind, knowing her, but you&#39;ve added so many things to your mental journal today. Not to mention, if you looked, then she&#39;d look, and if Ari saw you like this, she&#39;d probably just decide to face the king alone. Your best look is definitely when you can use your clothes to give yourself some real curves. Honestly, you were expecting so-
 
-&quot;Uhm... $shortName...? Do you mind if I... maybe... turn around?&quot;
+You doubt Ari would mind, knowing her, but you&#39;ve added so many things to your mental journal today. Not to mention, if you looked, then she&#39;d look, and if Ari saw you like this, she&#39;d probably just decide to face the king alone. You&#39;re at your best when you can use your clothes to give yourself some real curves. Honestly, you were expecting so-
 
-Unfortunately for you, your heart answers the way you really want to, and not the way you know you should.
+&quot;Uhm... $shortName...? Do you mind if I... maybe... turn around?&quot; Your breathing quickens.
+
+Unfortunately for you, your heart answers the way you really want to, and not the way your mind knows you should.
 
 &quot;Uh... only if you&#39;re sure you want to...&quot; You&#39;ve already started blushing, even though she&#39;s probably reconsidered already. You just-
 
@@ -2005,37 +2005,35 @@ Oh no.
 
 &quot;W-would you be uncomfortable if I said something...?&quot;
 
-Yes. Yes. Yes. Dear gods please don&#39;t let her say anything. Don&#39;t talk. There&#39;s no way anything she&#39;d say would do anything but highlight your fail-
+Yes. Yes. Yes. Dear gods, please don&#39;t let her say anything. Don&#39;t talk. There&#39;s no way anything she&#39;d say would do anything but embarrass yo-
 
-&quot;Uh... feel free...&quot; Your heart has mutinied your brain.
+&quot;Uh... feel free...&quot; Your heart has mutinied your mind.
 
 &quot;$shortName... you look... absolutely ethereal...&quot;
 
-And like that, your brain turns off, and your heart assumes full control.
+And like that, your thoughts turns off, and your heart assumes full control.
 
 &quot;Y-you really think so-&quot; You instinctively turn when you respond, and you see... **her**... You immediately move to hide your flushing face.
 
 &quot;That bad, huh?&quot; Ari chuckles as she takes a few tentative steps towards you. You&#39;re still screaming internally. 
 
-You&#39;re sure some scholar in the archives would tell of how her legs //accentuated her body//, or some nonsense about how breastily her chest did mammary. 
+You try to process a single moment of sight. Your entire mind fills with a heavy fog. An ache fills your heart, something less of //want// and more of &#39;&#39;need&#39;&#39;.
 
-You, however, catch a single glimpse, your eyes darting across her collarbone, lingering on the map of scars that trails across her, and you suddenly understand why half of human civilization is seemingly dedicated to scholars poorly attempting to recreate the form of a woman. In this moment, you think you could handle all of their jobs with ease. 
+That single glance replays several times in your head. Your gaze flicks over the paths of scars which run across the width of Ari&#39;s chest. You knew a knight errant would need some serious musculature... but you&#39;d never thought too hard about what that would look like. Now, you can barely think about anything else, at least until Ari reaches you.
 
-Ari meets your gaze, now much closer... extremely close. She motions with her arms, and you accept, wrapping her in your embrace. You lay your head on Ari&#39;s shoulder, and all of your fears seem to melt away. 
+Ari meets your gaze, now much closer... extremely close. She motions with her arms, and you accept, wrapping her in your embrace. You rest your head on hers, and all of your fears seem to melt away. Ariadne exploits her height disadvantage to leave a brief, cloying kiss on your collarbone.
 
-A sly grin crosses Ari&#39;s face, and she pulls back to bow deeply to you.
+When you separate, Ari takes your hands in hers.
 
-&quot;Oh wise and beautiful Princess $Name, might I, your humble knight, Ariadne, carry you to your chambers?&quot; You nearly fall over laughing, but you don&#39;t say no. 
-
-&#39;Get Princess Carried&#39; had been high on your list for a while. You&#39;re just glad you happened upon such an inordinately buff dork back in the dungeon.
+&quot;Shall we, princess?&quot; Heat floods your face, and you give Ari a small nod. She guides you to the bed, gently laying you down before circling to lay on the other side.
 
 
 
-Once you&#39;ve both settled into bed, Ariadne turns to you, her face flushed from thought alone.
+Once you&#39;ve both settled in, Ariadne turns to you, her face flushed from thought alone.
 
-&quot;Uhm... this bed is pretty stiff, maybe we could-&quot; You cut her off before she can hatch some ridiculous excuse, and you just pull her in. You&#39;re much warmer in her arms than with any of Payla&#39;s cheap blankets anyway.
+&quot;Uhm... this bed is pretty stiff, maybe we could-&quot; You cut her off before she can hatch some ridiculous excuse, and you just pull her into your arms. You&#39;re much warmer together than with any of Payla&#39;s cheap blankets, anyway.
 
-You watch over Ari for some time. As she dozes off, you give her a soft goodnight kiss, and, after an unbelievably long day, [[you finally drift off to sleep...-&gt;theMorningAfter]]](OwOWhatsDis|](theVow|</tw-passagedata><tw-passagedata pid="38" name="theMorningAfter" tags="" position="4000,3300" size="100,100">(if:$catholicism is 1)[You wake up, to your confusion, on Payla&#39;s guest bed. You look to your side, and Ari is sitting where you&#39;d been laying the night before.
+You watch over Ari for some time. She dozes quickly in your arms, resting her head on your chest. Once Ari finally seems to be out, you give her a soft goodnight kiss, and, after an unbelievably long day, [[you finally drift off to sleep...-&gt;starsOne]]](OwOWhatsDis|](theVow|</tw-passagedata><tw-passagedata pid="38" name="theMorningAfter" tags="" position="4000,3300" size="100,100">(if:$catholicism is 1)[You wake up, to your confusion, on Payla&#39;s guest bed. At your side Ari sits where you&#39;d been laying the night before.
 
 &quot;Oh, the princess finally rises. Good morning~&quot; Ari gives you a wide grin. She&#39;s already all suited up, watching over you. For once, you&#39;re happy to have a protector.
 
@@ -2043,40 +2041,8 @@ You watch over Ari for some time. As she dozes off, you give her a soft goodnigh
 
 &quot;Uhm. T-thanks...&quot; Ari takes your hand and pulls you from bed.
 
-&quot;Come now, we&#39;ve got places to be, oh Princess $shortName.&quot; Ari toussles your hair some, and you give her a sideways glare. 
+&quot;Come now, we&#39;ve got places to be, Princess $shortName.&quot; Ari toussles your hair, and you give her a sideways glare.](else:)[You wake, basking in the residual warmth of a rare pleasant dream.
 
-The two of you sweep over the room, making sure you&#39;ve grabbed all of your incredibly sparse worldly posessions. You hope to make it out of the waterways with some time to spare, today. You&#39;re excited to show Ari what&#39;s up ahead. You realize you&#39;ve forgotten a major part of your morning routine.
-
-You apologize to Ari and sequester yourself in a corner, producing a simple syringe from your bag. You grimace and jab it into your leg. In the moment, you question the price you have to pay for beauty. You obviously wouldn&#39;t quit, but that doesn&#39;t make the pain less annoying. Ari, on the other hand, looks concerned.
-
-&quot;You&#39;re not dying on me, are you?&quot; Her tone is joking, but she&#39;s holding your hand as if the slightest touch would turn you to ash.
-
-&quot;Only on the inside, Ari~, and that hasn&#39;t been for a while.&quot; Your coyness can&#39;t seem to shake her concern, but she holds you a little tighter now.
-
-With your routine finally done for the morning, the two of you give Payla your goodbyes [[and head out-&gt;darkMoonOpen]].](else:)[
-That night, you have your first pleasant dream in several weeks.
-(click:?fade2)[(show:?wakingUp)][
-You see yourself seated on a seaside cliff.
-
-The air around you is quiet, and thousands of stars hang above you. You take a moment to bask in their splendor.
-
-You hear Ari laugh behind her easel, and she moves to sit beside you, putting an arm around you. You pull in to prop your head on her shoulder.
-
-&quot;So... what were you painting?&quot; Ari gives you a wide grin.
-
-&quot;Just the most beautiful sight in the world, $shortName...&quot; The two of you peer out over the waves below you, and you sigh.
-
-&quot;You&#39;re right... It&#39;s... incredible...&quot;
-
-&quot;I&#39;m glad you agree, love...&quot; Ari takes your chin in her hand and turns you to face her. You flush. 
-
-With a hungry stare, she leans you down and trails darting kisses from your lips to your neck. She keeps you held tight.
-
-Ari pulls up for a moment to look into your eyes. You lay in silent awe of her and the sea of stars which frame her face above you.
-
-Ari gives you a soft smile. The next instant, she&#39;s on top of you, and, in the next, [the dream fades to nothing.]&lt;fade|]&lt;dreamB|]
-[
-You wake feeling warm throughout your entire body.
 The solar lamps of the waterways stream light through the window of Payla&#39;s guest bedroom. You&#39;re still swaddled in the single, cheap blanket that you and Ari were given to share. Turning your head, you realize you&#39;re resting it in Ariadne&#39;s lap.
 
 Ari tuts at your attempts to flee and continues coiling her fingers through your hair.
@@ -2095,23 +2061,23 @@ She calls your bluff, and grabs you by the chin.
 
 The two of you laze about like this for a while more. You know you have to get on the road... but Ari makes you want to stay put.
 
-It&#39;s during your &quot;Cuddle Until You Have The Energy To Mock The Other Again&quot; phase that Payla finally opens the door. Of course she wouldn&#39;t knock.
+It&#39;s during your &quot;Cuddle Until You Have The Energy To Mock Each Other Again&quot; phase that Payla finally opens the door. Of course she wouldn&#39;t knock.
 
-&quot;Good morning $Name! Hope you and yer friend slept well... I presume you&#39;ll be on your way?&quot; You and Ari both silently nod from beneath the lone blanket, and Payla heads out.(show:?finallyLeaving)](wakingUp|[
+&quot;Good morning $Name! Hope you and yer friend slept well... I presume you&#39;ll be on your way?&quot; You and Ari both silently nod from beneath the lone blanket, and Payla leaves you alone.]&lt;wakingUp|[
 
 
 
-The two of you sweep over the room, making sure you&#39;ve grabbed all of your incredibly sparse worldly posessions. (if:$tenderFlower is 1)[Ari has pinned your gifted daisy behind her ear again.] You hope to make it out of the waterways with some time to spare, today. The road ahead will be long, but you realize you&#39;ve forgotten a major part of your morning routine.
+The two of you sweep over the room, making sure you&#39;ve grabbed all of your incredibly sparse worldly posessions. (if:$tenderFlower is 1)[Ari has pinned your gifted daisy behind her ear again.] You plan a route with your vague recollections of the Royal Conservatory ahead of you. With any luck, you could reach the capitol without stopping once. In your excitement for real progress, you realize you&#39;ve forgotten a major part of your morning routine.
 
-You apologize to Ari and sequester yourself in a corner, producing a simple syringe from your bag. You grimace and jab it into your leg. In the moment, you question the price you have to pay for beauty. You obviously wouldn&#39;t quit, but that doesn&#39;t make the pain less annoying. Ari, on the other hand, looks concerned.
+Apologizing to Ari, you sequester yourself in a corner, producing a simple syringe from your bag. With a grimace, you jab it into your thigh. A few deep breaths, in and out, and the dull throbbing pain fades back into nothing. Ari gives you a concerned look as she approaches.
 
-&quot;You&#39;re not dying on me, are you, $shortName?&quot; Her tone is joking, but she&#39;s holding your hand as if the slightest touch would turn you to ash.
+&quot;You&#39;re not dying on me, are you?&quot; She&#39;s smiling, but she takes your hand as if the slightest touch would turn you to ash.
 
-&quot;Only on the inside, Ari~, and that hasn&#39;t been for a while.&quot; Your coyness can&#39;t seem to shake her concern, but she holds you a little tighter now.
+&quot;I was planning to wait a bit longer on that front. Just for maximum emotional impact, y&#39;know?&quot; Your coyness can&#39;t seem to shake her concern, but she holds you a bit tighter.
 
-With your routine finally done for the morning, the two of you give Payla your goodbyes [[and head out.-&gt;darkMoonOpen]]](finallyLeaving|</tw-passagedata><tw-passagedata pid="39" name="falseStart" tags="starterus" position="5825,6000" size="100,100">UwU
+With one last glance over the room, the two of you give Payla your goodbyes [[and head out.-&gt;darkMoonOpen]]]&lt;finallyLeaving|</tw-passagedata><tw-passagedata pid="39" name="falseStart" tags="starterus" position="4150,3150" size="100,100">UwU
 
-[[The ink dries to a deep crimson, and the fiend gives a curt bow before slithering out of the room -&gt;fiveMonthslater]] 
+[[The ink dries to a deep crimson, and the fiend gives a curt bow before slithering out of the room -&gt;storyTime]] 
 
 (set: $Name to &quot;Lilith&quot;)
 (set: $shortName to &quot;Lily&quot;)
@@ -2127,9 +2093,10 @@ With your routine finally done for the morning, the two of you give Payla your g
 (set: $rapierFlag to 1)
 (set: $introIndex to 2)
 (set: $termEndear to &quot;wife&quot;)
-(set: $weaponIndex to 0)</tw-passagedata><tw-passagedata pid="40" name="darkMoonOpen" tags="" position="4000,3600" size="100,100">Before long, you&#39;ve passed far beyond the lights of the waterways&#39; township, following the water towards the next hurdle on your path.
-
+(set: $weaponIndex to 0)</tw-passagedata><tw-passagedata pid="40" name="darkMoonOpen" tags="" position="4000,3600" size="100,100">
 &lt;h2&gt;-2000 km: The Aspect of Treachery&lt;/h2&gt;
+
+Before long, you&#39;ve passed far beyond the lights of the waterways&#39; township, following the water towards the next hurdle on your path.
 
 One small step along the path of the waterways, and the air goes chill around you. You&#39;ve entered an open cavern, flanked by trees and drowned in oppressive shadows. Your trip is mostly silent for the first few miles.
 
@@ -2214,7 +2181,7 @@ Once the two of you safely make it into the main tent, you can breathe more easi
 
 
 Ariadne flops onto the royal mattress in front of you.
-&quot;Hey $shortName(print:$shortName&#39;s last)~~, I snatched one of these from a rack near the entrance. I&#39;ll let you pick, since //I// never got Abyssal lessons from the Demon King.&quot; With a wink, Ari hands you a flier of showtimes and plot summaries.
+&quot;Hey $shortName(print:$shortName&#39;s last)~, I snatched one of these from a rack by the entrance. I&#39;ll let you pick, since //I// never got Abyssal lessons from the Demon King.&quot; With a wink, Ari hands you a flier of showtimes and plot summaries.
 
 &quot;I&#39;ll have you know I learned Abyssal from a //tutor//, thank you very much.&quot; You draw some saccharine laughter from Ari with that, and you can  **feel** your energy returning to you.
 
@@ -2284,7 +2251,7 @@ The two of you sit in silence for some time.
 
 ...
 
-&quot;So anyway, do you wanna sneak some snacks in?&quot; (show:?usher)](romSumm| [
+&quot;So anyway, uh... do you wanna sneak some snacks in?&quot; (show:?usher)](romSumm| [
 &quot;Hmm... this one&#39;s about a pair of soldiers who are stuck on opposing sides of a war, but who are also childhood friends. They&#39;re both scared to lose the war, but they&#39;re more scared about losing eachother.&quot;
 
 Ari is tearing up already.
@@ -2301,13 +2268,17 @@ When you look back to her, Ari is already fully suited up for the show. (show:?u
 
 Yet, when you turn to her, Ari is tearing up.
 
-&quot;I... $shortName that is unbelievably cute. I... I&#39;d be honored for that to be our theatre date...&quot; She beams at you. (show:?usher)](irinaSumm| [Ari sneaks out and brings back tickets for both of you. Neither of you have much spare clothing, so your date outfits are just your traveling outfits.
+&quot;I... $shortName that is unbelievably cute. I... I&#39;d be honored for that to be our theatre date...&quot; She beams at you. (show:?usher)](irinaSumm| [
+
+
+
+Ari sneaks out and brings back tickets for both of you. Neither of you have much spare clothing, so your date outfits are just your traveling outfits.
 
 A half hour later, the royal usher comes to escort you to your seats. A few minutes after he enters, you learn the Darkmoon //has// a royal usher on call. He accepts a tip as your apology for his new bruises.
 
 Finally in your seats, you take Ari&#39;s hand and wait for the show to begin.
 
-Before the show starts, you feel... on edge... you feel like you&#39;re being watched. Ari can immediately tell something is off.
+Before the show starts, you feel... on edge... like someone, or something, is staring down your neck. Ari can immediately tell something is off.
 
 &quot;Hey... uh... $shortName? Something... wrong?&quot; She gives you a playful nudge with her elbow.
 
@@ -2378,7 +2349,9 @@ With your bearings back, you wrap an arm around Ariadne, both to comfort her, an
 
 &quot;It&#39;s a promise.&quot; The two of you lose track of time, but Demaetria wakes soon after to interrupt your embrace.
 
-Demaetria kneels at the foot of the bed.
+
+
+She kneels at the foot of the bed.
 
 &quot;My liege... I am happy you are safe... Somewhere, a seal has been broken. I was lucky that it knocked out some of my stage equipment, or I might not have responded fast enough to rescue you...&quot;
 
@@ -2386,7 +2359,7 @@ This is... the most genuinely emotive you&#39;ve ever seen her...
 
 &quot;Your highness, I do hope you&#39;re feeling okay. Clearly, The Abyss will require your assistance, soon.&quot; You and Ari share an... uncomfortable glance.
 
-&quot;Uh... Demaetria...? What does this... well, //mean//?&quot; Your head is already throbbing, but it couldn&#39;t hurt to stuff in some more incomprehensible gibberish from Demaetria. After all, when would she ever waste your time?
+&quot;Uh... Demaetria...? Thanks, and all, but what does any of that... well, //mean//?&quot; Your head is already throbbing, but it couldn&#39;t hurt to stuff in some more incomprehensible gibberish from Demaetria. After all, when would she ever waste your time?
 
 &quot;I... your liege... with this seal, your blood shall call to the throne... I can explain more... but... maybe not with your... //friend// in the room?&quot;
 
@@ -2400,9 +2373,9 @@ This is... the most genuinely emotive you&#39;ve ever seen her...
 
 &quot;Very well...&quot; Demaetria stalks towards the door. Her eyes have gone cold. &quot;Just remember... nobody can escape their birthright forever, young prince. See you at your performance tonight...&quot;
 
-Ari&#39;s jaw is entirely slack. You have to restrain her sword hand, an effort that is exacerbated by your rapidly worsening headache. The top of your head burns, but Ari holds you while you suffer. 
+Ari&#39;s jaw is entirely slack. You have to restrain her sword hand, an effort that is exacerbated by your rapidly worsening migraine. The top of your head burns, but Ari holds you while you suffer. 
 
-&quot;I... I cannot believe the nerve on that woman... I do wish you&#39;d just let me perform acts of extraordinary violence sometimes, dear...&quot; You tear up a little... Ari just has that effect on you, sometimes.
+&quot;I... I cannot believe the nerve on that woman... I do wish you&#39;d just let me perform acts of extraordinary violence sometimes, dear...&quot; You tear up a little... either out of pride or from the pain.
 
 &quot;Uhm... do you need food or... anything...?&quot; You imagine you look horrific for her to be so worried.
 
@@ -2412,6 +2385,8 @@ You find... well... [[something worse.-&gt;hornTime]]</tw-passagedata><tw-passag
 
 If you were in the core, this wouldn&#39;t be an issue. You could just talk to the royal physician, he&#39;d lecture you about getting good rest and avoiding stress to prevent maturation, but inevitably schedule you to have them cut back down. Back then... this wasn&#39;t really an issue, but Duercas is currently thousands of kilometers away... You can&#39;t stop yourself from rubbing at them. They feel foreign, almost infectious, but you&#39;re stuck with them for now.
 
+
+
 You hear the doorknob click, and you immediately jump to bury yourself in the royal blankets.
 
 &quot;Hey $shortName-&quot; Ari cuts herself off with a gasp. She walks up towards the bedside, gently laying down next to the formless blob of cloth you&#39;ve made your home.
@@ -2420,27 +2395,29 @@ You hear the doorknob click, and you immediately jump to bury yourself in the ro
 
 &quot;If you need me to go talk to Demaetria... if you don&#39;t think you&#39;ll be ready by tonight... just tell me and I can go let her know... no violence, I promise.&quot; Ari is cradling the blob. You finally break out of it and spread the blanket to her.
 
-&quot;I&#39;m... uh... I&#39;ll be okay for tonight, I think... just a long day...&quot; You put your arm around Ari, and she pulls you into an embrace.
+&quot;I&#39;ll... uh... I&#39;ll be okay for tonight, I think... just a long day...&quot; You put your arm around Ari, and she pulls you into an embrace.
 
-&quot;Yeah... yeah I feel that too. Also if... breaking seals... are contagious, you&#39;d better not be giving them to me.&quot; The two of you laugh together for a while. You feel... at peace. Whatever comes next, you feel like you can find a way through. You almost wish your performance //were// delayed, just so you could stay like this... but that gives you a more pressing question.
+&quot;Yeah... yeah I feel that... Also if... breaking seals... are contagious, you&#39;d better not be giving them to me.&quot; The two of you laugh together for a while. You feel... at peace. Whatever comes next, you feel like you can find a way through. You almost wish your performance //were// delayed, just so you could stay like this... but that gives you a more pressing question.
 
 &quot;Uh... Ari...? What happened to the theatre...?&quot; 
 
 &quot;Oh... uhm... I was a bit busy trying to get you out, but it seemed to be in a bad state... The stagehands put out the fire pretty quickly, but everyone seemed really shaken up...&quot; Ariadne tears up. It seems like an upsetting memory for her.
 
-[&quot;It&#39;s okay, Ari. I&#39;m safe now.&quot;]&lt;jeck|(click:?jeck)[== You place a little kiss on your savior&#39;s cheek, and she returns it on your forehead. 
+[&quot;Hey... It&#39;s okay, Ari. I&#39;m safe now.&quot;]&lt;jeck|(click:?jeck)[== You place a little kiss on your savior&#39;s cheek, and she returns it on your forehead. 
 
-&quot;You know, I&#39;m glad we&#39;re still doing the show. I think it&#39;ll be a fun little diversion from all this stress. Oh, you&#39;ll also be delighted to know that Demaetria gave me the lines for our roles, so we can practice~, if you feel up to it.&quot; Ariadne hands you a few loose sheets of paper. 
+&quot;You know, I&#39;m sort of glad we&#39;re still doing the show. I think it&#39;ll be a fun little diversion from all this... Oh, you&#39;ll also be delighted to know that Demaetria gave me the lines for our roles, so we can practice~, if you feel up to it.&quot; Ariadne hands you a few loose sheets of paper. 
 
-It&#39;s about as bad as you expected. Demaetria gave you a stupidly easy play, just so you coudn&#39;t possibly mess it up. You even performed the exact same play in your acting classes as a kid. You don&#39;t exactly //want// Demaetria to have more faith in you, what with the blackmail, but it does hurt your pride.
+It&#39;s about as bad as you expected. Demaetria gave you a stupidly easy play, just so you coudn&#39;t possibly mess it up. You even performed the exact same play in your acting classes as a child. You don&#39;t exactly //want// Demaetria to have more faith in you, what with the blackmail, but it does hurt your pride.
 
-&quot;Oooh, you&#39;re to be my valiant knight. What a change of pace~&quot; Ari grins at you, and you try to smile back, despite your dissapointment. You&#39;ve been in this play several times, everyone always seems to cast you as the knight.
+&quot;Oooh, you&#39;re to be my valiant knight. What a change of pace~&quot; Ari grins at you, and you try to smile back, despite your dissapointment. You&#39;ve been in this play five times, you&#39;ve been the knight four times, and a tree once. Surprisingly, the tree was a much better performance for you.
+
+
 
 The two of you attempt some staged readings of your lines. Mainly //you// do, as Ari doesn&#39;t get many lines as the princess. It&#39;s not long before you have to take a break. You tell Ariadne that your head is acting up, and it certainly is, just... not because of your sickness. Ari holds you while you rest, going over your script so she can wrap her head around the plot. 
 
 You wouldn&#39;t admit it to her, but the way Ari has progressed from playing with //her// hair when nervous to playing with //yours// makes you feel... warm... or... at home... or something... Even if you&#39;d like to admit it, you&#39;re not totally sure how you&#39;d describe the feeling. All you know is that you don&#39;t want it to stop. 
 
-You&#39;re not sure why reading through your lines would have Ari like this. Maybe she&#39;s nervous for you to kiss her hand in front of so many people, that&#39;s probably a much bigger deal to humans. You don&#39;t mind, though, and the two of you stay like this for some time, Ari reading intently, and you cuddling up to keep her comfortable.
+You&#39;re not sure why reading through your lines would have Ari like this. Maybe she&#39;s nervous for you to kiss her hand in front of so many people. That&#39;s probably a much bigger deal to humans. You don&#39;t mind, though, and the two of you stay like this for some time, Ari reading intently, and you cuddling up to keep her comfortable.
 
 [[After some time, you fall asleep on Ari&#39;s shoulder-&gt;thePlay]].</tw-passagedata><tw-passagedata pid="44" name="thePlay" tags="" position="4600,3600" size="100,100">You awaken, still wrapped in Ariadne&#39;s arms. Both of your scripts are lain out in front of you. Ari gives you a peck on the cheek.
 
@@ -6347,11 +6324,6 @@ You sulk because you don&#39;t know what you&#39;re supposed to do...
 ...
 
 
-A sullen princess, even in death...
-
-
-...
-
 
 You notice that your arm has regained function... It seems as if you&#39;re definitely supposed to pick one of these... but... why?
 
@@ -10085,9 +10057,90 @@ You trip over a root, right at the edge of a massive clearing, and you finally g
 
 An army... dozens of humans, all armed with blades and torches.
 
-You&#39;re frozen. You look skyward, and the endless void above seems to fill the entire world.
+You&#39;re frozen. You look skyward, and the endless void above seems to fill your vision.
 
-[[And your entire world fades into nothingness. -&gt;abyssTime]]</tw-passagedata></tw-storydata>
+[[And the world fades into nothingness. -&gt;abyssTime]]</tw-passagedata><tw-passagedata pid="139" name="starsOne" tags="the-stars" position="4100,3300" size="100,100">Your eyes open to the raucous sound of dozens of voices around you and the sight of multicolored magical lights on the ceiling above.
+
+You feel Ariadne&#39;s hand in yours, and your eyes dart around the room. From the statues around, you&#39;ve placed it. You&#39;re in Trinity. 
+
+You look to your side, and your gaze meets Ari&#39;s. She&#39;s watching you, her face lightly flushed and propped up by her elbow.
+
+&quot;H-hey... $shortName...&quot; Her voice is soft, and she&#39;s wearing a dazed grin.
+[
+&quot;Y&#39;know, it&#39;s a bit odd that you keep popping up in my dreams... Not like I&#39;m complaining, of course...&quot;]&lt;a1|(click:?a1)[(replace:?a2)[](show:?a1R)][
+&quot;Enjoying yourself, Ari...?&quot;]&lt;a2|(click:?a2)[(replace:?a1)[](show:?a2R)] [Ari strokes your palm with her thumb, holding her cheek in her other hand.
+
+&quot;It really does feel like a dream, huh...? I keep expecting to wake up, back in my old hideout...&quot; She sighs, softening her gaze towards you. Now you feel //your// cheeks flushing.
+
+&quot;I... uh... okay, sure...&quot; You coil a finger through your hair. It&#39;s... longer? Is that something you dream about? Your questioning is interrupted as Ari leans on you, resting her head on your shoulder, with her hand caressing the back of your neck. You tense up, but Ari coos in your ear.
+
+(text-color:&quot;grey&quot;)[&quot;Sorry... the door girl was making eyes at you... don&#39;t want her getting any ideas...&quot;] You sigh, breathing in a mixture of alcohol and Ari&#39;s floral perfume. She wraps her arms around your waist, and you reciprocate.
+
+
+
+The two of you sit in a silent embrace, swaying gently to music that you can barely hear over the crowd. You rest your head on Ari&#39;s shoulder, waiting for the dream to end.
+
+A few songs later, she presses a kiss to your cheek. You flush, [[and the world fades into darkness. -&gt;theMorningAfter]]](a1R|[A smirk creeps across Ari&#39;s face, and she leans forward, filling the air around you with the scent of lavender and alcohol. She wraps an arm around your waist and whispers into your ear.
+
+(text-color:&quot;grey&quot;)[&quot;I&#39;d have a much nicer night enjoying //you//, $splitName...&quot;] She places a brief nibble on your earlobe, and you feel your face go hot. You //gently// push Ari back to an arm&#39;s length.
+
+&quot;That... uh... wow. First: very bold thing to say to royalty. Second: I absolutely can&#39;t believe I could dream up a line like that.&quot; As you chide yourself, Ari&#39;s expression drops. She leans on your table, sighing.
+
+&quot;Ah... that explains that... Sorry. I guess I must sound totally out of pocket to you.&quot; Her shoulders sag, and she takes your hand in hers. It&#39;s like she&#39;s a totally different person.
+
+&quot;W-wait... explains what...?&quot; Your breathing quickens. Did your subconscious just totally change gears? You search for an answer, but Ari only offers a sad smile. Suddenly her expression shifts, and she shoots you a wide grin. Her eyes don&#39;t change, though.
+
+&quot;Ah, $shortName... don&#39;t you remember that play Demaetria had us do... those were some times, huh?&quot; You feel... lost. Your eyes clearly show it, because Ari&#39;s expression drops back to where it was before. She strokes your palm with her thumb. Your gaze falls as you search for any sort of answer.
+
+Play? Demaetria? As in, like... Darkmoon Demaetria...? Is your dream trying to tell you something? What does any-
+
+
+
+Ari squeezes your hand.
+
+You look up, and she&#39;s biting back tears with a pained smile. You want to say something, anything, but your tongue sticks to the roof of your mouth. Ari speaks, her voice barely above a raspy whisper, and you strain to hear her.
+
+&quot;I&#39;m... I&#39;m //so// sorry... $shortName...&quot; A single tear rolls down Ari&#39;s cheek.
+
+You reach to brush it off, but Ari takes your wrist in her hand.
+
+It lands on the table, [[and the world around you goes black. -&gt;theMorningAfter]]](a2R|</tw-passagedata><tw-passagedata pid="140" name="waterCont" tags="" position="4600,3000" size="100,100">[When you come to, the first thing you see is Ariadne&#39;s face, shaded by the torchlight. 
+
+You feel a warmth over you. Ariadne is cradling your head in her lap, unknowingly twisting your hair around her fingers. Seeing you wake, her eyes shimmer a little, and a sweet smile paints itself across her face. 
+
+&quot;There are better places to sleep than the ground y&#39;know, $Name...&quot; Her voice is uncharacteristically certain and dripping with the honeyed warmth that she always seems to emanate. You feel so at ease that you don&#39;t even worry about that very strange thought. 
+
+You also notice the source of your warmth. While you were out, it seems Ariadne started a small fire in the center of the room. Sitting on it is some sort of compact pot. As you wonder where she keeps these sorts of things, you notice the weight across your chest. You&#39;re draped in Ariadne&#39;s cloak. 
+
+&quot;You had me real worried, y&#39;know... I&#39;d n-never forgive you if you got hurt trying to protect me. I&#39;m... I&#39;m already putting you through a lot...&quot; The sheen around her eyes has started developing into full tears.
+
+&quot;Playing hero is just gonna get us both killed, y&#39;know... at least let the big, armed knight be the one to sacrifice herself, okay?&quot; She&#39;s still smiling beneath her tears. You instinctively reach out to brush them away.
+
+[&quot;I... I can&#39;t let you do that...  I //did// say I&#39;d guide you, didn&#39;t I?&quot;]&lt;godImFuckingCryingTooNowThanks| (click: ?godImFuckingCryingTooNowThanks)[(show:?jesusChristImBawling)][
+
+&quot;You&#39;re... just impossible, y&#39;know?&quot; Ariadne wipes the last of her tears and laughs to herself.
+
+&quot;Okay then... No dying! We&#39;ll get to the core, at least... No promises after that. Not that we&#39;ll ever get there if we keep running into things like this...&quot; She grumbles to herself.
+
+You can&#39;t help but laugh. She&#39;s got a point. You&#39;ve spent so long in this dungeon. If anything below manages to resist harder, you&#39;ll be at this for months.
+
+&quot;Hey, the way I see it, if we can make it through here, the core will be easy. I&#39;ve never heard of any adventurers even getting this far.&quot; You&#39;re tearing up some too at this point. It&#39;s been a tough day, or... days? You haven&#39;t been able to keep track with all the chaos. Father is probably worried sick.
+
+...
+
+
+...
+
+You laugh at the thought. If he was really that concerned, he&#39;d have the entire dungeon locked down already.
+
+&quot;Hey, uhm, $Name... I, uh, heated up some rations... if you&#39;d like some... or... you can eat normal food right?&quot; Ariadne is being entirely serious, but you can&#39;t stop even more laughter from spilling out. She pouts for a moment, but you thank her anyway, and fill one of her traveling cups with some of the dull, yellow broth she&#39;s heated up for you both.
+
+Rations have nothing on your royal accommodations... but... somehow... you don&#39;t mind.
+
+You&#39;ve got a long road ahead, but you&#39;re happy to take some time to rest before you reach [[the next major threshold. -&gt;waterDoor]]](jesusChristImBawling|](ariCare|</tw-passagedata><tw-passagedata pid="141" name="starsZero" tags="" position="4600,2900" size="100,100">
+&lt;/&gt;Gomenasorry, Hyp was working on this right when she pushed the build :((((((&lt;\&gt;
+
+[[And then the world fades into darkness. -&gt;waterCont]]</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
